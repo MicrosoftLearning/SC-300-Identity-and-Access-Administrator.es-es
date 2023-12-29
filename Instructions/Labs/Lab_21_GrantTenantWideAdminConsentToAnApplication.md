@@ -1,32 +1,31 @@
 ---
 lab:
-  title: '21: consentimiento administrativo para todos los inquilinos a una aplicación'
+  title: '21: conceder el consentimiento del administrador para todo el inquilino a una aplicación'
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
 ---
 
-# Laboratorio 21: consentimiento administrativo para todos los inquilinos a una aplicación
+# Laboratorio 21: conceder el consentimiento del administrador para todo el inquilino a una aplicación
 
 ## Escenario del laboratorio
 
-Para las aplicaciones que haya desarrollado la organización, o bien las que se hayan registrado directamente en el inquilino de Azure AD, puede conceder el consentimiento del administrador para todo el inquilino desde los Registros de aplicaciones en Azure Portal.
+Para las aplicaciones que haya desarrollado la organización, o bien las que se hayan registrado directamente en el inquilino de Microsoft Entra, puede conceder el consentimiento del administrador para todo el inquilino desde los Registros de aplicaciones en Azure Portal.
 
 #### Tiempo estimado: 15 minutos
 
-### Ejercicio 1: consentimiento de administrador
+### Ejercicio 1: conceder consentimiento del administrador
 
-#### Tarea 1: conceder el consentimiento de administrador en Registros de aplicaciones
+#### Tarea 1: conceder el consentimiento del administrador en Registros de aplicaciones
 
-   **Advertencia**: la concesión del consentimiento del administrador para todos los inquilinos a una aplicación permitirá que la aplicación y el editor accedan a los datos de la organización. Antes de conceder el consentimiento, revise con atención los permisos que solicita la aplicación.
+   **Advertencia**: la concesión del consentimiento del administrador para todo el inquilino a una aplicación concederá acceso a la aplicación y al publicador de la aplicación a los datos de la organización. Antes de conceder el consentimiento, revise con atención los permisos que solicita la aplicación.
 
 El rol de administrador global es necesario para proporcionar el consentimiento del administrador para los permisos de aplicación en Microsoft Graph API.
 
-1. En un ejercicio anterior creó una aplicación denominada Aplicación de demostración. Si es necesario, en Microsoft Azure, ve a **Azure Active Directory**, selecciona **Registros de aplicaciones** y después, **Aplicación de demostración**.
+1. En un ejercicio anterior creó una aplicación denominada Aplicación de demostración. Si es necesario, en el Centro de administración de Microsoft Entra, ve a **Identidad**, **Aplicaciones**, selecciona  **Registros de aplicaciones ** y selecciona después **Aplicación de demostración**.
 
+2. En la pantalla de la **Aplicación de demostración**, busca, copia y guarda los valores de **id. de aplicación (cliente)** y de **id. de directorio (inquilino)** para poder usarlos más adelante.
 
-2. En la página de la **Aplicación de demostración**, busca, copia y guarda los valores de **Id. de aplicación (cliente)** y de **Id. de directorio (inquilino)** para poder usarlos más adelante.
-
-    >**Nota**: **la aplicación de demostración** se ha creado en los laboratorios anteriores. Estos laboratorios son un requisito previo.
+    **Nota** - **la aplicación de demostración** se crea en los laboratorios anteriores. Completa estos laboratorios antes de este.
 
     ![Captura de pantalla que muestra la página Aplicación de demostración con el Id. de directorio resaltado](./media/lp3-mod3-demo-app-directory-id.png)
 
@@ -38,13 +37,13 @@ El rol de administrador global es necesario para proporcionar el consentimiento 
 
 5. Revise el cuadro de diálogo y, a continuación, seleccione **Sí**.
 
-   **Advertencia**: la concesión del consentimiento del administrador para todos los inquilinos a través de Registros de aplicaciones revocará todos los permisos concedidos previamente a todos los inquilinos. Los permisos que los usuarios hayan concedido previamente en su propio nombre no se verán afectados.
+   **Advertencia**: la concesión del consentimiento del administrador para todo el inquilino a través de Registros de aplicaciones revocará todos los permisos concedidos previamente en todo el inquilino. Los permisos que los usuarios hayan concedido previamente en su propio nombre no se verán afectados.
 
-#### Tarea 2: conceder el consentimiento de administrador en las aplicaciones empresariales
+#### Tarea 2: conceder el consentimiento del administrador en las aplicaciones de Enterprise
 
 Puede conceder el consentimiento del administrador para todo el inquilino a través de Aplicaciones empresariales si la aplicación ya se ha aprovisionado en el inquilino.
 
-1. En Microsoft Azure, vaya a **Azure Active Directory > Aplicaciones de empresa > Aplicación de demostración.**
+1. En el Centro de administración Microsoft Entra, ve a **Identidad > Aplicaciones > Aplicaciones empresariales > Aplicación de demostración.**
 
 2. En la página **Aplicación de demostración**, en el panel de navegación izquierdo, selecciona **Permisos** en la sección **Seguridad**.
 
@@ -52,7 +51,7 @@ Puede conceder el consentimiento del administrador para todo el inquilino a trav
 
     ![Captura de pantalla que muestra la página de permisos de la aplicación de demostración con la opción Conceder consentimiento del administrador para Contoso resaltada.](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
-   **Advertencia**: la concesión del consentimiento del administrador para todos los inquilinos a través de Registros de aplicaciones revocará todos los permisos concedidos previamente a todos los inquilinos. Los permisos que los usuarios hayan concedido previamente en su propio nombre no se verán afectados.
+   **Advertencia**: la concesión del consentimiento del administrador para todo el inquilino a través de Registros de aplicaciones revocará todos los permisos concedidos previamente en todo el inquilino. Los permisos que los usuarios hayan concedido previamente en su propio nombre no se verán afectados.
 
 4. Cuando se le solicite, inicie sesión con la cuenta de administrador global.
 

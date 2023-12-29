@@ -1,33 +1,33 @@
 ---
 lab:
-  title: '26: configurar Privileged Identity Management para roles de Azure AD'
+  title: '26: configurar Privileged Identity Management para roles de Microsoft Entra'
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratorio 26: configurar Privileged Identity Management para roles de Azure AD
+# Laboratorio 26: configurar Privileged Identity Management para roles de Microsoft Entra
 
 ## Escenario del laboratorio
 
-Un administrador de roles con privilegios puede personalizar Privileged Identity Management (PIM) en su organización de Azure Active Directory (Azure AD), incluido el cambio de la experiencia de un usuario que va a activar una asignación de rol válida. Debes familiarizarte con la configuración de PIM.
+Un administrador de roles con privilegios puede personalizar Privileged Identity Management (PIM) en su organización de Microsoft Entra, incluido cómo cambiar la experiencia de un usuario que va a activar una asignación de roles apta. Debes familiarizarte con la configuración de PIM.
 
 #### Tiempo estimado: 30 minutos
 
-### Ejercicio 1: configurar roles de Azure AD
+### Ejercicio 1: configurar la configuración de roles de Microsoft Entra
 
 #### Tarea 1: abrir la configuración del rol
 
-Siga estos pasos para abrir la configuración de un rol de Azure AD.
+Sigue estos pasos para abrir la configuración de un rol de Microsoft Entra.
 
-1. Inicia sesión en  [https://portal.azure.com](https://portal.azure.com) como Administrador global.
+1. Inicia sesión en  [https://entra.microsoft.com](https://entra.microsoft.com) como Administrador global.
 
-2. Busque y, a continuación, seleccione **Azure AD Privileged Identity Management.**
+2. Busca y luego selecciona **Privileged Identity Management.**
 
-3. En la página Privileged Identity Management, en el panel de navegación izquierdo, selecciona **Roles de Azure AD**.
+3. En la página de Privileged Identity Management, en el panel de navegación izquierdo, selecciona **Roles de Microsoft Entra**.
 
 4. En la página Inicio rápido, en el panel de navegación izquierdo, seleccione **Configuración.**
 
-    ![Imagen de pantalla que muestra la página de roles de Azure AD con el menú Configuración resaltado](./media/lp3-mod3-pim-ad-roles-settings.png)
+    ![Imagen de pantalla que muestra la página de roles de Microsoft Entra con el menú Configuración resaltado](./media/lp3-mod3-pim-ad-roles-settings.png)
 
 5. Revise la lista de roles y, a continuación, en **Buscar por nombre de rol**, escriba **cumplimiento**.
 
@@ -43,7 +43,7 @@ Si se establecen varios aprobadores, la aprobación se completa en cuanto uno de
 
     ![Imagen de pantalla que muestra la parte superior de la página Detalles de configuración de rol: administrador de cumplimiento con la opción Editar resaltada](./media/lp4-mod3-pim-edit-compliance-role.png)
 
-2. En la página Editar configuración de rol: administrador de cumplimiento, activa la casilla **Requerir aprobación para activar**.
+2. En la página Editar configuración de rol: Administrador de cumplimiento, selecciona la casilla **Requiere aprobación para activar**.
 
 3. Seleccione **Seleccionar aprobadores**.
 
@@ -53,29 +53,31 @@ Si se establecen varios aprobadores, la aprobación se completa en cuanto uno de
 
 5. Una vez que haya especificado la configuración del rol, seleccione **Actualizar** para guardar los cambios.
 
-### Ejercicio 2: PIM con roles de Azure AD
+### Ejercicio 2: PIM con roles de Microsoft Entra
 
 #### Tarea 1: asignar un rol
 
-Con Azure Active Directory (Azure AD), un administrador global puede realizar asignaciones de roles de administrador de Azure AD permanentes. Estas asignaciones de roles se pueden crear mediante Azure Portal o mediante comandos de PowerShell.
+Con Microsoft Entra ID, un administrador Global puede hacer asignaciones permanentes de roles de administrador de Microsoft Entra. Estas asignaciones de roles pueden crearse utilizando el Centro de administración Microsoft Entra o mediante comandos de PowerShell.
 
-El servicio Azure AD Privileged Identity Management (PIM) permite también a los administradores de roles con privilegios realizar asignaciones de roles de administrador permanentes. Además, los administradores de rol con privilegios pueden hacer que los usuarios sean aptos para roles de administrador de Azure AD. Un administrador apto puede activar el rol cuando lo necesite y, cuando termina, sus permisos caducan.
+El servicio Privileged Identity Management (PIM) permite también a los administradores de roles con privilegios realizar asignaciones de roles de administrador permanentes. Además, los administradores de rol con privilegios pueden hacer que los usuarios sean aptos administrar roles de Microsoft Entra. Un administrador apto puede activar el rol cuando lo necesite y, cuando termina, sus permisos caducan.
 
-Siga estos pasos para hacer que un usuario sea elegible para un rol de administrador de Azure AD.
+Sigue estos pasos para hacer que un usuario sea elegible para un rol de administrador de Microsoft Entra.
 
-1. Inicia sesión en [https://portal.azure.com](https://portal.azure.com) con una cuenta de administrador global.
+1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con una cuenta de administrador global.
 
-2. Busque y, a continuación, seleccione **Azure AD Privileged Identity Management.**
+2. Busca y luego selecciona **Privileged Identity Management.**
 
-3. En la página Privileged Identity Management, en el panel de navegación izquierdo, selecciona **Roles de Azure AD**.
+    **Nota:** puedes encontrarlo en el menú de Identidad - Gobernanza de identidades - Privileged Identity Management.
+
+3. En la página de Privileged Identity Management, en el panel de navegación izquierdo, selecciona **Roles de Microsoft Entra**.
 
 4. En la página Inicio rápido, en el panel de navegación izquierdo, seleccione **Roles.**
 
 5. En el menú superior, seleccione **+ Agregar asignaciones**.
 
-    ![Imagen de pantalla que muestra roles de Azure AD con el menú Agregar asignaciones resaltado](./media/lp4-mod3-pim-assign-role.png)
+    ![Imagen de pantalla que muestra roles de Microsoft Entra con el menú Agregar asignaciones resaltado](./media/lp4-mod3-pim-assign-role.png)
 
-6. En la página Agregar asignaciones, en la pestaña **Pertenencia**, revisa la configuración.
+6. En el panel Agregar asignaciones, en la pestaña **Pertenencia**, revisa la configuración.
 
 7. Seleccione el menú **Seleccionar rol** y, a continuación, seleccione **Administrador de cumplimiento**.
 
@@ -83,7 +85,7 @@ Siga estos pasos para hacer que un usuario sea elegible para un rol de administr
 
 9. En **Seleccionar miembros**, seleccione **No hay miembros seleccionados**.
 
-10. En el panel Seleccionar un miembro, selecciona **Miriam Graham** y después, **Seleccionar**.
+10. En el panel Seleccionar un miembro, selecciona **Miriam Graham** y luego selecciona **Seleccionar**.
 
     ![Imagen de pantalla que muestra el panel Seleccionar un miembro con un miembro seleccionado resaltado](./media/lp4-mod3-pim-add-role-assignment.png)
 
@@ -98,32 +100,31 @@ Siga estos pasos para hacer que un usuario sea elegible para un rol de administr
 
 #### Tarea 2: iniciar sesión con Miriam
 
-1. Abrir una ventana del explorador de InPrivate.
-2. Conéctate a Azure Portal (https://portal.azure.com).
-3. Si se abre y ya hay una sesión iniciada, selecciona el nombre en la esquina superior derecha y elige **Iniciar sesión con otra cuenta**.
-4. Inicia sesión como Miriam.
+1. Abre una ventana del explorador InPrivate.
+2. Conéctate al Centro de administración Microsoft Entra (https://entra.microsoft.com).
+    **Nota**: si se abre con un usuario que ha iniciado sesión, selecciona su nombre en la esquina superior derecha y selecciona **Iniciar sesión con otra cuenta**.
+3. Inicia sesión como Miriam.
 
    | Campo | Value |
    | :--- | :--- |
    | Nombre de usuario | **MiriamG@**`<<your domain.onmicrosoft.com>>` |
    | Contraseña |  Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña del administrador de inquilinos). |
 
-5. Cierra el **diálogo Le damos la bienvenida a Azure**.
-6. En la barra **Buscar recursos, servicios y documentos**, busca Azure Active Directory y abre la página.
-7. En la página **Información general**, busca mi **Mi fuente**.
-8. Selecciona **Ver perfil** en el nombre de Miriam Graham; se abrirá la página de perfil de Miriam.
-9. Selecciona **Roles asignados** y después, **Asignaciones elegibles**.
-10. Observa que el rol **Administrador de cumplimiento** ahora está disponible para Miriam.
+4. En el menú **Identidad**, abre **Usuarios** y después selecciona **Todos los usuarios**.
+5. Busca a **Miriam** en la lista de usuarios
+6. En la página **Información general**, busca **Roles asignados**.
+7. Selecciona **Asignaciones válidas**.
+1. Ten en cuenta que el rol **Administrador de cumplimiento** ahora está disponible para Miriam.
 
-#### Tarea 3: activar tus roles de Azure AD
+#### Tarea 3: activar los roles de Microsoft Entra
 
-Cuando necesite asumir un rol de Azure AD, puede solicitar la activación al abrir **Mis roles** en Privileged Identity Management.
+Cuando necesites asumir un rol de Microsoft Entra, puedes solicitar la activación al abrir **Mis roles** en Privileged Identity Management.
 
-1. Desde la barra **Búsqueda, recursos, servicios y documentos**, busca Con privilegios.
-2. Abre la página **Administración de identidades privilegiadas de Azure AD**.
-3. En la pantalla Privileged Identity Management, en la navegación izquierda, selecciona **Mis roles**.
+1. En la barra **Buscar, recursos, servicios y documentos**, busca Con privilegios.
+2. Abre la página **Privileged Identity Management**.
+3. En la página Privileged Identity Management, en el panel de navegación izquierdo, selecciona **Mis roles**.
 
-4. En la página Mis roles, revisa la lista de asignaciones elegibles.
+4. En la página Mis roles, revisa la lista de **asignaciones elegibles**.
 
     ![Imagen de pantalla que muestra Mis roles con las asignaciones de roles elegibles resaltadas](./media/lp4-mod3-my-roles.png)
 
@@ -133,11 +134,11 @@ Cuando necesite asumir un rol de Azure AD, puede solicitar la activación al abr
 
     ![Imagen de pantalla que muestra un menú emergente para activar el administrador de cumplimiento](./media/lp4-mod3-pim-activate-role.png)
 
-    **Comprobación**: en función de la configuración actual del entorno del laboratorio, será necesario configurar MFA e iniciar sesión correctamente.
+    **Comprobación**: en función de la configuración actual del entorno de laboratorio, será necesario configurar MFA e iniciar sesión correctamente.
 
-7. Una vez completada la verificación de seguridad adicional, en el panel Activar: administrador de cumplimiento, en el cuadro **Motivo**, introduce **Esta es mi justificación para activar este rol**.
+7. Una vez completada la verificación de seguridad adicional, en el panel Activar: administrador de cumplimiento, en el cuadro **Motivo**, rellena **Esta es mi justificación para activar este rol**.
 
-    **Nota Importante**: según el principio del privilegio mínimo, solo debes activar la cuenta durante el tiempo que la necesites.  Si es necesario realizar el trabajo, solo tarda 1,5 horas. Establece la duración en dos horas.  De forma similar, si sabes que no podrás realizar el trabajo hasta después de las tres de la tarde, elige una hora de activación personalizada.
+    **Nota importante**: para la entidad de seguridad de menos privilegios, solo debes activar la cuenta durante el período de tiempo que la necesites.  Si son necesarias 1,5 horas para realizar el trabajo, establece la duración en dos horas.  De forma similar, si sabes que no podrás realizar el trabajo hasta después de las 3 p. m., elige una hora de activación personalizada.
 
 8. Seleccione **Activar**.
 
@@ -145,12 +146,12 @@ Cuando necesite asumir un rol de Azure AD, puede solicitar la activación al abr
 
 Para determinados roles, el ámbito de los permisos concedidos se puede restringir a una sola unidad de administración, entidad de servicio o aplicación. Este procedimiento es un ejemplo si se asigna un rol con el ámbito de una unidad administrativa.
 
-1. Recuerda cerrar las ventanas del explorador de MiriamG, después, abre Azure Portal como cuenta de administrador.
-2. Ve a la página Privileged Identity Management y, en el panel de navegación izquierdo, selecciona **Roles de Azure AD.**
+1. Recuerda cerrar las ventanas del explorador para MiriamG y luego abre el Centro de administración Microsoft Entra con tu cuenta de administrador.
+2. Ve a la página Privileged Identity Management y, en el menú de navegación izquierdo, selecciona **Roles de Microsoft Entra** de Azure.
 3. Seleccione **Roles**.
 4. En la página Roles, en el menú superior, selecciona **+ Agregar asignaciones.**
 
-5. En la página Agregar asignaciones, selecciona el menú **Seleccionar rol** y, después, selecciona **Administrador de usuarios.**
+5. En la página Agregar asignaciones, selecciona el menú **Seleccionar rol** y después, selecciona **Administrador de usuarios.**
 
 6. Seleccione el menú **Tipo de ámbito** y revise las opciones disponibles. Por ahora, usará el tipo de ámbito **Directorio**.
 
@@ -162,7 +163,7 @@ Para determinados roles, el ámbito de los permisos concedidos se puede restring
 
 Siga estos pasos para actualizar o quiotar una asignación de roles existente.
 
-1. En la hoja Abrir Azure AD Privileged Identity Management > Roles de Azure AD, en el panel de navegación izquierdo, selecciona **Asignaciones**.
+1. En la página Abrir roles de Privileged Identity Management > Microsoft Entra, en el panel de navegación izquierdo, selecciona **Asignaciones**.
 
 2. En la lista **Asignaciones**, en Administrador de cumplimiento, revise las opciones de la columna **Acción**.
 

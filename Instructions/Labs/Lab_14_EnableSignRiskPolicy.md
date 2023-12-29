@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 14 - Habilitación del inicio de sesión y las directivas de riesgo de los usuarios
+  title: '14: habilitar el inicio de sesión y las directivas de riesgo de los usuarios'
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -9,24 +9,24 @@ lab:
 
 ## Escenario del laboratorio
 
-Como capa adicional de seguridad, debes habilitar y configurar las directivas de inicio de sesión y riesgo de usuario de la organización de Azure AD.
+Como capa adicional de seguridad, debes habilitar y configurar las directivas de riesgo de inicios de sesión y de usuarios de tu organización de Microsoft Entra.
 
-#### Tiempo estimado: 10 minutos
+#### Tiempo estimado: 10 minutos
 
 
-### Ejercicio 1: habilitación de una directiva de riesgo de usuario
+### Ejercicio 1: habilitar una directiva de riesgo de usuario
 
 #### Tarea 1: configurar la directiva
 
-1. Inicia sesión en [https://portal.azure.com]( https://portal.azure.com) con una cuenta de administrador global.
+1. Inicia sesión en [https://entra.microsoft.com]( https://entra.microsoft.com) con una cuenta de administrador global.
 
-2. Abre el menú del portal y después, selecciona  **Azure Active Directory**.
+2. Abre el menú del portal y selecciona  **Microsoft Entra ID**.
 
-3. En la página Azure Active Directory, en **Administrar**, selecciona **Seguridad**.
+3. En el menú de la izquierda, en **Identidad**, selecciona **Protección**.
 
 4. En la página Seguridad, en el panel de navegación izquierdo, selecciona **Protección de identidad**.
 
-5. En la página de protección de identidad, en el panel de navegación izquierdo, selecciona **Directiva de riesgos de usuario**.
+5. En la página de protección de identidades, en el panel de navegación izquierdo, selecciona **Directiva de riesgo de usuario**.
 
     ![Imagen de pantalla que muestra la página Directiva de riesgo de usuario y la ruta de exploración resaltada](./media/lp2-mod4-browse-to-identity-protection.png)
 
@@ -48,15 +48,15 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 13. Active la casilla **Requerir cambio de contraseña** y seleccione **Listo**.
 
-14. En **Cumplimiento de directivas**, selecciona **Activar** y, luego, elige **Guardar**.
+14. En **Aplicación de las directivas**, selecciona **Activado** y luego selecciona **Guardar**.
 
 #### Tarea 2: habilitar la directiva de riesgo de inicio de sesión
 
-1. En la página de protección de identidades, en el panel de navegación izquierdo, selecciona **Directiva de riesgo de inicio de sesión**.
+1. En la página de protección de identidades, en el panel de navegación de la izquierda, selecciona **Directiva de riesgo de inicio de sesión**.
 
 2. Al igual que con la directiva de riesgo de usuario, la directiva de riesgo de inicio de sesión se puede asignar a usuarios y grupos, y permite excluir usuarios de la directiva.
 
-3. En **Riesgo de inicio de sesión**, selecciona **Bajo y superior**.
+3. En **Riesgo de inicio de sesión**, selecciona **Baja y superior**.
 
 4. En el panel Riesgo de inicio de sesión, seleccione **Alto** y, luego, elija **Listo**.
 
@@ -64,4 +64,4 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 6. Active la casilla **Requerir autenticación multifactor** y, a continuación, seleccione **Listo**.
 
-7. En **Cumplimiento de directivas**, selecciona **Activar** y, luego, elige **Guardar**.
+7. En **Aplicación de las directivas**, selecciona **Activado** y luego selecciona **Guardar**.
