@@ -25,7 +25,7 @@ Microsoft Sentinel es una solución SIEM y SOAR nativa de la nube de Microsoft.
 
 1. Selecciona **+ Crear** en la esquina superior izquierda.
 
-1. En el icono **Agregar Microsoft Sentinel a un área de trabajo**, selecciona **Crear un área de trabajo nueva**.
+1. En el icono **Agregar Microsoft Sentinel a un área de trabajo**, seleccione **+ Crear un área de trabajo nueva**.
 
 1. En **Grupo de recursos**, selecciona **Crear nuevo** e introduce **Sentinel-RG**.
 
@@ -40,11 +40,11 @@ Microsoft Sentinel es una solución SIEM y SOAR nativa de la nube de Microsoft.
 1. Si se te solicita, selecciona **Aceptar** para activar la prueba gratuita de Microsoft Sentinel.
 
 #### Tarea 2: agregar Azure AD como origen de datos
-    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
+    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. En **Microsoft Sentinel**, navega en el menú hasta **Administración de contenido** y selecciona **Centro de contenido**.
 
-1. Usa el cuadro de búsqueda para buscar **Azure** en la lista de conectores, busca **Azure Active Directory** y marca la casilla.
+1. Use el cuadro de búsqueda para buscar **Entra** en la lista de conectores, busque **Microsoft Entra ID** y marque la casilla.
 
 1. A la derecha, se abrirá un icono de vista previa.  Seleccione **Instalar**.
 
@@ -64,7 +64,7 @@ Microsoft Sentinel es una solución SIEM y SOAR nativa de la nube de Microsoft.
 
 1. Selecciona **Actualizar** en el icono **Microsoft Sentinel | Conectores de datos** y el número 1 se mostrará en el recuento **Conectados**.
 
-   **Nota:** el conector de datos de Azure AD puede tardar unos minutos en mostrarse en el recuento activo. 
+   **Nota**: el conector de datos de Microsoft Entra ID puede tardar unos minutos en mostrarse en el recuento activo. 
 
 #### Tarea 3: ejecutar consultas de Kusto en la actividad de usuario
 

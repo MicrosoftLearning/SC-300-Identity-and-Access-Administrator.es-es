@@ -91,11 +91,11 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 1. **Sal** de la sesión RDP de la máquina virtual.
 
 
-#### Tarea 4: modificar el archivo RDP para admitir el inicio de sesión de Azure AD
+#### Tarea 4: Modificación del archivo RDP para admitir el inicio de sesión de Microsoft Entra ID
 
 1. Abre la carpeta **Descargas** en el administrador de archivos.
 
-1. **Realiza una copia** del archivo RDP y agrega **-AzureAD** al final del nombre de archivo.
+1. **Haga una copia** del archivo RDP y agregue **-EntraID** al final del nombre de archivo.
 
 1. Edita la nueva versión del archivo RDP que acabas de copiar con Bloc de notas. Agrega estas dos líneas de texto a la parte inferior del archivo:
      ```
@@ -105,11 +105,11 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
  
  1. **Guarda** el archivo RDP.  Ahora deberías tener dos versiones del archivo:
       - <<virtual machine name>>.RDP
-      - <<virtual machine name>>-AzureAD.RDP
+      - <<virtual machine name>>-EntraID.RDP
 
-#### Tarea 5: conectarse al centro de datos de Windows Server 2022 mediante el inicio de sesión de Azure AD
+#### Tarea 5: Conexión a la máquina virtual Windows mediante el inicio de sesión de Microsoft Entra ID
 
-1. Abre el **<<virtual machine name>>-AzureAD.RDP
+1. Abra **<<virtual machine name>>-EntraID.RDP
 
 1. Selecciona **Conectar** cuando se abra el diálogo.
 
@@ -129,19 +129,17 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 
 1. Windows Server debe confirmar el inicio de sesión y abrirse en el panel de Administrador del servidor normal.
 
-#### Tarea 6: pruebas opcionales para explorar el inicio de sesión de Azure AD
+#### Tarea 6: Pruebas opcionales para explorar el inicio de sesión de Microsoft Entra ID
 
 1. Comprueba que JoniS era el único usuario agregado al grupo de administradores.
 
-1. En el panel de Administrador del servidor, selecciona el menú **Herramientas** de la parte superior izquierda.
-
-1. Inicia la herramienta **Administración de equipos**.
+1. Haga clic con el botón secundario del ratón en el botón INICIAR y, a continuación, seleccione **Administración de equipos** en el menú emergente.
 
 1. Abre **Usuarios y grupos locales** y después ve a **Grupos, Administradores**.
 
 1. Deberías ver **Azure\JoniSherman....** en la lista.
 
-1. Comprueba si otros miembros de Azure AD pueden iniciar sesión.
+1. Compruebe si otros miembros de Microsoft Entra ID pueden iniciar sesión.
 
 1. Sal de la sesión de escritorio remoto.
 
@@ -159,7 +157,9 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 
 1. Seleccione **+ Crear un recurso**.
 
-1. Selecciona **Crear** en **Ubuntu Server 18.04 LTS** en la vista Popular.
+1. Busque **Ubuntu**.
+
+1. Seleccione **Crear** en **Ubuntu Server 22.04 LTS**. Puede usar otros servidores Linux para este laboratorio de pruebas.
 
 1. En la pestaña **Administración**, marca la casilla para habilitar **Inicio de sesión con Azure Active Directory (vista previa)**.
 
