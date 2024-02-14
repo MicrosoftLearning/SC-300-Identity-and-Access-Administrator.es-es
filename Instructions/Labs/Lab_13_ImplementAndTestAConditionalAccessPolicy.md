@@ -15,9 +15,9 @@ Tu organización debe poder limitar el acceso de los usuarios a sus aplicaciones
 
 #### Tiempo estimado: 30 minutos
 
-### Ejercicio 1: establecer una directiva de acceso condicional para impedir que DebraB acceda a Yammer
+### Ejercicio 1: Establecer una directiva de acceso condicional para impedir que DebraB acceda a Sway
 
-#### Tarea 1: confirmar que DebraB tiene acceso a Yammer
+#### Tarea 1: Confirmar que DebraB tenga acceso a Sway
 
 
 1. Inicia una nueva ventana del explorador InPrivate.
@@ -91,7 +91,7 @@ Debe probar las directivas de acceso condicional para asegurarse de que funciona
 
 3. Si has iniciado sesión, cierra la pestaña, espera 1 minuto y vuelve a intentarlo.
     
-   **Nota**: Si se inicia sesión automáticamente en Sway como DebraB, deberás cerrar sesión manualmente. Las credenciales y el acceso se han almacenado en caché.  Una vez que cierres sesión y la inicies, la sesión de Yammer debe denegar el acceso.
+   **Nota**: Si ha iniciado sesión automáticamente en Sway como DebraB, debe cerrar sesión manualmente.  Las credenciales y el acceso se almacenaron en caché.  Una vez que cierre sesión e inicie sesión, la sesión de Sway debe denegar el acceso.
 
 4. Cierra la pestaña y vuelve a la página Acceso condicional.
 
