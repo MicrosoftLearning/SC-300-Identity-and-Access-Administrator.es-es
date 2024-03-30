@@ -1,24 +1,24 @@
 ---
 lab:
-  title: '01: administrar roles de usuario'
+  title: 01 - Administración de roles de usuario
   learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
 ---
 
-# Inquilinos de WWL: condiciones de uso
+# Inquilinos de WWL: términos de uso
 Si se le proporciona un inquilino porque está realizando un curso dirigido por un instructor, tenga en cuenta que ese inquilino está disponible únicamente como apoyo para los laboratorios prácticos del curso. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no sea apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
 
 
 
-# Laboratorio 01: administrar las funciones de usuario
+# Laboratorio 1: administrar roles de usuario
 
 ## Escenario del laboratorio
 
-Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas de administrador de aplicaciones. Debes crear un nuevo usuario y asignarle el rol adecuado.
+Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas como administrador de aplicaciones. Debes crear un nuevo usuario y asignarle el rol adecuado.
 
 #### Tiempo estimado: 30 minutos
 
-### Ejercicio 1: crear un nuevo usuario y probar sus derechos de administrador de aplicaciones
+### Ejercicio 1: creación de un nuevo usuario y prueba de sus derechos de administrador de aplicaciones
 
 #### Tarea 1: agregar un nuevo usuario
 
@@ -37,13 +37,13 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
 
 5. Marca la opción **Generar contraseña automáticamente**.
 
-6. Copia la contraseña generada en una ubicación en la que puedas recordarla para la siguiente tarea.
+6. Copia la contraseña generada en una ubicación donde puedas recordarla para la siguiente tarea.
 
      *Tendrás que cambiar la contraseña la primera vez que accedas a esta cuenta*
 
 7. Seleccione **Revisar + crear**. Después, selecciona **Crear** en la pantalla de revisión. Al hacerlo, el usuario se crea y se registra en la organización.
 
-#### Tarea 2: inicia sesión e intenta crear una aplicación
+#### Tarea 2: iniciar sesión e intentar crear una aplicación
 
 1. Inicia una nueva ventana del explorador de InPrivate.
 2. Abre el Centro de administración de Microsoft Entra [https://entra.microsoft.com](https://entra.microsoft.com) como Chris Green.
@@ -51,26 +51,26 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
     | **Configuración**| **Valor**|
     | :--- | :--- |
     | Nombre de usuario| ChrisG@`your domain name.com`|
-    | Contraseña| Introduce la contraseña generada automáticamente de la tarea anterior. |
+    | Contraseña| Escribe la contraseña generada automáticamente de la tarea anterior. |
 
 3. Actualiza tu contraseña.
 
     | **Configuración**| **Valor**|
     | :--- | :--- |
     | Contraseña actual| Usa una contraseña generada automáticamente|
-    | New Password| Introduce una contraseña única y segura |
+    | New Password| Escribe una contraseña única y segura |
     | Confirm Password| Vuelve a introducir una contraseña única y segura |
 
 4. Si ves un **diálogo de recorrido**, selecciona el botón **Quizás más tarde**.
 
 5. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
-7. Selecciona **+ Nueva aplicación**. Ten en cuenta que **+ Crear su propia aplicación** no está disponible.
+7. Selecciona **+ Nueva aplicación**. Ten en cuenta que **+ Crear tu propia aplicación** no está disponible.
 
-9. Intenta seleccionar algunas de las otras configuraciones como **Proxy de aplicación**, **Configuración de usuario** y otras para ver que **Chris Green** no tiene derechos.
+9. Prueba seleccionando otras opciones como **Proxy de aplicación**, **Configuración de usuario** y otras para ver si **Chris Green** no tiene derechos.
 10. Selecciona el nombre **ChrisG** en la esquina superior derecha y cierra la sesión.
 
 
-### Ejercicio 2: asignar el rol de administrador de aplicaciones y crear una aplicación
+### Ejercicio 2: asignación de rol de administrador de aplicaciones y creación de una aplicación
 
 #### Tarea 1: asignar un rol a un usuario
 
@@ -81,7 +81,7 @@ Con Microsoft Entra ID, puede designar administradores limitados que administren
 3. Selecciona **Todos los usuarios** en la sección Administrar del menú.
 4. Selecciona la cuenta de **Chris Green**.
 5. Elige **Roles asignados** en el menú Administrar.
-6. Selecciona **+ Agregar asignaciones** y marca el rol `Application administrator`.
+6. Selecciona **+ Agregar asignaciones** y marca la función `Application administrator`.
 7. Seleccione **Agregar**.
 
     ![Página Roles asignados, se muestra el rol seleccionado](./media/directory-role-select-role.png)
@@ -102,28 +102,28 @@ Con Microsoft Entra ID, puede designar administradores limitados que administren
     | Nombre de usuario| ChrisG@`your domain name.com`|
     | Contraseña| Introduce la contraseña única y segura que has creado anteriormente |
 
-3. Si ves el diálogo de recorrido **Te damos la bienvenida a Microsoft Azure**, selecciona el botón **Tal vez más tarde**.
-4. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
-5. Observa que **+ Nueva aplicación** ya está disponible.
+3. Si aparece el cuadro de diálogo **Le damos la bienvenida a Microsoft Azure**, selecciona el botón **Quizás más tarde**.
+4. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda en la parte superior de la pantalla.
+5. Observa que **+ Nueva aplicación** está disponible ahora.
 6. Selecciona **+ Nueva aplicación**
 7. Observa que **"**+ Crea tu propia aplicación** no está en gris. Si eliges una aplicación de la galería, verás que el botón **Crear** está disponible.
 
    **Nota: este rol tiene ahora la capacidad de añadir aplicaciones al inquilino. Experimentaremos más con esta característica en laboratorios posteriores.**
 
-7. Cierra la sesión de la instancia de Chris Green de Azure Portal y cierra el explorador.
+7. Cierre la sesión de la instancia de Chris Green del portal y cierre el explorador.
 
-### Ejercicio 3: eliminar una asignación de roles
+### Ejercicio 3: eliminación de una asignación de roles
 
 #### Tarea 1: eliminar el administrador de aplicaciones de Chris Green
 
-Esta tarea usará un método alternativo para quitar el rol asignado; usará la opción **Roles y administradores** en Azure AD.
+Esta tarea usará un método alternativo para quitar el rol asignado; usará la opción **Roles y administradores** en Micrisoft Entra ID.
 
 1. Si aún no has iniciado sesión como tu Administrador global, inicia el Centro de administración de Microsoft Entra e inicia sesión ahora.
 2. En el cuadro de búsqueda, escribe **Roles** y después inicia los roles y la administración de Microsoft Entra ID.
 3. En  **Todos los roles** de  **Roles y administradores**, selecciona el rol **Administrador de aplicaciones** de la lista.
 4. En la página **Administrador de aplicaciones | Asignaciones** deberías ver el nombre Chris Green en la lista.
-5. Marca la casilla junto a Chris Green.
-6. Selecciona **X Quitar asignaciones** en las opciones de la parte superior del cuadro de diálogo.
+5. Coloca una marca de verificación en el cuadro junto a Chris Green.
+6. Selecciona **X Quitar asignaciones** de las opciones de la parte superior del cuadro de diálogo.
 7. Responde **Sí** cuando se abra el cuadro de confirmación.
 8. Cierra la pantalla.
 
@@ -135,40 +135,40 @@ Esta tarea usará un método alternativo para quitar el rol asignado; usará la 
 
 2. En el mosaico **Usuarios | Todos los usuarios**, selecciona la flecha desplegable **Operaciones masivas** y después **Crear de forma masiva**.
 
-3. Al seleccionar **Crear de forma masiva** se abrirá un nuevo mosaico. Este mosaico proporciona un vínculo de **Descarga** a un archivo de plantilla que vas a editar para rellenarlo con tu información de usuario y cargarlo para añadir la creación masiva de usuarios.
+3. Al seleccionar **Creación masiva** se abrirá un nuevo mosaico. Este mosaico proporciona un vínculo de **descarga** de un archivo de plantilla que editarás para rellenar con la información del usuario y cargar para agregar la creación masiva de usuarios.
 
 4. Selecciona **Descargar** para descargar el archivo .csv.
 
-5. La plantilla .csv proporciona los campos incluidos con el perfil de usuario. Esto incluye el nombre de usuario, el nombre para mostrar y la contraseña inicial requeridos. También puedes completar campos opcionales, como Departamento y Ubicación de uso, en este momento. La captura de pantalla siguiente es un ejemplo de cómo puedes completar el archivo .csv: 
+5. La plantilla .csv te proporciona los campos incluidos con el perfil de usuario. Esto incluye el nombre de usuario, el nombre para mostrar y la contraseña inicial obligatorios. También puede completar campos opcionales, como Ubicación y uso del departamento, en este momento. La captura de pantalla siguiente es un ejemplo de cómo puedes completar el archivo .csv: 
 
     ![Importación masiva con la entrada de archivo CSV](./media/bulkimportexample.png)
 
-    Puedes modificar este archivo para agregar usuarios de forma masiva.  Ten en cuenta que no es necesario rellenar todo el campo.  Según los datos de muestra proporcionados, debes agregar principalmente el nombre y la información de nombre de usuario.
+    Puedes modificar este archivo para agregar usuarios de forma masiva.  Observa que no es necesario rellenar todo el campo.  Según los datos de ejemplo proporcionados, debes agregar principalmente el nombre y la información de nombre de usuario.
 
-6. Se ha proporcionado un CSV de muestra en la carpeta Allfiles/Lab1 -- **SC300BulkUser.csv**.
+6. Se ha proporcionado un CSV de ejemplo en la carpeta Allfiles/Lab1 -- **SC300BulkUser.csv**.
    1. Abra Bloc de notas.
-     - Dentro del entorno del laboratorio, selecciona el botón INICIO y escribe Bloc de notas.  
+     - Dentro del entorno de laboratorio, selecciona el botón INICIAR y escriba Bloc de notas.  
    1. Abre el archivo SC300BulkUser.csv
-   1. Cambia **introduce tu nombre de dominio** por el dominio de tu entorno de laboratorio de Azure.
+   1. Cambia el valor de **escriba el nombre de dominio** en el dominio de tu entorno de laboratorio de Azure.
    1. Guarde el archivo.
 
-7. En el cuadro de diálogo **Crear usuarios de forma masiva**, selecciona el icono de la carpeta de archivos del paso 3.
+7. En el diálogo **Creación masiva de usuarios**, selecciona el icono de carpeta de archivos del paso 3.
 
-8. Ve a la carpeta Allfiles/Lab1 y selecciona el archivo **SC300BulkUser.csv**.
+8. Accede mediante la ruta de acceso a la carpeta Allfiles/Lab1 y selecciona el archivo **SC300BulkUser.csv**.
 
-9. seleccione **Open**(Abrir).
+9. Seleccione **Open** (Abrir).
 
 7. Se te notificará que el archivo se ha cargado correctamente.Elige **Enviar** para agregar los usuarios. 
 
-Una vez creados los usuarios, se te notificará que la creación se ha realizado correctamente.  Cierra el icono Creación masiva de usuarios y los nuevos usuarios rellenarán la lista de **Usuarios | Todos los usuarios**. 
+Una vez creados los usuarios, se te comunicará que la creación se ha realizado correctamente.  Cierra el icono Creación masiva de usuarios y los nuevos usuarios se rellenarán en la lista **Usuarios | Todos los usuarios**. 
 
-#### Tarea 2: adición masiva de usuarios con PowerShell
+#### Tarea 2: agregar usuarios de manera masiva con PowerShell
 
-1. Abra PowerShell como administrador. Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
+1. Abra PowerShell como administrador.Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
 
-**Nota**: Necesitas tener PowerShell versión 7.2 o superior para que este laboratorio funcione.  Cuando se abra PowerShell verás una versión en la parte superior de la pantalla; si estás ejecutando una versión anterior, sigue las instrucciones de la pantalla para ir a https://aka.ms/PowerShell-Release?tag=7.3.9. Desplázate hasta la sección de recursos y selecciona powershell-7.3.1-win-x64.msi. Cuando se haya completado la descarga, selecciona Abrir archivo. Instálalo con todos los valores predeterminados.
+**Nota:** Debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, verás una versión en la parte superior de la pantalla. Si ejecutas una versión anterior, sigue las instrucciones de la pantalla para ir a https://aka.ms/PowerShell-Release?tag=7.3.9. Desplázate hacia abajo hasta la sección activos y selecciona powershell-7.3.1-win-x64.msi. Cuando se haya completado la descarga, selecciona Abrir archivo. Instala con todos los valores predeterminados.
 
-2. Tendrás que instalar el módulo PowerShell de Microsoft.Graph si no lo has usado antes.  Ejecuta los dos comandos siguientes y cuando se te pida que confirmes pulsa Y:
+2. Deberás instalar el módulo de PowerShell Microsoft.Graph si no lo has usado antes.  Ejecuta los dos comandos siguientes y cuando se te pida confirmación pulsa Y:
 
     ```
     Install-Module Microsoft.Graph
@@ -180,7 +180,7 @@ Una vez creados los usuarios, se te notificará que la creación se ha realizado
     ```
     
 
-4. Después, tendrás que iniciar sesión en Azure ejecutando:  
+4. Después deberás iniciar sesión en Azure mediante la ejecución de:  
 
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
@@ -202,19 +202,19 @@ Una vez creados los usuarios, se te notificará que la creación se ha realizado
     }
     ```
 
-8. Ya puedes crear un nuevo usuario.  El siguiente comando se rellenará con la información del usuario y se ejecutará.  Si tienes que agregar más de un usuario, puedes usar un archivo TXT del Bloc de notas para agregar la información del usuario y copiar o pegar en PowerShell. 
+8. Ya puedes crear un nuevo usuario.  El comando siguiente se rellenará con la información del usuario y se ejecutará.  Si tienes más de un usuario que agregar, puedes usar un archivo TXT de Bloc de notas para agregar la información del usuario y copiar o pegar en PowerShell. 
 
     ```
     New-MgUser `
         -DisplayName "New PW User" `
         -GivenName "New" -Surname "User" `
         -MailNickname "newuser" `
-        -UsageLocation "USA" `
+        -UsageLocation "US" `
         -UserPrincipalName "newuser@<labtenantname.com>" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
     ```
-**Nota**: reemplaza **labtenantname.com** por el nombre **onmicrosoft.com** asignado por el inquilino del laboratorio.
+**Nota**: reemplaza **labtenantname.com** por el nombre de **onmicrosoft.com** asignado por el inquilino del laboratorio.
 
 ## Experimentar con la administración de usuarios
 
@@ -225,7 +225,7 @@ Puedes agregar y quitar usuarios con la página Microsoft Entra ID.  Sin embargo
 
 #### Tarea 1: quitar un usuario
 
-Puede ocurrir que se elimine una cuenta y luego sea necesario recuperarla. Necesitas verificar que puedes recuperar una cuenta que se ha eliminado recientemente.
+Puede ocurrir que se elimine una cuenta y después se deba recuperar. Debes comprobar que puedes recuperar una cuenta que se ha eliminado recientemente.
 
 1. Vaya a [https://entra.micrososft.com](Microsoft Entra admin center).
 
@@ -233,13 +233,13 @@ Puede ocurrir que se elimine una cuenta y luego sea necesario recuperarla. Neces
 
 3. Abre la lista **Todos los usuarios**, selecciona la casilla del usuario que se va a eliminar. Por ejemplo, seleccione **Chris Green**.
 
-    **Consejo**: seleccionar varios usuarios de la lista permite administrarlos al mismo tiempo. Si selecciona un usuario y desea abrir la página de ese usuario, solo administrará a ese usuario.
+    **Sugerencia**: seleccionar usuarios de la lista te permite administrar varios usuarios al mismo tiempo. Si selecciona un usuario y desea abrir la página de ese usuario, solo administrará a ese usuario.
 
     ![Imagen de pantalla que muestra la lista de usuarios Todos los usuarios con una casilla de usuario activada y otra resaltada, que indica la posibilidad de seleccionar varios usuarios de la lista.](./media/lp1-mod2-remove-user.png)
 
 4. Con la cuenta de usuario seleccionada, en el menú, selecciona **Eliminar**.
 
-5. Revisa el cuadro de diálogo y selecciona **Sí**.
+5. Revisa el cuadro de diálogo y luego selecciona **Sí**.
 
 #### Tarea 2: restaurar un usuario eliminado
 
@@ -247,7 +247,7 @@ Puede ocurrir que se elimine una cuenta y luego sea necesario recuperarla. Neces
 
 2. Revisa la lista de usuarios eliminados y selecciona **Chris Green**.
 
-    **Importante**: de forma predeterminada, las cuentas de usuario eliminadas se eliminan permanentemente de Azure Active Directory automáticamente después de 30 días.
+    **Importante**: de manera predeterminada, las cuentas de usuario eliminadas se quitan permanentemente de Azure Active Directory de manera automática después de 30 días.
 
 3. En el menú, seleccione **Restaurar usuario**.
 
@@ -260,9 +260,9 @@ Puede ocurrir que se elimine una cuenta y luego sea necesario recuperarla. Neces
 
 ### Ejercicio 6: agregar una licencia de Windows 10 a una cuenta de usuario
 
-#### Tarea 1: buscar tu usuario sin licencia en Azure Active Directory
+#### Tarea 1: buscar el usuario sin licencia en Azure Active Directory
 
-A algunas cuentas de usuario de tu organización no se les proporcionarán todos los productos disponibles en tu licencia asignada o necesitarán actualizaciones o adiciones a tu asignación de licencias. Debes asegurarte de que puedes actualizar la asignación de licencias de una cuenta de usuario en Azure AD.
+Algunas cuentas de usuario de su organización no recibirán todos los productos disponibles en su licencia asignada o necesitarán actualizaciones o adiciones a su asignación de licencias. Debes asegurarte de que puedes actualizar la asignación de licencias de una cuenta de usuario en Azure AD.
 
 1. Vaya a [https://entra.microsoft.com]( https://entra.microsoft.com).
 
@@ -272,11 +272,11 @@ A algunas cuentas de usuario de tu organización no se les proporcionarán todos
 
 4. Selecciona **Raul Razo**.
 
-5. Revisa el perfil de Azure y asegúrate de que tiene un conjunto de Ubicación de uso.
+5. Revisa el perfil de Azure y asegúrate de que tiene la Ubicación de uso establecida.
 
-    **Atención**: para asignar una licencia a un usuario, este debe tener asignada una ubicación de uso.
+    **Advertencia**: para asignar una licencia a un usuario, el usuario debe tener asignada una ubicación de uso.
 
-6. Selecciona el elemento de menú **Licencias** en el menú de la izquierda.
+6. Selecciona la opción **Licencias** del menú de la izquierda.
 
 7. Asegúrate de que Raul tiene "No se han encontrado asignaciones de licencia".
 
@@ -288,12 +288,12 @@ A algunas cuentas de usuario de tu organización no se les proporcionarán todos
 
 11. Selecciona el botón **+ Asignaciones**. 
 
-12. En la página Actualizar asignaciones de licencia, selecciona la casilla de una licencia **Windows 10/11 Enterprise E3**.
+12. En la página Actualizar asignaciones de licencias, activa la casilla de una licencia de **Windows 10/11 Enterprise E3**.
 
     ![Imagen de pantalla que muestra la página Actualizar asignaciones de licencia y las opciones de licencia resaltadas](./media/lp1-mod2-assign-user-license-options.png)
 
 13. Cuando haya terminado, seleccione **Guardar**.
 
-14. En la parte superior de la pantalla selecciona **Inicio**, luego selecciona **Contoso**, luego selecciona **Usuario**, y selecciona **Raul Razo**.
+14. En la parte superior de la pantalla, selecciona **Inicio**, luego selecciona **Contoso**, **Usuario** y, finalmente, **Raul Razo**.
 
 15. Observa que se ha asignado la licencia.
