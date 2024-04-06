@@ -1,6 +1,6 @@
 ---
 lab:
-  title: "10: Autenticación de Azure\_AD para máquinas virtuales de Windows y Linux"
+  title: 10- Autenticación de Microsoft Entra ID para máquinas virtuales Windows y Linux
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -11,13 +11,13 @@ lab:
 
 ## Escenario del laboratorio
 
-La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesión en máquinas virtuales para el acceso remoto.  En este laboratorio se muestra cómo se puede configurar para máquinas virtuales de Windows y Linux.
+La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión en máquinas virtuales para el acceso remoto.  En este laboratorio se muestra cómo se puede configurar para máquinas virtuales de Windows y Linux.
 
 #### Tiempo estimado: 30 minutos
 
-### Ejercicio 1: iniciar sesión en máquinas virtuales de Windows en Azure con Azure AD
+### Ejercicio 1: Inicio de sesión en Windows Virtual Machines en Azure con Microsoft Entra ID
 
-#### Tarea 1: crear una máquina virtual de Windows con el inicio de sesión de Azure AD habilitado
+#### Tarea 1: Creación de una máquina virtual Windows con el inicio de sesión de Microsoft Entra ID habilitado
 
 1. Ve a [https://portal.azure.com](https://portal.azure.com)
 
@@ -30,17 +30,15 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 1. Tendrás que crear un nombre de usuario y una contraseña de administrador para la máquina virtual en la pestaña de conceptos básicos.
    - Usa un nombre de usuario que puedas recordar y una contraseña segura.
 
-1. En la pestaña **Administración**, activa la casilla **Iniciar sesión con Azure AD** en la sección de Azure AD.
+1. En la pestaña **Administración**, active la casilla **Iniciar sesión con Microsoft Entra ID** en la sección Microsoft Entra ID.
 
-    NOTA: Desde el 11/1/2023 esta interfaz de usuario no se ha actualizado para mostrar Microsoft Entra ID, todavía hace referencia a Azure AD.
-
-    NOTA 2: Observarás que la identidad** administrada asignada por el sistema** en la sección Identidad se activa automáticamente y se vuelve gris. Esta acción debe realizarse automáticamente una vez que se ha habilitado Login with Azure AD (Iniciar sesión con Azure AD).
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. Pase por el resto de la experiencia de creación de una máquina virtual. 
 
 1. Seleccione Crear.
 
-#### Tarea 2: iniciar sesión de Azure AD para Virtual Machines existentes de Azure
+#### Tarea 2: Inicio de sesión de Microsoft Entra ID para Azure Virtual Machines existente
 
 1. Ve a **Virtual Machines** en [https://portal.azure.com](https://portal.azure.com).
 
@@ -57,7 +55,7 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 
 1. Selecciona **Revisar + asignar** para completar el proceso
 
-#### Tarea 3: actualizar la máquina virtual del servidor para admitir el inicio de sesión de Azure AD
+#### Tarea 3: Actualización de la máquina virtual del servidor para admitir el inicio de sesión de Microsoft Entra ID
 
 1. Selecciona el elemento del menú **Conectar**.
 
@@ -89,7 +87,6 @@ La empresa ha decidido que Azure Active Directory debe usarse para iniciar sesi�
 1. Seleccione **Apply** (Aplicar) y, después, **OK** (Aceptar).
 
 1. **Sal** de la sesión RDP de la máquina virtual.
-
 
 #### Tarea 4: Modificación del archivo RDP para admitir el inicio de sesión de Microsoft Entra ID
 

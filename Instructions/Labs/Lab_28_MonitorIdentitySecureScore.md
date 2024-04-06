@@ -9,7 +9,7 @@ lab:
 
 ## Escenario del laboratorio
 
-Microsoft Entra Identity Protection proporciona detección y corrección automatizadas a riesgos basados en identidades y facilita datos en el portal para investigar posibles riesgos. Microsoft Entra Identity Protection también facilita una puntuación de seguridad de identidad para supervisar y mejorar la posición de seguridad de la identidad.  De la misma manera que Microsoft 365 Defender y Microsoft Defender for Cloud, la puntuación de seguridad de identidad facilita acciones de mejora y recomendaciones que pueden mejorar la posición de seguridad general para la identidad en Microsoft Entra ID.  Este laboratorio explorará esta funcionalidad. 
+Microsoft Entra Identity Protection proporciona detección y corrección automatizadas a riesgos basados en identidades y facilita datos en el portal para investigar posibles riesgos. Microsoft Entra Identity Protection también proporciona una puntuación de seguridad de identidad para supervisar y mejorar la posición de seguridad de la identidad.  De la misma manera que Microsoft Defender XDR y Microsoft Defender for Cloud, la puntuación de seguridad de identidad proporciona acciones de mejora y recomendaciones que pueden mejorar la posición general de seguridad para la identidad en Microsoft Entra ID.  Este laboratorio explorará esta funcionalidad. 
 
 #### Tiempo estimado: 15 minutos
 
@@ -27,7 +27,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 5. Desplázate hacia abajo para ver las **Acciones de mejora**.
 
-6. A diferencia de las acciones de mejora de Microsoft Defender for Cloud y Microsoft 365 Defender, estas acciones de mejora son específicas de la identidad.  Esto proporciona una lista más enfocada en las posibles acciones de la administración de la posición de seguridad.  Las acciones de mejora iniciadas desde esta lista también proporcionarán un impacto en la posición de seguridad general del inquilino. 
+6. A diferencia de las acciones de mejora de Microsoft Defender for Cloud y Microsoft Defender XDR, estas acciones de mejora son específicas de la identidad.  Esto proporciona una lista más enfocada en las posibles acciones de la administración de la posición de seguridad.  Las acciones de mejora iniciadas desde esta lista también proporcionarán un impacto en la posición de seguridad general del inquilino. 
 
 #### Tarea 2: ejecutar una acción de mejora
 

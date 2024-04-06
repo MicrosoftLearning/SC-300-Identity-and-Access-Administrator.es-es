@@ -77,13 +77,13 @@ Las suscripciones de Azure tienen una relación de confianza con Microsoft Entr
 
 ### Ejercicio 3: Configuración de tu información de privacidad
 
-#### Tarea 1: agregar la información de privacidad en Azure AD, incluyendo el contacto de privacidad global y la dirección URL de declaración de privacidad
+#### Tarea 1: Adición de la información de privacidad en Microsoft Entra ID, incluidos el contacto de privacidad global y la dirección URL de declaración de privacidad
 
 Microsoft recomienda agregar su contacto de privacidad global y la declaración de privacidad de su organización, de modo que los empleados internos e invitados externos puedan revisar las directivas. Dado que las declaraciones de privacidad se crean de forma única y específica para cada negocio, es recomendable ponerse en contacto con un abogado para obtener ayuda.
 
    **NOTA**: Para obtener información sobre cómo ver o eliminar datos personales, consulta https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure[](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). Para obtener más información acerca de RGPD, consulta la [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Puedes agregar información de privacidad de tu organización en el área  **Propiedades**  de Azure AD. Para acceder al área de propiedades y agregar la información de privacidad:
+Puede agregar la información de privacidad de su organización en el área de  **Propiedades**  de Microsoft Entra ID. Para acceder al área de propiedades y agregar la información de privacidad:
 
 1. En el menú **Identidad**, selecciona **Información general** y luego selecciona **Propiedades**.
 
