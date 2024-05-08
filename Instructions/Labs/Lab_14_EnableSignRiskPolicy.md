@@ -22,7 +22,7 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 2. Abre el menú del portal y selecciona  **Microsoft Entra ID**.
 
-3. En el menú de la izquierda, en **Identidad**, selecciona **Protección**.
+3. En el menú, en **Identidad**, seleccione **Protección**.
 
 4. En la página Seguridad, en el panel de navegación izquierdo, selecciona **Protección de identidad**.
 
