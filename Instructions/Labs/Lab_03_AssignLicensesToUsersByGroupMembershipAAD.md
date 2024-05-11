@@ -86,7 +86,7 @@ Tu organización ha decidido usar grupos de seguridad en Microsoft Entra ID para
     
 5. Cierre la ventana del explorador. 
 
-### Ejercicio 2: crear un grupo de Microsoft 365 en Microsoft Entra ID
+### Ejercicio 2: Crear un grupo de Microsoft 365 en Microsoft Entra ID
 
 #### Tarea 1: crear el grupo
 
