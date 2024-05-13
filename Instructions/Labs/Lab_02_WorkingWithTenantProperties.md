@@ -19,7 +19,9 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
 
 1. Ve a [https://entra.microsoft.com](https://entra.microsoft.com) e inicia sesión con una cuenta de administrador global para el directorio.
 
-1. En el menú **Identidad**, abre el menú **Configuración**, selecciona **Nombres de dominio**.
+1. En el menú **Identidad**, use la opción **Mostrar más* en la parte inferior.
+
+1.  Abra el menú **Configuración**, seleccione **Nombres de dominio**.
 
 1. Seleccione **+ Agregar dominio personalizado**.
 
@@ -28,6 +30,8 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
     ```
     sales.labtenant.onmicrosoft.com
     ```
+
+1. **Nota**: se le pedirá que abra el Centro de administración de Microsoft 365 para completar esta acción.
 
 1. Selecciona **Agregar dominio** para agregar el subdominio.
 
