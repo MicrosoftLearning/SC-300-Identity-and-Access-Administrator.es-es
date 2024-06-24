@@ -146,7 +146,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Deberías observar que a cada uno de estos usuarios se le deniega el acceso.
 
-### Ejercicio opcional 2: iniciar sesión en Linux Virtual Machines en Azure con Azure AD
+### Ejercicio opcional 2: Inicio de sesión en Máquinas virtuales Linux en Azure con Microsoft Entra ID
 
 #### Tarea 1: crear una máquina virtual de Linux con la identidad administrada asignada por el sistema
 
@@ -158,13 +158,13 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Seleccione **Crear** en **Ubuntu Server 22.04 LTS**. Puede usar otros servidores Linux para este laboratorio de pruebas.
 
-1. En la pestaña **Administración**, marca la casilla para habilitar **Inicio de sesión con Azure Active Directory (vista previa)**.
+1. En la pestaña**Administración**, active la casilla para habilitar **Inicio de sesión con Microsoft Entra ID**.
 
 1. Asegúrese de que la opción **Identidad administrada asignada por el sistema** se haya marcado.
 
 1. Pase por el resto de la experiencia de creación de una máquina virtual. Durante esta versión preliminar, tendrá que crear una cuenta de administrador con nombre de usuario y contraseña o clave pública SSH.
 
-#### Tarea 2: iniciar sesión de Azure AD para Virtual Machines existentes de Azure
+#### Tarea 2: Inicio de sesión de Microsoft Entra ID para Azure Virtual Machines existente
 
 1. Ve a **Virtual Machines** en [https://portal.azure.com](https://portal.azure.com).
 
