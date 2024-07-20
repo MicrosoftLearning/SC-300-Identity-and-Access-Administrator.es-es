@@ -13,6 +13,8 @@ Un administrador de roles con privilegios puede personalizar Privileged Identity
 
 #### Tiempo estimado: 30 minutos
 
+NOTA: se han producido cambios en el uso de MFA en entornos de laboratorio.  Cuando cambies entre usuarios para completar este laboratorio, es posible que se te pida que configures MFA.
+
 ### Ejercicio 1: configurar la configuración de roles de Microsoft Entra
 
 #### Tarea 1: abrir la configuración del rol
