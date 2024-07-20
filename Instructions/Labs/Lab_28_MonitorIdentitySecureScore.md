@@ -35,16 +35,30 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 2. En el icono que se abre, desplázate hacia abajo y selecciona **Introducción**.
 
-3. Se abrirá una nueva pestaña para **Identity Protection | Directiva de riesgo de inicio de sesión**.
+3. Se abrirá una nueva pestaña para el **Acceso condicional**.
+ **Nota:** De forma predeterminada, se abrirá el botón Comenzar en Azure Portal. Puedes usar el portal o volver al centro de administración de Entra. Cualquiera funcionará.
 
-4. Selecciona **Todos los usuarios** en **Asignaciones**.
+4. Seleccione **+ Nueva directiva**.
 
-5. Selecciona **Medio y superior** en **Riesgo de inicio de sesión**.
+5. Asigne un nombre a la directiva. Se recomienda que las organizaciones creen un estándar significativo para los nombres de sus directivas.
 
-6. Selecciona **Permitir** - **Requerir autenticación multifactor** en **Controles**.
+6. En Assignments (Asignaciones), seleccione Users or workload identities (Identidades de usuario o de carga de trabajo).
 
-7. Cambia la **Aplicación de directiva** a **Habilitado** (si aún no lo has hecho) y selecciona **Guardar**.
+7. En Incluir, seleccione Todos los usuarios.
 
-8. Has creado una directiva de riesgo de inicio de sesión que ahora debe aumentar tu puntuación de seguridad de identidad.  Esto tardará hasta 24 horas en afectar a la puntuación de seguridad de la identidad.
+8. En Excluir, seleccione Usuarios y grupos y elija las cuentas que deben mantener la capacidad para usar la autenticación heredada. Microsoft recomienda excluir al menos una cuenta para evitar que se bloquee.
 
-9. Revisa otras acciones de mejora y los pasos para crearlas y habilitarlas.
+9. En Recursos de destino> Aplicaciones en la nube> Incluir, selecciona Todas las aplicaciones en la nube.
+
+10. En Condiciones > Aplicaciones cliente, establece Configurar en Sí.
+ - Active solo las casillas Clientes de Exchange ActiveSync y Otros clientes.
+
+11. Seleccione Listo.
+
+12. En Controles de acceso > Conceder, selecciona Bloquear acceso.
+
+13. Elija Seleccionar.
+
+14. Confirme la configuración y establezca Habilitar directiva en Solo informe.
+
+15. Seleccione Crear para crear la directiva.

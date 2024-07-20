@@ -9,7 +9,7 @@ lab:
 
 ## Escenario del laboratorio
 
-Las directivas de los términos de uso de Azure AD ofrecen un método sencillo que las organizaciones pueden usar para presentar información a los usuarios finales. Esta presentación garantiza que los usuarios ven las declinaciones de responsabilidades pertinentes de los requisitos legales o de cumplimiento. En este artículo se describe cómo empezar a trabajar con las directivas de los términos de uso.
+Las directivas de los términos de uso de Microsoft Entra ofrecen un método sencillo que las organizaciones pueden usar para presentar información a los usuarios finales. Esta presentación garantiza que los usuarios ven las declinaciones de responsabilidades pertinentes de los requisitos legales o de cumplimiento. En este artículo se describe cómo empezar a trabajar con las directivas de los términos de uso.
 
 Debes crear y aplicar una directiva TOU para tu organización.
 
@@ -21,11 +21,11 @@ Debes crear y aplicar una directiva TOU para tu organización.
 
 Una vez que haya finalizado el documento de términos de uso, use el procedimiento siguiente para agregarlo.
 
-1. Inicia sesión en [https://portal.azure.com](https://portal.azure.com) con una cuenta de administrador global.
+1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con una cuenta de administrador global.
 
-2. Abre **Azure Active Directory** y selecciona  **Gobernanza de identidades**.
+2. Abre seleccionando **Gobernanza de identidad** en el menú de navegación de la izquierda.
 
-3. En el menú de navegación izquierdo, en **Términos de uso**, seleccione **Términos de uso**.
+3. En el menú, en **Administración de derechos**, selecciona **Términos de uso**.
 
 4. En la página Términos de uso, en el menú superior, seleccione **+ Nuevos términos**.
 
@@ -33,36 +33,36 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
 5. En el cuadro **Nombre**, escriba los **Términos de uso de prueba**.
 
-6. Estos son los términos de uso que se usarán en Azure Portal.
+    **Nota**: estos son los términos de uso que se usarán en Azure Portal.
 
-7. En el cuadro **Nombre para mostrar**, escriba **Términos de uso de Contoso**.
-
-8. Este es el título que los usuarios verán cada vez que inicien sesión.
-
-9. En el **cuadro del documento de términos de uso**, vaya a su PDF de términos de uso finalizado y selecciónelo.
+6. En el **cuadro del documento de términos de uso**, vaya a su PDF de términos de uso finalizado y selecciónelo.
 
    **Archivo TOU incluido**: inicia sesión en el repositorio de GitHub AllFiles/Labs/Lab26 para obtener un documento PDF de términos de usuario de ejemplo para usar en este laboratorio.
 
-10. Selecciona el idioma **Español** para tu documento de condiciones de uso.
+7. En el cuadro **Nombre para mostrar**, escriba **Términos de uso de Contoso**.
+
+    **Nota**: este es el título que los usuarios verán cada vez que inicien sesión.
+
+8. Selecciona el idioma **Español** para tu documento de condiciones de uso.
 
    **Nota**: la opción de idioma te permite cargar varios términos de uso en diferentes idiomas. La versión de los términos de uso que verá un usuario final se basará en sus preferencias del explorador.
 
-11. Para requerir a los usuarios finales que vean los términos de uso antes de aceptarlos, establezca **Requerir a los usuarios que expandan los términos de uso** en **Activado**.
+9. Para requerir a los usuarios finales que vean los términos de uso antes de aceptarlos, establezca **Requerir a los usuarios que expandan los términos de uso** en **Activado**.
 
-12. Para exigir a los usuarios finales que acepten tus términos de uso en todos los dispositivos desde los que acceden, establece **Requerir el consentimiento de los usuarios en cada dispositivo** en **Desactivado**. Es posible que los usuarios deban instalar aplicaciones adicionales si esta opción está habilitada.
+10. Para exigir a los usuarios finales que acepten tus términos de uso en todos los dispositivos desde los que acceden, establece **Requerir el consentimiento de los usuarios en cada dispositivo** en **Desactivado**. Es posible que los usuarios deban instalar aplicaciones adicionales si esta opción está habilitada.
 
-    **Advertencia**: el consentimiento en cada dispositivo obligará a los usuarios a registrar cada uno de ellos en Azure AD para obtener acceso. Un procedimiento recomendado es requerir que esta configuración esté activada; sin embargo, para tener el laboratorio más despejado, usamos Desactivado.
+    **Advertencia**: el consentimiento en cada dispositivo obligará a los usuarios a registrar cada uno de ellos en Microsoft Entra ID para obtener acceso. Un procedimiento recomendado es requerir que esta configuración esté activada; sin embargo, para tener el laboratorio más despejado, usamos Desactivado.
 
-13. Si quiere hacer expirar autorizaciones de términos de uso en una programación, establezca **Expirar autorizaciones** en **Activado**. Al establecerse en Activado, se muestran dos opciones de configuración de la programación adicionales.
+11. Si quiere hacer expirar autorizaciones de términos de uso en una programación, establezca **Expirar autorizaciones** en **Activado**. Al establecerse en Activado, se muestran dos opciones de configuración de la programación adicionales.
 
     ![Configuración de Expirar autorizaciones para establecer la fecha de inicio, la frecuencia y la duración](./media/lp4-mod1-new-terms-of-use-create.png)
 
-14. Use las opciones de configuración **Expirar a partir del** y **Frecuencia** para especificar la programación para las expiraciones de términos de uso. En la siguiente tabla se muestra el resultado de un par de opciones de configuración de ejemplo:
+12. Use las opciones de configuración **Expirar a partir del** y **Frecuencia** para especificar la programación para las expiraciones de términos de uso. En la siguiente tabla se muestra el resultado de un par de opciones de configuración de ejemplo:
 
     | Expirar a partir del | Frecuencia | Resultado |
     |---|---|---|
-    | La fecha de hoy | Mensualmente | A partir de hoy, los usuarios deben aceptar los términos de uso y, después, volver a aceptarlos cada mes.|
-    | Fecha del futuro | Mensualmente | A partir de hoy, los usuarios deben aceptar los términos de uso. Cuando la fecha del futuro llegue, expirarán las autorizaciones y, luego, los usuarios deberán volver a aceptar cada mes. |
+    | La fecha de hoy | Mensual | A partir de hoy, los usuarios deben aceptar los términos de uso y, después, volver a aceptarlos cada mes.|
+    | Fecha del futuro | Mensual | A partir de hoy, los usuarios deben aceptar los términos de uso. Cuando la fecha del futuro llegue, expirarán las autorizaciones y, luego, los usuarios deberán volver a aceptar cada mes. |
 
     Por ejemplo, si establece la fecha de inicio de la expiración en **1 de enero** y la frecuencia en **Mensual**, este es el modo en que pueden producirse las expiraciones para dos usuarios:
 
@@ -71,7 +71,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
     | Alice | 1 ene | 1 feb | 1 mar | 1 abr|
     | Bob | 15 ene | 1 feb | 1 mar| 1 abr |
 
-15. Use la opción de configuración **Duración antes de solicitar que se acepten los términos de nuevo (días)** para especificar el número de días antes de que el usuario tenga que aceptar los términos de uso de nuevo. Esto permite a los usuarios seguir su propia programación. Por ejemplo, si establece la duración en **30** días, este es el modo en que pueden producirse las expiraciones para dos usuarios:
+13. Use la opción de configuración **Duración antes de solicitar que se acepten los términos de nuevo (días)** para especificar el número de días antes de que el usuario tenga que aceptar los términos de uso de nuevo. Esto permite a los usuarios seguir su propia programación. Por ejemplo, si establece la duración en **30** días, este es el modo en que pueden producirse las expiraciones para dos usuarios:
 
     | Usuario | Primera fecha de aceptación | Primera fecha de expiración | Segunda fecha de expiración | Tercera fecha de expiración |
     |---|---|---|---|---|
@@ -80,7 +80,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
     **Nota**: Es posible usar las opciones de configuración Expirar autorizaciones y Duración antes de solicitar que se acepten los términos de nuevo (días) de forma conjunta, pero normalmente usará una o la otra.
 
-16. En **Acceso condicional**, seleccione **Directiva personalizada**.
+14. En **Acceso condicional**, seleccione **Directiva personalizada**.
 
     | Plantilla | Descripción |
     |---|---|
@@ -93,40 +93,40 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
     Las directivas personalizadas de acceso condicional permiten términos de uso pormenorizados, hasta una aplicación de nube o un grupo de usuarios específicos. Para obtener más información, vea [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
-17. Cuando haya finalizado, seleccione **Crear**.
+15. Cuando haya finalizado, seleccione **Crear**.
 
     ![Imagen de pantalla que muestra la página Nuevos términos de uso con las opciones configuradas resaltadas](./media/lp4-mod1-new-terms-of-use-create.png)
 
-18. Cuando se creen los términos de uso, se le redirigirá automáticamente a la página Directiva de acceso condicional. En la página, en el cuadro **Nombre**, escriba **Aplicar CDU**.
+16. Cuando se creen los términos de uso, se le redirigirá automáticamente a la página Directiva de acceso condicional. En la página, en el cuadro **Nombre**, escriba **Aplicar CDU**.
 
-19. En **Assignments** (Asignaciones), seleccione **Users or workload identities** (Identidades de usuario o de carga de trabajo).
+17. En **Asignaciones**, selecciona **Identidades de usuario**.
 
-20. En la pestaña Incluir, seleccione la casilla **Usuarios y grupos**.
+18. En la pestaña Incluir, seleccione la casilla **Usuarios y grupos**.
 
-21. En el panel Seleccionar, selecciona **Adele Vance** para probar la directiva de términos de uso.
+19. En el panel Seleccionar, selecciona **Adele Vance** para probar la directiva de términos de uso.
 
    **Aviso**: Si eliges tu cuenta de administrador, como en el caso de todas las directivas de acceso condicional, asegúrate de que tienes otra cuenta con permisos suficientes para cambiar la directiva de acceso condicional. Esto es para asegurarse de que la cuenta de administrador no se bloquee en caso de que la directiva de acceso condicional dé lugar a un resultado no deseado.
 
-22. Seleccione **Aplicaciones en la nube o acciones**.
+20. Selecciona **Recursos de destino.**
 
-23. Seleccione **Todas las aplicaciones en la nube**.
+21. Seleccione **Todas las aplicaciones en la nube**.
 
-24. En **Controles de acceso**, seleccione **Conceder**.
+22. En **Controles de acceso**, seleccione **Conceder**.
 
-25. En el panel de concesión, seleccione **Términos de uso de prueba** y, a continuación, seleccione **Seleccionar**.
+23. En el panel de concesión, seleccione **Términos de uso de prueba** y, a continuación, seleccione **Seleccionar**.
 
-26. En **Habilitar directiva**, seleccione **Activar**.
+24. En **Habilitar directiva**, seleccione **Activar**.
 
-27. Cuando haya finalizado, seleccione **Crear**.
+25. Cuando haya finalizado, seleccione **Crear**.
 
     ![Imagen de pantalla que muestra la directiva de acceso condicional con opciones de configuración resaltadas](./media/lp4-mod1-terms-of-use-ca-policy.png)
 
-28. Si decide usar su propia cuenta, puede actualizar el explorador. Se le pedirá que inicie sesión de nuevo. Al iniciar sesión, se le pedirá que acepte los términos de uso.
+26. Si decide usar su propia cuenta, puede actualizar el explorador. Se le pedirá que inicie sesión de nuevo. Al iniciar sesión, se le pedirá que acepte los términos de uso.
 
 #### Tarea 2: Iniciar sesión como Adele
 
 1. Abrir una ventana del explorador de InPrivate.
-2. Conectarse a https://portal.azure.com.
+2. Debes conectarte a https://portal.azure.com.
 3. Si aparece un mensaje de que ya has iniciado sesión, selecciona el nombre de los usuarios que han iniciado sesión en la esquina superior derecha de la pantalla y elige **Iniciar sesión con otra cuenta**.
 4. Iniciar sesión como Adele:
 
@@ -139,9 +139,9 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 6. Ver los términos de uso
 7. Puedes elegir **Aceptar** o **Rechazar**.
 
-    >**Nota**: Si eliges **rechazar**, durante un inicio de sesión futuro como AdeleV, será necesario volver a ver y aceptar los Términos de uso.
+    **Nota**: Si eliges **rechazar**, durante un inicio de sesión futuro como AdeleV, será necesario volver a ver y aceptar los Términos de uso.
 
-    >**Nota**: Los términos de uso pueden tardar unos minutos en aparecer; también puedes cerrar sesión y volver a iniciar sesión en el portal.
+    **Nota**: Los términos de uso pueden tardar unos minutos en aparecer; también puedes cerrar sesión y volver a iniciar sesión en el portal.
  
 #### Tarea 3: Ver un informe de quién los ha aceptado y rechazado
 
@@ -195,13 +195,14 @@ Los usuarios pueden revisar y ver los términos de uso que han aceptado mediante
 
 Algunos de los detalles de los términos de uso se pueden editar, pero no se puede modificar un documento existente. El siguiente procedimiento describe cómo editar dichos detalles.
 
-1. Inicia sesión en  [https://portal.azure.com](https://portal.azure.com) como Administrador global.
+1. Inicia sesión en  [https://entra.microsoft.com](https://entra.microsoft.com) como Administrador global.
 
-2. Abre Azure Active Directory y selecciona  **Identity Governance**.
+2. Abre el elemento de Microsoft Entra ID y selecciona  **Gobernanza de identidades** en el menú.
 
-3. En el menú de navegación izquierdo, en **Términos de uso**, seleccione **Términos de uso**.
+3. En el menú de navegación de la izquierda, en **Administración de derechos**, selecciona **Términos de uso**.
 
 4. Seleccione los términos de uso que quiere editar.
+ - Nota: tienes que hacer clic en el espacio abierto, no directamente en el nombre de los Términos o Uso.
 
 5. En el menú superior, seleccione **Editar términos**.
 
@@ -242,4 +243,3 @@ En ocasiones, puede que sea necesario actualizar el documento de términos de us
 6. Una vez que haya cargado el nuevo PDF y elegido volver a aceptar, seleccione **Agregar**.
 
 7. Ahora verá la versión más reciente en la columna Documento.
-
