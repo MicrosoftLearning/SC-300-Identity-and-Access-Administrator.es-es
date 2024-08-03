@@ -119,7 +119,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. Seleccione **Aceptar**.
 
 1. En el cuadro de diálogo de inicio de sesión, escribe la siguiente información:
-   - Nombre de usuario = **AzureAD\JoniS@<<your lab domainname>>
+   - Nombre de usuario = **AzureAD\JoniS@ tu nombre de dominio**
    - Contraseña = Introduce la contraseña proporcionada por tu proveedor de laboratorios
 
    NOTA: JoniS es el usuario al que concedemos acceso para iniciar sesión como administrador durante la Tarea 1.
