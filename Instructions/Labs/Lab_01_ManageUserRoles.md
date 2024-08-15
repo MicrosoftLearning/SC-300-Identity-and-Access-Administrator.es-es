@@ -262,7 +262,7 @@ Puede ocurrir que se elimine una cuenta y después se deba recuperar. Debes comp
 
 #### Tarea 1: buscar el usuario sin licencia en Azure Active Directory
 
-Algunas cuentas de usuario de su organización no recibirán todos los productos disponibles en su licencia asignada o necesitarán actualizaciones o adiciones a su asignación de licencias. Debes asegurarte de que puedes actualizar la asignación de licencias de una cuenta de usuario en Azure AD.
+Algunas cuentas de usuario de su organización no recibirán todos los productos disponibles en su licencia asignada o necesitarán actualizaciones o adiciones a su asignación de licencias. Debes asegurarte de que puedes actualizar la asignación de licencias de una cuenta de usuario en Microsoft Entra ID.
 
 1. Vaya a [https://entra.microsoft.com]( https://entra.microsoft.com).
 
