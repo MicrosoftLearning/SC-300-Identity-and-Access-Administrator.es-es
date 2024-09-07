@@ -23,20 +23,33 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Seleccione **+ Crear un recurso**.
 
-1. Escribe **Windows 11** en el campo de búsqueda de la barra de búsqueda de Marketplace.
+1. Escribe **Windows 11** en la barra de búsqueda Buscar en Marketplace y, después, **Entrar**.
 
-1. En el cuadro **Windows 11**, elige **Windows 11 Enterprise 22H2** en el menú desplegable Seleccionar un plan de software.
+1. En el cuadro **Windows 11**, selecciona **Crear v** y elige **Windows 11 Empresas, versión 22H2** en el menú que se abre.
 
-1. Tendrás que crear un nombre de usuario y una contraseña de administrador para la máquina virtual en la pestaña de conceptos básicos.
-   - Usa un nombre de usuario que puedas recordar y una contraseña segura.
+1. Crea la VM con los valores siguientes en la pestaña **Aspectos básicos**:
+  | Campo | Valor que se usará |
+  | :-- | :-- |
+  | Subscription | Pase para Azure - Patrocinio |
+  | Grupo de recursos | Crear nuevo: rgEntraLogin |
+  | Nombre de la máquina virtual | vmEntraLogin |
+  | Region | *default* |
+  | Opciones de disponibilidad | No se requiere redundancia de la infraestructura |
+  | Tipo de seguridad | Estándar |
+  | Size | vCPU DC1s_v3 - 1 estándar, 8 GiB de memoria |
+  | Nombre de usuario administrador | vmEntraAdmin |
+  | Contraseña del administrador | Usa la proporcionada por el entorno de laboratorio o crea una contraseña segura que puedas recordar |
+  | Licencias | Confirma que tienes licencia |
 
-1. En la pestaña **Administración**, active la casilla **Iniciar sesión con Microsoft Entra ID** en la sección Microsoft Entra ID.
+1. No necesitarás cambiar nada en las pestañas **Discos** o **Redes**, pero puedes revisar los valores.
+
+1. Ve a la pestaña **Administración** y activa la casilla **Iniciar sesión con Microsoft Entra ID** en la sección Microsoft Entra ID.
 
         NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
-1. Pase por el resto de la experiencia de creación de una máquina virtual. 
+1. Seleccione **Revisar + crear**.
 
-1. Seleccione Crear.
+1. Una vez que selecciones **Crear**.
 
 #### Tarea 2: Inicio de sesión de Microsoft Entra ID para Azure Virtual Machines existente
 
@@ -57,7 +70,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 #### Tarea 3: Actualización de la máquina virtual del servidor para admitir el inicio de sesión de Microsoft Entra ID
 
-1. Selecciona el elemento del menú **Conectar**.
+1. En el menú **Conectar**, selecciona el elemento **Conectar**.
 
 1. En la pestaña **RDP**, selecciona **Descargar archivo RDP**.  Si se te solicita, elige la opción **Mantener** para el archivo.  Se guardará en la carpeta Descargas.
 
@@ -70,7 +83,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. Usa el nombre de usuario y la contraseña de administrador creados al configurar la máquina virtual.
    - Si se te solicita, di que sí para permitir el acceso a la máquina virtual o a la sesión RDP.
 
-1. Espera a que el servidor esté abierto y que todo el software se cargue, como el panel de administrador del servidor.
+1. Espera a que la VM se abra y se cargue todo el software.
 
 1. Selecciona el **botón Inicio** de la máquina virtual.
 
@@ -79,6 +92,8 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. Selecciona **Sistema y seguridad** en la lista de valores.
 
 1. En la configuración del **Sistema**, selecciona la opción **Permitir acceso remoto**.
+
+  NOTA: no tienes que abrir el submenú Sistema. La opción está disponible en el encabezado Sistema.
 
 1. En la parte inferior del cuadro de diálogo que se abre verás un **Escritorio remoto**.
 
@@ -124,7 +139,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
    NOTA: JoniS es el usuario al que concedemos acceso para iniciar sesión como administrador durante la Tarea 1.
 
-1. Windows Server debe confirmar el inicio de sesión y abrirse en el panel de Administrador del servidor normal.
+1. Windows debe confirmar el inicio de sesión y abrirlo en la pantalla normal.
 
 #### Tarea 6: Pruebas opcionales para explorar el inicio de sesión de Microsoft Entra ID
 
@@ -140,9 +155,9 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Sal de la sesión de escritorio remoto.
 
-1. Vuelve a iniciar el archivo **<<server name>>-AzureAD.RDP**.
+1. Vuelve a iniciar el archivo **<<server name>>-EntraID.RDP**.
 
-1. Intenta iniciar sesión como otros miembros de Azure AD, como AdeleV o AlexW o DiegoS.
+1. Intenta iniciar sesión como otros usuarios de Microsoft Entra, como AdeleV o AlexW o DiegoS.
 
 1. Deberías observar que a cada uno de estos usuarios se le deniega el acceso.
 
