@@ -31,7 +31,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 #### Tarea 2: ejecutar una acción de mejora
 
-1. Para mejorar una área de la posición de seguridad de identidad, selecciona **Proteger todos los usuarios con una directiva de riesgo de inicio de sesión**.
+1. Para mejorar una área de la posición de seguridad de identidad, selecciona **Habilitar directivas de riesgo de inicio de sesión de protección de identidades de Microsoft Entra ID**.
 
 2. En el icono que se abre, desplázate hacia abajo y selecciona **Introducción**.
 
@@ -40,9 +40,9 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 4. Seleccione **+ Nueva directiva**.
 
-5. Asigne un nombre a la directiva. Se recomienda que las organizaciones creen un estándar significativo para los nombres de sus directivas.
+5. Asigna un nombre a la directiva. Se recomienda que las organizaciones creen un estándar significativo para los nombres de sus directivas.
 
-6. En Assignments (Asignaciones), seleccione Users or workload identities (Identidades de usuario o de carga de trabajo).
+6. En Asignaciones, selecciona Identidades de carga de trabajo o usarios.
 
 7. En Incluir, seleccione Todos los usuarios.
 

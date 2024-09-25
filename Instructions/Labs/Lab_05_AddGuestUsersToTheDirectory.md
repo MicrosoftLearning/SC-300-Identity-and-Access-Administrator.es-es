@@ -122,7 +122,7 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
     }
     ```
 
-6. Se envió el comando MgInvitation para invitar al usuario externo:
+6. Envía el comando MgInvitation para invitar al usuario externo:
 
     ```
     New-MgInvitation -BodyParameter $params
