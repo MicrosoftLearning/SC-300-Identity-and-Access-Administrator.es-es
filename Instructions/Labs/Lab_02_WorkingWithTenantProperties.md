@@ -63,7 +63,7 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
 
     **IMPORTANTE**: el país o la región se especifican cuando se crea el inquilino. Esta configuración no puede modificarse más tarde.
 
-3. En la pantalla **Propiedades**, en **Propiedades de inquilino**, busca **Ubicación** y revisa la información.
+3. En la pantalla **Propiedades**, en **Propiedades de inquilino**, busca **Ubicación de datos** y revisa la información.
 
     ![Imagen de pantalla que muestra la página Propiedades de Azure Active Directory con la configuración de País o región y Ubicación resaltada.](./media/azure-active-directory-properties-country-location.png)
 

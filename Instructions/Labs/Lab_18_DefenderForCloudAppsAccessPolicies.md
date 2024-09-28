@@ -18,7 +18,7 @@ Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condici
 #### Tarea 1: confirmar que PradeepG tiene acceso incondicional a FORMS
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Conectarse a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
@@ -55,13 +55,13 @@ Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condici
 #### Tarea 3: iniciar sesión en Forms y validar que el acceso condicional está supervisando
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Conectarse a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
    - Contraseña: la contraseña de la pestaña de recursos
 5. Confirma que Pradeep tiene acceso y que tú recibes un nuevo mensaje:
-   - Tu empresa supervisa el uso de esta aplicación.
+   - El acceso a Microsoft Forms se supervisa.
 6. Cierra la ventana de exploración de InPrivate.
 
 ### Ejercicio 2: configurar alertas en Microsoft Defender for Cloud Apps
@@ -72,11 +72,9 @@ El registro de la aplicación establece una relación de confianza entre la apli
 
 1. Inicia sesión en [https://security.microsoft.com](https://security.microsoft.com) con una cuenta de administrador global.
 
-1. En el menú izquierdo, desplázate hasta la parte inferior y selecciona **Más recursos**.
+1. En el menú de la izquierda, desplázate y selecciona **Directivas** en la sección **Aplicaciones en la nube** del menú de la izquierda.
 
-1. En la ventana **Más recursos**, busca y selecciona **Abrir** en **Microsoft Defender for Cloud Apps**.  Esto te llevará al portal de **Microsoft Defender for Cloud Apps** dentro de la cuenta de Microsoft 365.
-
-1. En el menú del portal de **Microsoft Defender for Cloud Apps**, selecciona la flecha desplegable de **Control** y selecciona **Directivas**.
+1. En el menú **Directivas**, busca y selecciona **Administración de directivas**.
 
 1. Seleccione **+ Crear directiva**. Selecciona **Directiva de acceso**.
 
@@ -99,13 +97,13 @@ El registro de la aplicación establece una relación de confianza entre la apli
 #### Tarea 2: iniciar sesión como Pradeep en Forms para desencadenar la actividad
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Conectarse a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
    - Contraseña: la contraseña de la pestaña de recursos
 5. Confirma que Pradeep tiene acceso y que tú recibes un nuevo mensaje:
-   - Tu empresa supervisa el uso de esta aplicación.
+   - El acceso a Microsoft Forms se supervisa.
 6. Cierra la ventana de exploración de InPrivate.
 
 #### Tarea 3: revisar la actividad en Defender for Cloud Apps

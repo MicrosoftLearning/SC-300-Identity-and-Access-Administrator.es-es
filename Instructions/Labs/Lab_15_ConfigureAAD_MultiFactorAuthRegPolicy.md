@@ -50,7 +50,7 @@ La autenticación multifactor proporciona un medio para comprobar quién está u
 
 1. En **Asignaciones**, selecciona **Todos los usuarios** en Usuarios y selecciona un usuario para aplicar MFA.
 
-1. Cambia **Aplicación de las directivas** de **Desactivado** a **Activado**.
+1. Cambia **Cumplimiento de directiva** de **Deshabilitado** a **Habilitado**.
 
 1. Seleccione **Guardar**.
 

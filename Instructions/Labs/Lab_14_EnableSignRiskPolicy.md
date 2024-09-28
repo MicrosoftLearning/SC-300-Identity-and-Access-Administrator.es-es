@@ -48,7 +48,7 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 13. Active la casilla **Requerir cambio de contraseña** y seleccione **Listo**.
 
-14. En **Aplicación de las directivas**, selecciona **Activado** y luego selecciona **Guardar**.
+14. En **Cumplimiento de directiva**, selecciona **Habilitar** y luego **Guardar**.
 
 #### Tarea 2: habilitar la directiva de riesgo de inicio de sesión
 
@@ -64,4 +64,4 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 6. Active la casilla **Requerir autenticación multifactor** y, a continuación, seleccione **Listo**.
 
-7. En **Aplicación de las directivas**, selecciona **Activado** y luego selecciona **Guardar**.
+7. En **Cumplimiento de directiva**, selecciona **Habilitar** y luego **Guardar**.
