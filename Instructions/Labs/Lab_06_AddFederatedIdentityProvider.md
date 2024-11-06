@@ -46,7 +46,7 @@ Tu empresa trabaja con muchos proveedores y, en ocasiones, necesitas agregar alg
 
 11. En Información de contacto del desarrollador, escribe la dirección de correo electrónico de la cuenta de laboratorio que usaste para iniciar sesión en el portal.
 
-12. Seleccione **Guardar y continuar**.
+12. Selecciona **Guardar y continuar**.
 
 13. En el menú de la izquierda, seleccione **Credenciales**.
 
