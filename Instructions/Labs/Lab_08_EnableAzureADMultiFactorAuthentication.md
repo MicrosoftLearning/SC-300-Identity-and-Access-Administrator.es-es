@@ -65,7 +65,7 @@ A continuación se verá cómo configurar las reglas de directivas de acceso con
    - Ahora, en Incluir, cambia la opción al elemento **Seleccionar aplicaciones**.
    - En el cuadro de diálogo recién abierto, elige **Office 365**.
       - **Recordatorio:** en un laboratorio anterior le dimos a Delia Dennis una licencia de Office 365 e iniciamos sesión para asegurarnos de que funcionaba.
-   - Elija **Seleccionar**.
+   - Elige **Seleccionar**.
 
 6. Revise la sección Condiciones.
 
@@ -90,7 +90,7 @@ A continuación se verá cómo configurar las reglas de directivas de acceso con
 #### Tarea 3: probar el inicio de sesión de Delia
 
 1. Abre una nueva ventana de exploración de InPrivate.
-2. Conectarse a https://www.office.com.
+2. Debes conectarte a https://www.office.com.
 3. Selecciona la opción de Iniciar sesión.
 4. Escribe **DeliaD@**`<<your domain address>>`.
 5. Escribe la contraseña = Escribe la contraseña de administrador global del inquilino (Nota: consulta la pestaña "Recursos de laboratorio" para recuperar la contraseña de administrador).

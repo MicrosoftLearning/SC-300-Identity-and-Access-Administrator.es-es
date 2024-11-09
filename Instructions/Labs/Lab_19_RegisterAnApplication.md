@@ -108,7 +108,7 @@ En primer lugar, siga estos pasos para crear un ámbito de ejemplo denominado Em
 
 5. Se te pedirá que establezcas un valor de  **URI de Id. de aplicación** si aún no has configurado uno. El URI de identificación de aplicación actúa como prefijo de los ámbitos a los que se hará referencia en el código de la API y debe ser único globalmente. Puedes usar el valor predeterminado proporcionado, que tiene el formato \<application-client-id\>, o especificar un URI más legible, como  `https://contoso.com/api`.
 
-6. Seleccione **Guardar y continuar**.
+6. Selecciona **Guardar y continuar**.
 
 6. Después, especifica los atributos del ámbito en el  **panel Agregar un ámbito**. Para este tutorial, puede usar los valores de ejemplo o especificar los suyos propios.
 

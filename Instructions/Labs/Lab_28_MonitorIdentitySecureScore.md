@@ -38,7 +38,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 3. Se abrirá una nueva pestaña para el **Acceso condicional**.
  **Nota:** De forma predeterminada, se abrirá el botón Comenzar en Azure Portal. Puedes usar el portal o volver al centro de administración de Entra. Cualquiera funcionará.
 
-4. Seleccione **+ Nueva directiva**.
+4. Selecciona **+ Nueva directiva**.
 
 5. Asigna un nombre a la directiva. Se recomienda que las organizaciones creen un estándar significativo para los nombres de sus directivas.
 
@@ -61,4 +61,4 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 14. Confirme la configuración y establezca Habilitar directiva en Solo informe.
 
-15. Seleccione Crear para crear la directiva.
+15. Selecciona Crear para crear la directiva.

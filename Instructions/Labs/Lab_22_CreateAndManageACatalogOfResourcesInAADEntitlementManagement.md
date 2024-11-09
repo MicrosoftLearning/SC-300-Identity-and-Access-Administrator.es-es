@@ -65,7 +65,7 @@ Para incluir recursos en un paquete de acceso, deben estar en un catálogo. Los 
 
    | Tipo de recurso | Valor |
    | :------------- | :---------- |
-   |  **Grupos y equipos** | Venta minorista |
+   |  **Grupos y equipos** | Minoristas |
    |  **Aplicaciones** | Box |
    |  **Aplicaciones** | Salesforce |
    |  **Sitios de SharePoint** | Marca SharePoint <<<elige de la lista de sitios de SharePoint disponibles |
@@ -74,7 +74,7 @@ Para incluir recursos en un paquete de acceso, deben estar en un catálogo. Los 
 
 7. Para este ejercicio, puede elegir cualquier recurso que haya disponible.
 
-    ![Adición de recursos a un catálogo](./media/catalog-add-resources.png)
+    ![Agregar recursos a un catálogo](./media/catalog-add-resources.png)
 
 8. Cuando hayas finalizado, selecciona **Agregar**. Ahora, estos recursos se pueden incluir en paquetes de acceso del catálogo.
 
