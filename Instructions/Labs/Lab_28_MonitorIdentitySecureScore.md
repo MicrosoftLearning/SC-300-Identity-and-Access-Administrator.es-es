@@ -7,9 +7,13 @@ lab:
 
 # Laboratorio 28: supervisar y administrar la posición de seguridad con la puntuación de seguridad de la identidad
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Microsoft Entra Identity Protection proporciona detección y corrección automatizadas a riesgos basados en identidades y facilita datos en el portal para investigar posibles riesgos. Microsoft Entra Identity Protection también proporciona una puntuación de seguridad de identidad para supervisar y mejorar la posición de seguridad de la identidad.  De la misma manera que Microsoft Defender XDR y Microsoft Defender for Cloud, la puntuación de seguridad de identidad proporciona acciones de mejora y recomendaciones que pueden mejorar la posición general de seguridad para la identidad en Microsoft Entra ID.  Este laboratorio explorará esta funcionalidad. 
+
+**Nota:** Dado que este laboratorio se ejecuta en un nuevo entorno de inquilino creado, probablemente obtendrás una puntuación de seguridad de la identidad del 0,00 %.  Los datos valiosos tardan aproximadamente 24 horas en escribir el cálculo para proporcionarte una puntuación válida.
 
 #### Tiempo estimado: 15 minutos
 
@@ -31,34 +35,31 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 #### Tarea 2: ejecutar una acción de mejora
 
-1. Para mejorar una área de la posición de seguridad de identidad, selecciona **Habilitar directivas de riesgo de inicio de sesión de protección de identidades de Microsoft Entra ID**.
+1. Para mejorar una área de la posición de seguridad de identidad, selecciona **Habilitar la directiva de riesgo de inicio de sesión de Protección de Microsoft Entra ID**.
 
 2. En el icono que se abre, desplázate hacia abajo y selecciona **Introducción**.
 
-3. Se abrirá una nueva pestaña para el **Acceso condicional**.
+3. Se abrirá una nueva pestaña para **Identity Protection | Directiva de riesgo de inicio de sesión**.
  **Nota:** De forma predeterminada, se abrirá el botón Comenzar en Azure Portal. Puedes usar el portal o volver al centro de administración de Entra. Cualquiera funcionará.
 
-4. Selecciona **+ Nueva directiva**.
+6. En Asignaciones, el texto **Todos los usuarios**.
 
-5. Asigna un nombre a la directiva. Se recomienda que las organizaciones creen un estándar significativo para los nombres de sus directivas.
+7. En Incluir, selecciona Todos los usuarios.
 
-6. En Asignaciones, selecciona Identidades de carga de trabajo o usarios.
+8. En Excluir, selecciona Usuarios y grupos y elige tu cuenta de **administrador de MOD**.
 
-7. En Incluir, seleccione Todos los usuarios.
+  - Microsoft recomienda excluir al menos una cuenta para evitar que se bloquee.
 
-8. En Excluir, seleccione Usuarios y grupos y elija las cuentas que deben mantener la capacidad para usar la autenticación heredada. Microsoft recomienda excluir al menos una cuenta para evitar que se bloquee.
+9. En Riesgo de acceso: selecciona el texto que dice **Baja y superior**.
 
-9. En Recursos de destino> Aplicaciones en la nube> Incluir, selecciona Todas las aplicaciones en la nube.
+10. Elige **Media y superior** y luego selecciona **Listo**.
 
-10. En Condiciones > Aplicaciones cliente, establece Configurar en Sí.
- - Active solo las casillas Clientes de Exchange ActiveSync y Otros clientes.
+10. En la sección **Controles** elige el texto que dice **Bloquear acceso**.
 
-11. Seleccione Listo.
+11. Selecciona **Conceder acceso: requerir autenticación multifactor**.
 
-12. En Controles de acceso > Conceder, selecciona Bloquear acceso.
+11. Selecciona Listo.
 
-13. Elija Seleccionar.
+14. Confirma la configuración y establece la aplicación de directivas en **Habilitada**.
 
-14. Confirme la configuración y establezca Habilitar directiva en Solo informe.
-
-15. Selecciona Crear para crear la directiva.
+15. Seleccione **Guardar**.

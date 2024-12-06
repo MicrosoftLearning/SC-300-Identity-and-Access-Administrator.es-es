@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 12: administrar los valores de bloqueo inteligente de Microsoft Entra
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Debes configurar las opciones de protección de contraseña adicionales para tu organización.
@@ -35,7 +37,7 @@ En función de los requisitos de la organización, puede personalizar los valore
 
 7. Junto a **Modo**, seleccione **Forzado**.
 
-8. Guarde los cambios.
+8. Guarda los cambios.
 
     **NOTA**: cuando se desencadene el umbral de bloqueo inteligente, recibirás el siguiente mensaje mientras la cuenta esté bloqueada:
     - Su cuenta se bloqueó temporalmente para impedir un uso no autorizado. Vuelva a intentarlo y, si sigue teniendo problemas, póngase en contacto con su administrador.

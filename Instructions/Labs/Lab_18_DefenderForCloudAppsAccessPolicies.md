@@ -7,6 +7,8 @@ lab:
 
 # 18: directivas de acceso y sesión de Defender for Cloud Apps
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condicional adicionales específicas de las aplicaciones en la nube que estamos supervisando.  La creación de estas directivas se puede realizar desde el menú Control del portal de Microsoft Defender for Cloud Apps.
@@ -61,7 +63,7 @@ Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condici
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
    - Contraseña: la contraseña de la pestaña de recursos
 5. Confirma que Pradeep tiene acceso y que tú recibes un nuevo mensaje:
-   - El acceso a Microsoft Forms se supervisa.
+   - Tu empresa supervisa el uso de esta aplicación.
 6. Cierra la ventana de exploración de InPrivate.
 
 ### Ejercicio 2: configurar alertas en Microsoft Defender for Cloud Apps
@@ -103,7 +105,7 @@ El registro de la aplicación establece una relación de confianza entre la apli
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
    - Contraseña: la contraseña de la pestaña de recursos
 5. Confirma que Pradeep tiene acceso y que tú recibes un nuevo mensaje:
-   - El acceso a Microsoft Forms se supervisa.
+   - Tu empresa supervisa el uso de esta aplicación.
 6. Cierra la ventana de exploración de InPrivate.
 
 #### Tarea 3: revisar la actividad en Defender for Cloud Apps

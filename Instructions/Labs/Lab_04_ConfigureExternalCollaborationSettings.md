@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 04: configurar valores de colaboración externa
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Debes habilitar la configuración de colaboración externa para que accedan invitados aprobados a tu organización.
@@ -35,7 +37,7 @@ Debes habilitar la configuración de colaboración externa para que accedan invi
     
 5. Asegúrese de que está seleccionada la opción **Sí**.
 6. Si es necesario, selecciona **Guardar**.
-7. De lo contrario, selecciona `Home > Contoso Marketing >`**Identidades externas** para volver a la pantalla anterior.
+7. Vuelve al menú **Identidades externas**.
 8. Selecciona **Configuración de colaboración externa** a la izquierda.
 
 9. En  **Acceso de usuario invitado**, revisa los niveles de acceso disponibles y, luego, selecciona **El acceso de los usuarios invitados está restringido a las propiedades y pertenencias de sus propios objetos de directorio (lo más restrictivo)**.
@@ -60,7 +62,7 @@ Debes habilitar la configuración de colaboración externa para que accedan invi
 
 11. En  **Restricciones de colaboración**, revisa las opciones disponibles y acepta la configuración predeterminada.
 
-    **IMPORTANTE**
+    **Importante **
     - Puede crear una lista de permitidos o una lista de denegación. No se pueden configurar ambos tipos de listas. De forma predeterminada, los dominios que no están en la lista de permitidos están en la de denegación y viceversa.
     - Solo puede crear una directiva por organización. Puede actualizar la directiva para incluir más dominios, o puede eliminar la directiva para crear una nueva.
     - El número de dominios que puede agregar a una lista de permitidos o de denegación solo se ve limitado por el tamaño de la directiva. El tamaño máximo de toda la directiva es de 25 KB (25 000 caracteres), que incluye la lista de permitidos o la lista de denegación y cualquier otro parámetro configurado para otras características.

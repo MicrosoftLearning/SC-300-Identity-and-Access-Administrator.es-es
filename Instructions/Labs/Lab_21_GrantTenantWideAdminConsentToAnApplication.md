@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 21: conceder el consentimiento del administrador para todo el inquilino a una aplicación
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Para las aplicaciones que haya desarrollado la organización, o bien las que se hayan registrado directamente en el inquilino de Microsoft Entra, puede conceder el consentimiento del administrador para todo el inquilino desde los Registros de aplicaciones en Azure Portal.
@@ -43,16 +45,20 @@ El rol de administrador global es necesario para proporcionar el consentimiento 
 
 Puede conceder el consentimiento del administrador para todo el inquilino a través de Aplicaciones empresariales si la aplicación ya se ha aprovisionado en el inquilino.
 
-1. En el Centro de administración Microsoft Entra, ve a **Identidad > Aplicaciones > Aplicaciones empresariales > Aplicación de demostración.**
+1. En el Centro de administración Microsoft Entra, ve a **Identidad** y **Aplicaciones**.
 
-2. En la página **Aplicación de demostración**, en el panel de navegación izquierdo, selecciona **Permisos** en la sección **Seguridad**.
+2. En el menú abre **Aplicaciones empresariales**.
 
-3. En **Permisos**, seleccione **Conceder consentimiento del administrador**.
+3. En la lista de aplicaciones empresariales elige la **Aplicación de demostración** que hemos registrado anteriormente.
+
+4. En la página **Aplicación de demostración**, en el panel de navegación izquierdo, selecciona **Permisos** en la sección **Seguridad**.
+
+5. En **Permisos**, seleccione **Conceder consentimiento del administrador**.
 
     ![Captura de pantalla que muestra la página de permisos de la aplicación de demostración con la opción Conceder consentimiento del administrador para Contoso resaltada.](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Advertencia**: la concesión del consentimiento del administrador para todo el inquilino a través de Registros de aplicaciones revocará todos los permisos concedidos previamente en todo el inquilino. Los permisos que los usuarios hayan concedido previamente en su propio nombre no se verán afectados.
 
-4. Cuando se le solicite, inicie sesión con la cuenta de administrador global.
+6. Cuando se le solicite, inicie sesión con la cuenta de administrador global.
 
-5. En el cuadro de diálogo **Permisos solicitados**, revise la información y seleccione **Aceptar**.
+7. En el cuadro de diálogo **Permisos solicitados**, revise la información y seleccione **Aceptar**.

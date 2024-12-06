@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 03: Asignar licencias mediante la pertenencia a grupos
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Tu organización ha decidido usar grupos de seguridad en Microsoft Entra ID para administrar licencias. Debes configurar un nuevo grupo de seguridad y asignar una licencia a ese grupo y comprobar que se han actualizado las licencias de miembro del grupo.
@@ -56,18 +58,41 @@ Tu organización ha decidido usar grupos de seguridad en Microsoft Entra ID para
 8. Seleccione el botón **Crear**.
 9. Cuando termines, comprueba que el grupo denominado **sg-SC300-O365** aparece en la lista **Todos los grupos**.
 
-#### Tarea 3: asignar una licencia a un grupo
+#### Tarea 3: Agregar una licencia de Office a sg-SC300-O365
 
-1. En la lista **Todos los grupos**, selecciona **sg-SC300-O365**.
-2. En la ventana Marketing, en **Administrar**, selecciona **Licencias**.
-3. En el menú, selecciona **+ Asignaciones**.
-4. En Actualizar asignaciones de licencia, en **Seleccionar licencias**, revisa la lista de licencias disponibles y después selecciona la casilla de verificación de **Office 365 E3**.
+Tienes que agregar y quitar licencias a través del Centro de administración de Microsoft 365. Este es un cambio relativamente nuevo.
 
-   **Sugerencia**: cuando se seleccionan varias licencias, puedes usar el menú de opciones de Revisar licencia para seleccionar una licencia específica y ver la opción de licencia para esta.
+1. Abre una nueva pestaña en tu explorador.
 
-   ![Imagen de pantalla que muestra las licencias seleccionadas y asignadas a un grupo. El menú Revisar licencia también aparece seleccionado y muestra varias opciones de selección.](./media/lp1-mod2-assign-license-group.png)
+2. Conéctate al Centro de administración de Microsoft 365 en http://admin.microsoft.com.
 
-6. Seleccione **Guardar**.
+3. Inicia sesión con tu cuenta de administrador si se te solicita.
+
+4. En el menú de la izquierda, selecciona **Facturación** y después selecciona **Licencias**.
+
+5. Selecciona la licencia **Office 365 E3** de la lista.
+
+6. Selecciona la pestaña **Grupos** en la pantalla de licencias.
+
+7. Elige el elemento **+ Agregar licencia**.
+
+8. Busca el grupo **sg-SC300-O365** y selecciónalo de la lista.
+
+8. Una vez que hayas agregado a Raúl, selecciona **Asignar**.
+ 
+9. Cierra el mensaje de confirmación.
+
+10. Vuelve a la pestaña del explorador con el **Centro de administración Microsoft Entra** abierto.
+
+11. Vuelve a **Todos los grupos** en el menú de la izquierda, en **Identidad**, selecciona **Grupos**
+
+12. En la página Usuarios, selecciona **sg-SC300-O365**.
+
+13. En el panel de navegación izquierdo, seleccione **Licencias.**
+
+14. Observa que se ha asignado la licencia Office 365 E3.
+
+15. Puedes salir de la pantalla de licencia.
 
 #### Tarea 4: confirmar la licencia de Office 365
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 22: crear y administrar un catálogo de recursos en la administración de derechos de Microsoft Entra
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Un catálogo es un contenedor de recursos y paquetes de acceso. Creará un catálogo cuando quiera agrupar recursos relacionados y paquetes de acceso. Quien cree el catálogo se convertirá en su primer propietario. El propietario de un catálogo puede agregar otros propietarios. Debes crear y configurar un catálogo en tu organización.
@@ -39,15 +41,15 @@ Un catálogo es un contenedor de recursos y paquetes de acceso. Creará un catá
 
 6. En el cuadro **Descripción**, escriba **Para usuarios del departamento de marketing**. Los usuarios verán esta información en los detalles de un paquete de acceso.
 
-7. En **Habilitado, seleccione No**.
+7. En **Habilitado**, selecciona **Sí**.
 
-- - **Habilitado para usuarios externos** permite a los usuarios de directorios externos seleccionados poder solicitar paquetes de acceso en este catálogo. No se realizarán cambios en esta configuración.
+  - **Habilitado para usuarios externos** selecciona **No**.  Esta configuración permite a los usuarios de los directorios externos seleccionados poder solicitar paquetes de acceso de este catálogo. No se realizarán cambios en esta configuración.
 
 9. Puede optar por habilitar el catálogo para su uso inmediato o deshabilitarlo si desea agregarlo al "stage" o mantenerlo no disponible hasta que tenga previsto usarlo. Para este ejercicio, no es necesario habilitar el catálogo.
 
-    ![Imagen de pantalla que muestra la panorámica Nuevo catálogo con las opciones Nombre, Descripción, Habilitado y Crear resaltadas](./media/lp4-mod1-new-catalog-marketing.png)
+  ![Imagen de pantalla que muestra la panorámica Nuevo catálogo con las opciones Nombre, Descripción, Habilitado y Crear resaltadas](./media/lp4-mod1-new-catalog-marketing.png)
 
-10. Seleccione Crear.
+10. Seleccione **Crear**.
 
 #### Tarea 2: agregar recursos a un catálogo
 
@@ -68,7 +70,7 @@ Para incluir recursos en un paquete de acceso, deben estar en un catálogo. Los 
    |  **Grupos y equipos** | Minoristas |
    |  **Aplicaciones** | Box |
    |  **Aplicaciones** | Salesforce |
-   |  **Sitios de SharePoint** | Marca SharePoint <<<elige de la lista de sitios de SharePoint disponibles |
+   |  **Sitios de SharePoint** | Marca: selecciona este SharePoint de la lista de sitios disponibles |
 
 6. Es posible que no tenga ningún recurso en Grupos y Teams, aplicaciones o sitios de SharePoint. Seleccione cualquier categoría de recursos y, a continuación, seleccione un recurso de esa categoría.
 
@@ -124,13 +126,15 @@ Puede editar el nombre y la descripción de un catálogo. Los usuarios ven esta 
 
 1. El siguiente icono es donde se configura quién revisa y aprueba el acceso, la frecuencia con la que se revisará el acceso y cuándo expirará el acceso.
 
-1. En **Seleccionar revisores**, selecciona **Propietarios de grupo** como estos revisores. **Nota**: como práctica recomendada de gobernanza de identidades, no se debe permitir que los usuarios invitados revisen su propio acceso.
+1. En **Seleccionar revisores**, selecciona **Propietarios de grupo** como estos revisores.
+
+  - **Nota**: como práctica recomendada de gobernanza de identidades, no se debe permitir que los usuarios invitados revisen su propio acceso.
 
 1. Escribe la **Duración (en días)**, cuyo valor predeterminado es 3. Elige la **Periodicidad de revisión** y la **Fecha de inicio** para la revisión.
 
 1. Selecciona **Siguiente: Configuración** y configura las opciones de cómo se realizará la revisión y qué ocurre cuando el usuario invitado responde o no responde.  Un procedimiento recomendado es seleccionar **Aplicar automáticamente los resultados al recurso** y seleccionar **Quitar acceso** para **Si los revisores no responden**. 
 
-1. Selecciona **Siguiente: revisar + crear** y selecciona **Crear** para crear la nueva **Revisión de acceso**.
+1. Selecciona **Siguiente: revisar + crear**, y selecciona **Crear** para crear la nueva revisión de acceso.
 
 
 #### Tarea 6: eliminar un catálogo

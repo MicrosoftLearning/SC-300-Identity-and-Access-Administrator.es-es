@@ -7,7 +7,7 @@ lab:
 
 # Laboratorio 10: Autenticación de Microsoft Entra para máquinas virtuales de Windows y Linux
 
-**Nota:** este laboratorio requiere un pase para Azure. Consulta el laboratorio 00 para obtener instrucciones.
+### Tipo de inicio de sesión = Inicio de sesión de recurso de Azure
 
 ## Escenario del laboratorio
 
@@ -28,9 +28,10 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. En el cuadro **Windows 11**, selecciona **Crear v** y elige **Windows 11 Empresas, versión 22H2** en el menú que se abre.
 
 1. Crea la VM con los valores siguientes en la pestaña **Aspectos básicos**:
+
   | Campo | Valor que se usará |
   | :-- | :-- |
-  | Subscription | Pase para Azure - Patrocinio |
+  | Subscription | Acepta el valor predeterminado |
   | Grupo de recursos | Crear nuevo: rgEntraLogin |
   | Nombre de la máquina virtual | vmEntraLogin |
   | Region | *default* |
@@ -43,13 +44,13 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. No necesitarás cambiar nada en las pestañas **Discos** o **Redes**, pero puedes revisar los valores.
 
-1. Ve a la pestaña **Administración** y activa la casilla **Iniciar sesión con Microsoft Entra ID** en la sección Microsoft Entra ID.
+1. En la pestaña **Administración**, active la casilla **Iniciar sesión con Microsoft Entra ID** en la sección Microsoft Entra ID.
 
         NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
-1. Seleccione **Revisar + crear**.
+1. Pase por el resto de la experiencia de creación de una máquina virtual. 
 
-1. Una vez que selecciones **Crear**.
+1. Selecciona **Revisar + crear** y después elige **Crear**.
 
 #### Tarea 2: Inicio de sesión de Microsoft Entra ID para Azure Virtual Machines existente
 
@@ -62,15 +63,15 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. Selecciona **+ Agregar** y después **Agregar asignación de roles** para abrir la página Agregar asignación de roles.
 
 1. Asigna la siguiente configuración:
-    - **Tipo de asignación**: roles de función de trabajo.
-    - **Rol**: inicio de sesión de administrador de Virtual Machine
-    - **Miembros**: elige usuario, grupo o entidad de servicio.  Después usa **+ Seleccionar miembros** para agregar a **Joni Sherman** como usuario específico de la máquina virtual.
+  - **Rol de función de trabajo**
+  - **Rol**: inicio de sesión de administrador de Virtual Machine
+  - **Miembros**: elige usuario, grupo o entidad de servicio.  Después usa **+ Seleccionar miembros** para agregar a **Joni Sherman** como usuario específico de la máquina virtual.
 
-1. Selecciona **Revisar + asignar** para completar el proceso
+1. Selecciona **Revisar + asignar** para completar el proceso.
 
-#### Tarea 3: Actualización de la máquina virtual del servidor para admitir el inicio de sesión de Microsoft Entra ID
+#### Tarea 3: Actualizar la máquina virtual para permitir el inicio de sesión de Microsoft Entra ID
 
-1. En el menú **Conectar**, selecciona el elemento **Conectar**.
+1. Selecciona el elemento del menú **Conectar**.
 
 1. En la pestaña **RDP**, selecciona **Descargar archivo RDP**.  Si se te solicita, elige la opción **Mantener** para el archivo.  Se guardará en la carpeta Descargas.
 
@@ -80,10 +81,10 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Elige iniciar sesión como usuario alternativo.
 
-1. Usa el nombre de usuario y la contraseña de administrador creados al configurar la máquina virtual.
+1. Usa el nombre de usuario y la contraseña de administrador (vmEntraAdmin) que has creado al configurar la máquina virtual.
    - Si se te solicita, di que sí para permitir el acceso a la máquina virtual o a la sesión RDP.
 
-1. Espera a que la VM se abra y se cargue todo el software.
+1. Espera a que se abra la máquina virtual y se cargue todo el software.
 
 1. Selecciona el **botón Inicio** de la máquina virtual.
 
@@ -92,8 +93,6 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 1. Selecciona **Sistema y seguridad** en la lista de valores.
 
 1. En la configuración del **Sistema**, selecciona la opción **Permitir acceso remoto**.
-
-  NOTA: no tienes que abrir el submenú Sistema. La opción está disponible en el encabezado Sistema.
 
 1. En la parte inferior del cuadro de diálogo que se abre verás un **Escritorio remoto**.
 
@@ -109,7 +108,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. **Haga una copia** del archivo RDP y agregue **-EntraID** al final del nombre de archivo.
 
-1. Edita la nueva versión del archivo RDP que acabas de copiar con Bloc de notas. Agrega estas dos líneas de texto a la parte inferior del archivo:
+1. Edite la nueva versión del archivo RDP que acabas de copiar con **Bloc de notas**. Agrega estas dos líneas de texto a la parte inferior del archivo:
      ```
         enablecredsspsupport:i:0
         authentication level:i:2
@@ -139,7 +138,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
    NOTA: JoniS es el usuario al que concedemos acceso para iniciar sesión como administrador durante la Tarea 1.
 
-1. Windows debe confirmar el inicio de sesión y abrirlo en la pantalla normal.
+1. Windows Server debe confirmar el inicio de sesión y abrirse en el panel de Administrador del servidor normal.
 
 #### Tarea 6: Pruebas opcionales para explorar el inicio de sesión de Microsoft Entra ID
 
@@ -155,9 +154,9 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Sal de la sesión de escritorio remoto.
 
-1. Vuelve a iniciar el archivo **<<server name>>-EntraID.RDP**.
+1. Vuelve a iniciar el archivo **<<server name>>-AzureAD.RDP**.
 
-1. Intenta iniciar sesión como otros usuarios de Microsoft Entra, como AdeleV o AlexW o DiegoS.
+1. Intenta iniciar sesión como otros miembros de Azure AD, como AdeleV o AlexW o DiegoS.
 
 1. Deberías observar que a cada uno de estos usuarios se le deniega el acceso.
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 02: trabajar con propiedades de inquilino
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Debes identificar y actualizar las distintas propiedades asociadas a tu inquilino.
@@ -17,9 +19,11 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
 
 #### Tarea 1: crear nombre de subdominio personalizado
 
+Usarías Microsoft Entra ID para crear un dominio que hayas adquirido.  Si deseas crear un subdominio para dividir el dominio .onmicrosoft.com existente, debes usar el Centro de administración de Microsoft 365.
+
 1. Ve a [https://entra.microsoft.com](https://entra.microsoft.com) e inicia sesión con una cuenta de administrador global para el directorio.
 
-1. En el menú **Identidad**, use la opción **Mostrar más* en la parte inferior.
+1. En el menú **Identidad**, usa la opción **Mostrar más** de la parte inferior.
 
 1.  Abra el menú **Configuración**, seleccione **Nombres de dominio**.
 
@@ -28,13 +32,18 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
 1. En el campo **Nombre de dominio personalizado**, crea un subdominio personalizado para el inquilino de laboratorio colocando **ventas** delante del nombre de dominio**onmicrosoft.com**.  El formato será similar a lo siguiente:
 
     ```
-    sales.labtenant.onmicrosoft.com
+    mydomain.com
     ```
 
 1. **Nota**: se le pedirá que abra el Centro de administración de Microsoft 365 para completar esta acción.
 
 1. Selecciona **Agregar dominio** para agregar el subdominio.
 
+1. Escribe el nombre del subdominio `sales.tenantname.onmicrosoft.com` en el cuadro de diálogo.
+
+1. Selecciona el botón **Usar este dominio** en la parte inferior de la pantalla.
+
+1. Selecciona el botón **Cerrar** cuando se abra la siguiente pantalla.  Para este laboratorio no configuraremos el DNS.
 
 ### Ejercicio 2: cambiar el nombre de visualización del inquilino
 
@@ -63,7 +72,7 @@ Debes identificar y actualizar las distintas propiedades asociadas a tu inquilin
 
     **IMPORTANTE**: el país o la región se especifican cuando se crea el inquilino. Esta configuración no puede modificarse más tarde.
 
-3. En la pantalla **Propiedades**, en **Propiedades de inquilino**, busca **Ubicación de datos** y revisa la información.
+3. En la pantalla **Propiedades**, en **Propiedades de inquilino**, busca **Ubicación** y revisa la información.
 
     ![Imagen de pantalla que muestra la página Propiedades de Azure Active Directory con la configuración de País o región y Ubicación resaltada.](./media/azure-active-directory-properties-country-location.png)
 
@@ -118,7 +127,7 @@ Puede agregar la información de privacidad de su organización en el área de �
 
      **Se abrirá automáticamente una nueva pestaña del explorador.**
 
-4. Selecciona **Configuración y privacidad** en el menú izquierdo.
+4. Selecciona **Configuración y privacidad** en el menú de la izquierda.
 5. Seleccione **Privacidad**.
 6. En **Aviso de la organización**, selecciona el elemento **Ver** junto a la declaración de privacidad de la organización de Contoso Marketing.
 

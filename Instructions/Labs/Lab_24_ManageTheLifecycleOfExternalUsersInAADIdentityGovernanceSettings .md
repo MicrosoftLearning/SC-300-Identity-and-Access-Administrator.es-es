@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratorio 24: administrar el ciclo de vida de los usuarios externos en la configuración de la gobernanza de Microsoft Entra Identity  
+# Laboratorio 24: administrar el ciclo de vida de los usuarios externos en la configuración de la gobernanza de Microsoft Entra Identity
+
+### Tipo de inicio de sesión = Administración de Microsoft 365
 
 ## Escenario del laboratorio
 

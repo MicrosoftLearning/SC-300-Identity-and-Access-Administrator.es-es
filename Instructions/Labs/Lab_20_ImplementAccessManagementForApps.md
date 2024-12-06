@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 20: implementar la administración del acceso para aplicaciones
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Tu organización requiere que solo usuarios o grupos específicos tengan acceso a las aplicaciones empresariales. Tienes que asignar un usuario a una aplicación específica.
@@ -47,9 +49,11 @@ Tu organización requiere que solo usuarios o grupos específicos tengan acceso 
 
 4. En la página Agregar asignación, selecciona **Ninguno seleccionado** en la sección **Usuarios y grupos**.
 
-5. En el panel Usuarios y grupos, selecciona tu cuenta de administrador y luego selecciona **Seleccionar**.
+5. En el panel Usuarios y grupos, selecciona Adele Vance y tu cuenta de administrador MOD.
+
+6. Elija **Seleccionar**.
 
     ![Imagen de pantalla que muestra cómo agregar una asignación de cuenta de usuario a una aplicación con el botón Seleccionar resaltado ](./media/lp3-mod1-add-app-assignment.png)
 
-6. Seleccione **Asignar**.
+7. Seleccione **Asignar**.
 

@@ -7,13 +7,15 @@ lab:
 
 # Laboratorio 13: implementar y probar una directiva de acceso condicional
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Tu organización debe poder limitar el acceso de los usuarios a sus aplicaciones internas. Debes implementar una directiva de acceso condicional de Microsoft Entra.
 
 **Nota**: En el caso de las directivas de acceso condicional, puedes desactivar los valores predeterminados de seguridad, los puntos clave que se deben recordar son del entrenamiento.  Puedes encontrar información adicional sobre los valores predeterminados de seguridad en este vínculo: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
-#### Tiempo estimado: 30 minutos
+#### Tiempo estimado: 20 minutos
 
 ### Ejercicio 1: Establecer una directiva de acceso condicional para impedir que DebraB acceda a Sway
 
@@ -24,12 +26,16 @@ Tu organización debe poder limitar el acceso de los usuarios a sus aplicaciones
 2. Conéctese a [https://www.office.com](https://www.office.com). 
 3. Cuando se te solicite, inicia sesión como DebraB:
 
-   | Configuración | Valor |
-   | :--- | :--- |
-   | Nombre de usuario | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-   | Contraseña | Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña de administrador del inquilino). |
+  | Configuración | Valor |
+  | :--- | :--- |
+  | Nombre de usuario | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
+  | Contraseña | Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña de administrador del inquilino). |
     
-4. Selecciona en el icono **Sway** para ver que se carga correctamente.
+4. Omite las pantallas de bienvenida e introducción.
+
+5. Abre la página de **Aplicaciones** y selecciona el icono de **Sway** para comprobar que se carga correctamente.
+
+6. Cierra sesión en Office y cierra la sesión del explorador.
 
 #### Tarea 2: crear una directiva de acceso condicional
 
@@ -122,6 +128,7 @@ Debe probar las directivas de acceso condicional para asegurarse de que funciona
 1. Selecciona **What if**. Se te facilitará un informe en la parte inferior del icono de **Directivas que se aplicarán** y **Directivas que no se aplicarán**.
 
 Esto te permite probar las directivas y su efectividad antes de habilitar las directivas.
+
 
 ### Ejercicio 3: configuración de los controles de frecuencia de inicio de sesión mediante una directiva de acceso condicional
 

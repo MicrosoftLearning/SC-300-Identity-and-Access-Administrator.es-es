@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 15: Configurar una directiva de registro de MFA
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 La autenticación multifactor proporciona un medio para comprobar quién está usando más que un nombre de usuario y una contraseña. Ofrece una segunda capa de seguridad a los inicios de sesión de usuario. Para que los usuarios puedan responder a las solicitudes MFA, primero deben registrarse para la autenticación multifactor de Microsoft Entra. Debes configurar la directiva de registro de MFA de tu organización de Microsoft Entra para que se asigne a todos los usuarios.
@@ -44,13 +46,13 @@ La autenticación multifactor proporciona un medio para comprobar quién está u
 
 **Nota**: La protección de identidades de Microsoft Entra requiere que se active Microsoft Entra ID Premium P2. 
 
-1. En el Centro de administración de Microsoft Entra, ve a **Microsoft Entra Identity Protection** en la barra de búsqueda.
+1. En el Centro de administración Microsoft Entra, ve a **Protección de Microsoft Entra ID** en la barra de búsqueda.
 
 1. En **Proteger** en el menú, selecciona **Directiva de registro de MFA**.
 
 1. En **Asignaciones**, selecciona **Todos los usuarios** en Usuarios y selecciona un usuario para aplicar MFA.
 
-1. Cambia **Cumplimiento de directiva** de **Deshabilitado** a **Habilitado**.
+1. Cambia **Cumplimiento de directivas****Habilitado**.
 
 1. Seleccione **Guardar**.
 
