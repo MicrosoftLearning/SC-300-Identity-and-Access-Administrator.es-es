@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratorio 25: crear revisiones de acceso para usuarios internos y externos  
+# Laboratorio 25: crear revisiones de acceso para usuarios internos y externos
+
+### Tipo de inicio de sesión = Administración de Microsoft 365
 
 ## Escenario del laboratorio
 
@@ -33,11 +35,11 @@ El acceso de usuario con privilegios debe revisarse periódicamente de forma sim
 
 8. El siguiente paso es determinar los revisores.  Estos revisores pueden ser los propios miembros y revisarse a sí mismos, pero también pueden ser los supervisores si se tiene que revisar el acceso de todo un departamento. También puedes establecer la acción cuando un revisor no responde para quitar automáticamente ese acceso con privilegios del miembro.
 
-9. Elige un revisor y revisa la opción de periodicidad.  Luego, seleccione **Configuración**.
+9. Elige al revisor **Alex Wilber** y una opción de revisión de periodicidad **anual**.  Después, selecciona **Siguiente: configuración**.
 
 10. La configuración avanzada te permite incluir un mensaje como parte de la revisión.
 
-11. Cambia a la pestaña **Revisar y crear** para finalizar la revisión de acceso.
+11. Cambia a la pestaña **Siguiente: revisar + crear** para finalizar la revisión de acceso.
 
 12. Pon a la revisión de acceso el nombre **SC300 prueba de revisión de acceso**.
 

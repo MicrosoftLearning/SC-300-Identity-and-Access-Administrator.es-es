@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 17: detectar aplicaciones de Defender for Cloud Apps y aplicar restricciones
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Microsoft Defender for Cloud Apps utiliza registros del tráfico de red para identificar las aplicaciones a las que acceden los usuarios.  Los registros de tráfico de firewalls locales proporcionarán un informe de instantáneas sobre las aplicaciones más comunes y los usuarios que acceden a estas aplicaciones.El tráfico desde dispositivos administrados se insertará en el panel de información general de detección de Microsoft Defender for Cloud Apps.
@@ -29,6 +31,11 @@ Microsoft Defender for Cloud Apps utiliza registros del tráfico de red para ide
 
 1. Podrás acceder a este sitio web.
 
+1. Cierre la pestaña de Dropbox.
+
+1. Vuelve a la pantalla de Defender for Cloud Apps y selecciona los tres puntos a la derecha de Dropbox.
+
+1. Elige **Autorizado** y después el botón **Siguiente**. 
 
 #### Tarea 2: restringir aplicaciones en Defender for Cloud Apps
 
@@ -38,9 +45,6 @@ Microsoft Defender for Cloud Apps utiliza registros del tráfico de red para ide
 
 1. Este proceso te permite bloquear aplicaciones que no están autorizadas en la directiva de tu empresa, lo que limita Shadow IT en tu organización.
 
-**Nota**: Hay un retraso entre no autorizar una aplicación y esa aplicación que se está bloqueando.
+**Nota**: hay un tiempo de espera entre que se desautoriza una aplicación y se bloquea. Es posible que tengas que esperar hasta 5 minutos.
 
 Una vez que la aplicación se ha bloqueado como no autorizada, la aplicación no será accesible a través del explorador, el explorador privado ni la descarga en un cliente que esté incorporado a MDE (Microsoft Defender para punto de conexión) integrado con Microsoft Defender for Cloud Apps.
-
-
-

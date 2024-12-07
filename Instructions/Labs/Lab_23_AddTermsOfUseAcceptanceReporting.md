@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Laboratorio 23: agregar los términos de uso y el informe de aceptación 
+# Laboratorio 23: agregar los términos de uso y el informe de aceptación
+
+### Tipo de inicio de sesión = Administración de Microsoft 365
 
 ## Escenario del laboratorio
 
@@ -82,26 +84,30 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
 14. En **Acceso condicional**, seleccione **Directiva personalizada**.
 
-    | Plantilla | Descripción |
-    |---|---|
-    | **Acceso a las aplicaciones en la nube para todos los invitados** | Se creará una directiva de acceso condicional para todos los invitados y todas las aplicaciones en la nube. Esta directiva afecta a Azure Portal. Una vez que se crea, es posible que se le pida cerrar e iniciar sesión. | 
-    |**Acceso a las aplicaciones en la nube para todos los usuarios** | Se creará una directiva de acceso condicional para todos los usuarios y todas las aplicaciones en la nube. Esta directiva afecta a Azure Portal. Una vez que se crea, se le pedirá que cierre e inicie sesión. |
-    | **Directiva personalizada** | Seleccione los usuarios, los grupos y las aplicaciones a los que se aplicarán estos términos de uso. |
-    | **Crear directiva de acceso condicional posteriormente** | Estos términos de uso aparecerán en la lista de control de concesiones al crear una directiva de acceso condicional. |
+ - Opciones posibles y cuándo usarlas:
 
-    **IMPORTANTE**: Los controles de la directiva de acceso condicional (incluidos los términos de uso) no admiten el cumplimiento en las cuentas de servicio. Se recomienda excluir todas las cuentas de servicio de la directiva de acceso condicional.
+  | Plantilla | Descripción |
+  |---|---|
+  | **Acceso a las aplicaciones en la nube para todos los invitados** | Se creará una directiva de acceso condicional para todos los invitados y todas las aplicaciones en la nube. Esta directiva afecta a Azure Portal. Una vez que se crea, es posible que se le pida cerrar e iniciar sesión. | 
+  |**Acceso a las aplicaciones en la nube para todos los usuarios** | Se creará una directiva de acceso condicional para todos los usuarios y todas las aplicaciones en la nube. Esta directiva afecta a Azure Portal. Una vez que se crea, se le pedirá que cierre e inicie sesión. |
+  | **Directiva personalizada** | Seleccione los usuarios, los grupos y las aplicaciones a los que se aplicarán estos términos de uso. |
+  | **Crear directiva de acceso condicional posteriormente** | Estos términos de uso aparecerán en la lista de control de concesiones al crear una directiva de acceso condicional. |
 
-    Las directivas personalizadas de acceso condicional permiten términos de uso pormenorizados, hasta una aplicación de nube o un grupo de usuarios específicos. Para obtener más información, vea [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
+  **IMPORTANTE**: Los controles de la directiva de acceso condicional (incluidos los términos de uso) no admiten el cumplimiento en las cuentas de servicio. Se recomienda excluir todas las cuentas de servicio de la directiva de acceso condicional.
+
+  Las directivas personalizadas de acceso condicional permiten términos de uso pormenorizados, hasta una aplicación de nube o un grupo de usuarios específicos. Para obtener más información, vea [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
 15. Cuando haya finalizado, seleccione **Crear**.
 
     ![Imagen de pantalla que muestra la página Nuevos términos de uso con las opciones configuradas resaltadas](./media/lp4-mod1-new-terms-of-use-create.png)
 
+#### Tarea continua 1: Crear la directiva de acceso condicional
+
 16. Cuando se creen los términos de uso, se le redirigirá automáticamente a la página Directiva de acceso condicional. En la página, en el cuadro **Nombre**, escriba **Aplicar CDU**.
 
 17. En **Asignaciones**, selecciona **Identidades de usuario**.
 
-18. En la pestaña Incluir, seleccione la casilla **Usuarios y grupos**.
+18. En la pestaña Incluir elige **Seleccionar usuarios y grupos**, luego selecciona la casilla **Usuarios y grupos**.
 
 19. En el panel Seleccionar, selecciona **Adele Vance** para probar la directiva de términos de uso.
 
@@ -113,7 +119,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
 22. En **Controles de acceso**, seleccione **Conceder**.
 
-23. En el panel de concesión, seleccione **Términos de uso de prueba** y, a continuación, seleccione **Seleccionar**.
+23. En el panel Conceder, selecciona **Términos de uso de Contoso** y después selecciona **Seleccionar**.
 
 24. En **Habilitar directiva**, seleccione **Activar**.
 

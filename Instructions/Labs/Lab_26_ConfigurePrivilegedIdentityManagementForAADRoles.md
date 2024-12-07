@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 26: configurar Privileged Identity Management para roles de Microsoft Entra
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Un administrador de roles con privilegios puede personalizar Privileged Identity Management (PIM) en su organización de Microsoft Entra, incluido cómo cambiar la experiencia de un usuario que va a activar una asignación de roles apta. Debes familiarizarte con la configuración de PIM.
@@ -55,7 +57,7 @@ Si se establecen varios aprobadores, la aprobación se completa en cuanto uno de
 
 5. Una vez que haya especificado la configuración del rol, seleccione **Actualizar** para guardar los cambios.
 
-### Ejercicio 2: PIM con roles de Microsoft Entra
+### Ejercicio 2: usa PIM para asignar roles de Microsoft Entra
 
 #### Tarea 1: asignar un rol
 

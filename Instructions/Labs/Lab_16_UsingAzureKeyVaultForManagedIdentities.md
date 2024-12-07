@@ -7,7 +7,7 @@ lab:
 
 # Laboratorio 16: usar Azure Key Vault para identidades administradas
 
-**Nota:** este laboratorio requiere un pase para Azure. Consulta el laboratorio 00 para obtener instrucciones.
+### Tipo de inicio de sesión = Inicio de sesión de recurso de Azure
 
 ## Escenario del laboratorio
 
@@ -17,29 +17,11 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
 ### Ejercicio 1: Uso de Azure Key Vault para administrar identidades de máquina virtual
 
-#### Tarea 1: Creación de una máquina virtual
-
-1. Ve a [https://portal.azure.com](https://portal.azure.com)
-
-1. Seleccione **+ Crear un recurso**.
-
-1. Escribe **Windows 11** en el campo de búsqueda de la barra de búsqueda de Marketplace.
-
-1. Selecciona **Windows 11** y en la lista desplegable, selecciona **Windows 11 Empresas, versión 21H2**. Luego, elija **Crear**.
-
-1. Tendrás que crear un nombre de usuario y una contraseña de administrador para la máquina virtual en la pestaña de conceptos básicos.
-
-1. En la pestaña **Administración**, marca la casilla **Habilitar la identidad administrada asignada por el sistema**.
-
-1. Pase por el resto de la experiencia de creación de una máquina virtual. 
-
-1. Seleccione Crear.
-
-#### Tarea 2: crear un almacén de claves
+#### Tarea 1: Crear un almacén de claves
 
 1. Inicia sesión en [https://portal.azure.com]( https://portal.azure.com) con una cuenta de administrador global.
 
-1. En la parte superior de la barra de navegación izquierda, seleccione Crear un recurso.
+1. En la parte superior de la barra de navegación izquierda, selecciona **+ Crear recurso**.
 
 1. En el cuadro de texto Buscar en Marketplace, escribe **almacén de claves**.  
 
@@ -50,19 +32,42 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 1. Rellena toda la información necesaria, tal como se muestra a continuación. Asegúrate de elegir la suscripción que vas a usar para este laboratorio.
     **Nota**: Los nombres del almacén de claves deben ser únicos. Busca una marca de verificación verde a la derecha del campo.
 
- - **Grupo de recursos**: sc300KeyVaultrg
+ - **Grupo de recursos**: rgSC300KeyVault
  - **Nombre del almacén de claves** - *anyuniquevalue*
  - En la página **Configuración de acceso**, selecciona el botón de radio **Directiva de acceso de Key Vault**.
 1. Seleccione **Revisar + crear**.
 
 1. Seleccione **Crear**.
 
+#### Tarea 2: Crear una máquina virtual
+
+1. Seleccione **+ Crear un recurso**.
+
+1. Escribe **Windows 11** en el campo de búsqueda de la barra de búsqueda de Marketplace.
+
+1. Selecciona **Windows 11** y en la lista desplegable, selecciona **Windows 11 Empresas, versión 22H2**. Luego, elija **Crear**.
+
+  | Campo | Valores |
+  | :--   | :--    |
+  | Nombre de VM | vmKeyVault |
+  | Opciones de disponibilidad | No se requiere redundancia de la infraestructura |
+  | Nombre de usuario administrador | adminKeyVault |
+  | Contraseña | Establece una contraseña segura que puedas recordar |
+  | Licencias | Confirma que tienes una licencia válida |
+
+1. Usa el botón **Siguiente** para ir a la pestaña **Administración**.
+
+1. En la pestaña **Administración**, marca la casilla junto a **Habilitar la identidad administrada asignada por el sistema**.
+
+1. Pase por el resto de la experiencia de creación de una máquina virtual. 
+
+1. Elige **Revisar + crear** y luego selecciona **Crear**.
 
 #### Tarea 3: crear un secreto
 
 1. Vaya al almacén de claves recién creado.
 
-1. Seleccione **Secrets** (Secretos).
+1. Abre **Objetos** en el menú de la izquierda y luego selecciona **Secretos**.
 
 1. Seleccione **+ Generar/Importar**.
 
@@ -80,17 +85,21 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
 1. Selecciona **Directivas de acceso** en el menú de la izquierda.
 
-1. Seleccione **+ Create** (+ Crear).
+1. Selecciona **+ Crear**.
 
-1. En la sección Agregar directiva de acceso que se encuentra en Configurar a partir de una plantilla (opcional), elija Administración de secretos en el menú desplegable.
+1. En la sección Agregar directiva de acceso, en Configurar a partir de una plantilla (opcional), elige **Administración de secretos** en el menú desplegable.
 
-1. En **Seleccionar entidad de seguridad**, selecciona **No se ha seleccionado ninguno** para abrir la lista de entidades de seguridad que quieres seleccionar. En el campo de búsqueda, escribe el nombre de la máquina virtual que has creado en la tarea 2.  Seleccione la máquina virtual de la lista de resultados y elija Seleccionar.
+1. Usa el botón Siguiente para ir a la pestaña **Entidad de seguridad**.
 
-1. Seleccione **Agregar**.
+1. En el campo de búsqueda, escribe el nombre de la máquina virtual que has creado en la tarea 2: **vmKeyVault**.  Seleccione la máquina virtual de la lista de resultados y elija Seleccionar.
 
-1. Seleccione **Guardar**.
+1. Usa el botón Siguiente para ir a la pestaña **Revisar + crear**.
+
+1. Seleccione **Crear**.
 
 #### Tarea 5: acceder a datos con el secreto de Key Vault con PowerShell
+
+1. Ve a **vmKeyVault** y usa RDP para conectarte a tu máquina virtual como **adminKeyVault**.
 
 1. En la máquina virtual del laboratorio, abre PowerShell.  
 
@@ -107,6 +116,9 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
     ```
 
 1. Usa el comando Invoke-WebRequest de PowerShell para recuperar el secreto que has creado anteriormente en Key Vault y puntúa el token de acceso en el encabezado Autorización.  Necesitará la dirección URL de su almacén de claves, que se encuentra en la sección de Información esencial de la página Introducción del almacén de claves.  Recordatorio: el URI de Key Vault se encuentra en la pestaña Información general.
+
+  - URI de Key Vault: obtención de la página de información general de almacenes de claves de Azure Portal
+  - Nombre secreto: obtener de la página Objetos: secretos del almacén de claves
 
     ```
     Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}

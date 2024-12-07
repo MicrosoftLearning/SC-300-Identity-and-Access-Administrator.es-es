@@ -6,11 +6,22 @@ lab:
 ---
 
 # Inquilinos de WWL: términos de uso
-Si se te proporciona un inquilino porque estás realizando un curso dirigido por un instructor, ten en cuenta que ese inquilino está disponible únicamente como apoyo para los laboratorios prácticos del curso. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios prácticos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no es apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento. 
 
+Si se te proporciona un inquilino porque estás realizando un curso dirigido por un instructor, ten en cuenta que ese inquilino está disponible únicamente como apoyo para los laboratorios interactivos del curso. Los inquilinos no deben compartirse ni usarse para otros fines que no sean los de los laboratorios interactivos. El inquilino usado en este curso es un inquilino de prueba y no se puede usar ni tener acceso a él después de que la clase haya terminado y no es apto para la extensión. Los inquilinos no se deben convertir a suscripciones de pago. Los inquilinos obtenidos como parte de este curso siguen siendo propiedad de Microsoft Corporation y nos reservamos el derecho de acceso y recuperación en cualquier momento.
+
+# Dos opciones de inicio de sesión diferentes
+
+Este laboratorio tiene dos opciones de inicio de sesión diferentes, que se usan para diferentes partes del laboratorio. Un estilo de inicio de sesión es para laboratorios que requieren recursos de Azure, el otro es para laboratorios que solo necesitan recursos de Microsoft Entra y Microsoft 365. Tipos de registro:
+
+  - Inicio de sesión basado en recursos de Azure
+  - Inicio de sesión del inquilino de Microsoft 365 + E5
+
+Se te indicará qué nombre de usuario debes usar en cada uno de los laboratorios.
 
 
 # Laboratorio 1: administrar roles de usuario
+
+### Tipo de inicio de sesión = Administración de Microsoft 365
 
 ## Escenario del laboratorio
 
@@ -22,9 +33,10 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
 
 #### Tarea 1: agregar un nuevo usuario
 
-1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) como administrador global
+1. Inicia sesión en  [https://entra.microsoft.com](https://entra.microsoft.com) como Administrador global.
+ - Usa la cuenta **Administración de Microsoft 365**.
 
-2. En el menú de la izquierda, selecciona **Identidad**.
+2. En el menú de la izquierda selecciona **Identidad**.
 
 3. En el menú de navegación de la izquierda, en **Usuarios**, selecciona **Todos los usuarios** y después **+ Nuevo usuario** y **Crear nuevo usuario**.
 
@@ -61,13 +73,13 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
     | New Password| Escribe una contraseña única y segura |
     | Confirm Password| Vuelve a introducir una contraseña única y segura |
 
-4. Si ves un **diálogo de recorrido**, selecciona el botón **Quizás más tarde**.
+4. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
 
-5. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
-7. Selecciona **+ Nueva aplicación**. Ten en cuenta que **+ Crear tu propia aplicación** no está disponible.
+5. Selecciona **+ Nueva aplicación**. Ten en cuenta que **+ Crear tu propia aplicación** no está disponible.
 
-9. Prueba seleccionando otras opciones como **Proxy de aplicación**, **Configuración de usuario** y otras para ver si **Chris Green** no tiene derechos.
-10. Selecciona el nombre **ChrisG** en la esquina superior derecha y cierra la sesión.
+6. Prueba seleccionando otra configuración como **Proxy de aplicación**, **Configuración de usuario** y otras para ver si **Chris Green** no tiene derechos.
+
+7. Selecciona el nombre **ChrisG** en la esquina superior derecha y cierra la sesión.
 
 
 ### Ejercicio 2: asignación de rol de administrador de aplicaciones y creación de una aplicación
@@ -276,24 +288,38 @@ Algunas cuentas de usuario de su organización no recibirán todos los productos
 
     **Advertencia**: para asignar una licencia a un usuario, el usuario debe tener asignada una ubicación de uso.
 
-6. Selecciona la opción **Licencias** del menú de la izquierda.
+6. Selecciona el elemento de menú **Licencias** del menú de la izquierda.
 
 7. Asegúrate de que Raul tiene "No se han encontrado asignaciones de licencia".
 
-8. Vuelve a **Todos los usuarios** en el menú de la izquierda, en **Identidad**, y selecciona **Usuarios**.
+#### Tarea 2: Agregar una licencia de Windows a Raul
 
-9. En la página Usuarios, selecciona **Raul Razo**.
+Tienes que agregar y quitar licencias a través del Centro de administración de Microsoft 365. Este es un cambio relativamente nuevo.
 
-10. En el panel de navegación izquierdo, seleccione **Licencias.**
+1. Abre una nueva pestaña en tu explorador.
 
-11. Selecciona el botón **+ Asignaciones**. 
+2. Conéctate al Centro de administración de Microsoft 365 en http://admin.microsoft.com.
 
-12. En la página Actualizar asignaciones de licencias, activa la casilla de una licencia de **Windows 10/11 Enterprise E3**.
+3. Inicia sesión con tu cuenta de administrador si se te solicita.
 
-    ![Imagen de pantalla que muestra la página Actualizar asignaciones de licencia y las opciones de licencia resaltadas](./media/lp1-mod2-assign-user-license-options.png)
+4. En el menú de la izquierda, selecciona **Facturación** y después selecciona **Licencias**.
 
-13. Cuando haya terminado, seleccione **Guardar**.
+5. Selecciona la licencia **Windows 10/11 Enterprise E3** de la lista.
 
-14. En la parte superior de la pantalla, selecciona **Inicio**, luego selecciona **Contoso**, **Usuario** y, finalmente, **Raul Razo**.
+6. Elige el elemento **+ Agregar licencia**.
 
-15. Observa que se ha asignado la licencia.
+7. Busca **Raul Razo** en la lista.
+
+8. Una vez que hayas agregado a Raúl, selecciona **Asignar**.
+
+9. Vuelve a la pestaña del explorador con el **Centro de administración Microsoft Entra** abierto.
+
+10. Vuelve a **Todos los usuarios** en el menú de la izquierda, en **Identidad**, y selecciona **Usuarios**.
+
+11. En la página Usuarios, selecciona **Raul Razo**.
+
+12. En el panel de navegación izquierdo, seleccione **Licencias.**
+
+13. Observa que se ha asignado la licencia.
+
+14. Puedes salir de la pantalla de licencia.

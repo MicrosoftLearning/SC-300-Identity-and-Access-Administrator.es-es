@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 19: registrar una aplicación
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 #### Tiempo estimado: 30 minutos
 
 ### Ejercicio 1: registrar una aplicación
@@ -27,8 +29,9 @@ El registro de la aplicación establece una relación de confianza entre la apli
 
     ![Imagen de pantalla que muestra la hoja Registrar una página de aplicación con el nombre y la configuración predeterminada resaltados.](./media/lp3-mod3-register-an-application.png)
 
-6. Cuando hayas terminado, accederás a la página **Aplicación de demostración**.
+6. Seleccionará el botón **Registrarse**.
 
+7. Cuando hayas terminado, accederás a la página **Aplicación de demostración**.
 
 #### Tarea 2: configurar opciones de la plataforma
 
@@ -56,7 +59,11 @@ Para agregar y modificar los URI de redirección de las aplicaciones registradas
     | Android| Introduce el  **nombre del paquete** de la aplicación, que puedes encontrar en el archivo AndroidManifest.xml, y genera e introduce el **hash de firma**. Al especificar estos valores, se genera un URI de redirección.|
     | Aplicaciones móviles y de escritorio| Selecciona uno de los  **URI de redirección sugeridos**  o especifica un  **URI de redirección personalizado**. En el caso de las aplicaciones de escritorio, se recomienda: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Seleccione esta plataforma para las aplicaciones móviles que no utilicen la biblioteca de autenticación de Microsoft (MSAL) más reciente o que no usen un agente. Seleccione también esta plataforma para las aplicaciones de escritorio.|
 
-5. Selecciona  **Configurar** para completar la configuración de la plataforma.
+5. Selecciona **Web** como plataforma.
+
+6. Escribe `https://localhost` como URI de redireccionamiento.
+
+7. Selecciona  **Configurar** para completar la configuración de la plataforma.
 
 #### Tarea 3: agregar credenciales, certificados y secreto de cliente
 
@@ -75,20 +82,16 @@ Puede agregar certificados y secretos de cliente (una cadena) como credenciales 
 
 2. En  **Certificados y secretos**, selecciona  **+ Nuevo secreto de cliente**.
 
-3. Agregue una descripción para el secreto de cliente.
+3. Agrega una descripción para tu secreto de cliente y duración
 
-4. Seleccione una duración.
+ - Descripción = secreto de laboratorio sc300
+ - Duración = 90 días (3 meses)
 
-5. Seleccione **Agregar**.
+4. Seleccione **Agregar**.
 
-6. **Guarda el valor del secreto en el Bloc de notas** para su uso en el código de la aplicación cliente. La página Certificado y secretos mostrará el nuevo valor del secreto. Es importante que copies este valor, ya que solo se muestra esta vez; si actualizas la página y vuelves, solo se mostrará como un valor enmascarado.
+5. **Guarda el valor del secreto en el Bloc de notas** para su uso en el código de la aplicación cliente. La página Certificado y secretos mostrará el nuevo valor del secreto. Es importante que copies este valor, ya que solo se muestra esta vez; si actualizas la página y vuelves, solo se mostrará como un valor enmascarado.
 
-7. Omite las secciones  **Agregar un URI de redireccionamiento**  y  **Configurar la plataforma** . No es necesario configurar un URI de redireccionamiento para las API web, ya que ningún usuario inicia sesión de forma interactiva.
-
-8. Omite la sección  **Agregar las credenciales**  por ahora. La API necesitaría sus propias credenciales solo si accede a otra de nivel inferior, pero este escenario no se trata en este artículo.
-
-Una vez registrada la API web, está listo para agregar los ámbitos que el código de la API puede usar para proporcionar permisos pormenorizados a los consumidores de la API.
-
+Una vez registrada la aplicación web, estás listo para agregar los ámbitos que el código de la API puede usar para proporcionar permisos pormenorizados a los consumidores de la API.
 
 #### Tarea 5: agregar un ámbito
 
@@ -96,23 +99,21 @@ El código de las aplicaciones cliente solicita permiso para realizar operacione
 
 En primer lugar, siga estos pasos para crear un ámbito de ejemplo denominado Employees.Read.All:
 
-1. Inicie sesión en el centro de administración de Microsoft Entra.
+1. Selecciona  **Identidad**, después **Aplicación**  y por último selecciona  **Registros de aplicaciones**, y después selecciona el registro de aplicaciones de tu API.
 
-2. Si tienes acceso a varios inquilinos, usa el filtro  **Directorio + suscripción**  del menú superior para seleccionar el inquilino que contiene el registro de la aplicación cliente.
-
-3. Selecciona **Identidad**, después **Aplicación **  y, por último, selecciona **Registros de aplicaciones**y después selecciona el registro de aplicación de la API.
-
-4. Selecciona  **Exponer una API** y luego elige  **+ Agregar un ámbito**.
+2. Selecciona  **Exponer una API** y luego elige  **+ Agregar un ámbito**.
 
     ![Panel de exposición de una API durante el registro de una aplicación en Azure Portal](./media/portal-02-expose-api.png)
 
-5. Se te pedirá que establezcas un valor de  **URI de Id. de aplicación** si aún no has configurado uno. El URI de identificación de aplicación actúa como prefijo de los ámbitos a los que se hará referencia en el código de la API y debe ser único globalmente. Puedes usar el valor predeterminado proporcionado, que tiene el formato \<application-client-id\>, o especificar un URI más legible, como  `https://contoso.com/api`.
+3. Se te pedirá que establezcas un **URI de Id. de aplicación**. Establece el valor en **api://DemoAppAPI**
 
-6. Selecciona **Guardar y continuar**.
+  - Nota: el URI de Id. de aplicación actúa como prefijo de los ámbitos a los que se hará referencia en el código de la API y debe ser único globalmente. Puedes usar el valor predeterminado proporcionado, que tiene el formato api://<application-client-id\>, o especificar un URI más legible como `https://contoso.com/api`.
 
-6. Después, especifica los atributos del ámbito en el  **panel Agregar un ámbito**. Para este tutorial, puede usar los valores de ejemplo o especificar los suyos propios.
+4. Selecciona **Guardar y continuar**.
 
-    | Campo| Description| Ejemplo|
+5. Después, especifica los atributos del ámbito en el  **panel Agregar un ámbito**. Para este procedimiento paso a paso, usa los valores de la tercera columna: **Valor**.
+
+    | Campo| Descripción| Valor |
     | :--- | :--- | :--- |
     | Nombre de ámbito| Nombre del ámbito. Una convención de nomenclatura de ámbito común es resource.operation.constraint.| Employees.Read.All|
     | ¿Quién puede dar el consentimiento?| Si los usuarios pueden dar su consentimiento a este ámbito o si se requiere el consentimiento del administrador. Seleccione Solo administradores para permisos con más privilegios.| Administradores y usuarios|
@@ -148,17 +149,18 @@ A continuación, agregue otro ámbito de ejemplo denominado Employees.Write.All 
     | Nombre para mostrar del consentimiento del usuario| Ninguno (deje este campo en blanco)|
     | Descripción del consentimiento del usuario| Ninguno (deje este campo en blanco)|
 
-    >**Nota**: si has agregado correctamente los dos ámbitos de ejemplo descritos en las secciones anteriores, aparecerán en el panel **Exponer una API** del registro de la aplicación de API web, de forma similar a esta imagen:
+2. Asegúrate de que el Estado está en **Habilitado** y selecciona **Agregar ámbito**.
 
-    ![Captura de pantalla del panel Exponer una API que muestra dos ámbitos expuestos.](./media/portal-03-scopes-list.png)
+  - **Nota**: si has agregado correctamente los dos ámbitos de ejemplo descritos en las secciones anteriores, aparecerán en el panel **Exponer una API** del registro de la aplicación de API web, de forma similar a esta imagen:
 
-    Como se muestra en la imagen, la cadena completa de un ámbito es la concatenación de los valores de  **URI de Id. de aplicación**  de la API web y  **Nombre de ámbito** del ámbito.
+  ![Captura de pantalla del panel Exponer una API que muestra dos ámbitos expuestos.](./media/portal-03-scopes-list.png)
 
-        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+  Como se muestra en la imagen, la cadena completa de un ámbito es la concatenación de los valores de  **URI de Id. de aplicación**  de la API web y  **Nombre de ámbito** del ámbito.
 
+  **Nota**: por ejemplo, si el URI de Id. de aplicación de tu API web es `https://contoso.com/api` y el nombre del ámbito es Employees.Read.All, el ámbito completo es: `https://contoso.com/api/Employees.Read.All`
 
-        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
-    Una vez que el registro de una aplicación cliente tenga permiso para acceder a la API web, se puede emitir un token de acceso de OAuth 2.0 para el cliente mediante la plataforma de identidad de Microsoft. Cuando el cliente llama a la API web, presenta un token de acceso cuya demanda de ámbito (scp) se establece en los permisos especificados en el registro de la aplicación cliente. Puede exponer ámbitos adicionales posteriormente si es necesario. Tenga en cuenta que la API web puede exponer varios ámbitos asociados a varias operaciones. El recurso puede controlar el acceso a la API web en tiempo de ejecución, mediante la evaluación de las notificaciones de ámbito (scp) del token de acceso de OAuth 2.0 recibido.
+  **Nota**: después, configurarás el registro de una aplicación cliente con acceso a tu API web y a los ámbitos que hayas definido mediante los pasos anteriores.
+  Una vez que el registro de una aplicación cliente tenga permiso para acceder a la API web, se puede emitir un token de acceso de OAuth 2.0 para el cliente mediante la plataforma de identidad de Microsoft. Cuando el cliente llama a la API web, presenta un token de acceso cuya demanda de ámbito (scp) se establece en los permisos especificados en el registro de la aplicación cliente. Puede exponer ámbitos adicionales posteriormente si es necesario. Tenga en cuenta que la API web puede exponer varios ámbitos asociados a varias operaciones. El recurso puede controlar el acceso a la API web en tiempo de ejecución, mediante la evaluación de las notificaciones de ámbito (scp) del token de acceso de OAuth 2.0 recibido.
 
 
 ### Ejercicio 2: crear un rol personalizado para administrar el registro de aplicaciones
@@ -171,7 +173,7 @@ Debes crear un nuevo rol personalizado para la administración de aplicaciones. 
 
 2. Abre el menú del portal y selecciona  **Microsoft Entra ID**.
 
-3. En el menú izquierdo, en **Identidad**, selecciona **Roles y administradores**.
+3. En el menú de la izquierda, en **Identidad**, selecciona **Roles y administradores**.
 
 4. Después, selecciona el elemento **Roles y administradores** y luego selecciona **+ Nuevo rol personalizado**.
 
@@ -196,5 +198,7 @@ Debes crear un nuevo rol personalizado para la administración de aplicaciones. 
 
     **Por qué elegir estos dos**: para el aprovisionamiento de la aplicación estos dos elementos son los permisos mínimos necesarios para habilitar y aplicar el inicio de sesión único para la aplicación o la entidad de servicio que se está creando y poder asignar la aplicación empresarial a un conjunto de usuarios o grupos.  También se pueden conceder otros permisos.  Puedes obtener una lista completa de los permisos disponibles en `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
 
-10. Revise los valores y luego seleccione **Crear**.
+10. Seleccione **Siguiente**.
+
+11. Revise los valores y luego seleccione **Crear**.
 

@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 14: habilitar el inicio de sesión y las directivas de riesgo de los usuarios
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Como capa adicional de seguridad, debes habilitar y configurar las directivas de riesgo de inicios de sesión y de usuarios de tu organización de Microsoft Entra.
@@ -48,7 +50,7 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 13. Active la casilla **Requerir cambio de contraseña** y seleccione **Listo**.
 
-14. En **Cumplimiento de directiva**, selecciona **Habilitar** y luego **Guardar**.
+14. En **Cumplimiento de directivas**, selecciona **Habilitado** y después selecciona **Guardar**.
 
 #### Tarea 2: habilitar la directiva de riesgo de inicio de sesión
 
@@ -64,4 +66,4 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 6. Active la casilla **Requerir autenticación multifactor** y, a continuación, seleccione **Listo**.
 
-7. En **Cumplimiento de directiva**, selecciona **Habilitar** y luego **Guardar**.
+7. En **Cumplimiento de directivas**, selecciona **Habilitado** y después selecciona **Guardar**.

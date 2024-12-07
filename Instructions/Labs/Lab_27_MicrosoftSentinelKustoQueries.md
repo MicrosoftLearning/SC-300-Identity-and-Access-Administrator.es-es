@@ -7,7 +7,7 @@ lab:
 
 # Laboratorio 27: consultas Kusto de Microsoft Sentinel para orígenes de datos de Microsoft Entra
 
-**Nota:** este laboratorio requiere un pase para Azure. Consulta el laboratorio 00 para obtener instrucciones.
+### Tipo de inicio de sesión = Inicio de sesión de recurso de Azure
 
 ## Escenario del laboratorio
 
@@ -40,7 +40,6 @@ Microsoft Sentinel es una solución SIEM y SOAR nativa de la nube de Microsoft.
 1. Si se te solicita, selecciona **Aceptar** para activar la prueba gratuita de Microsoft Sentinel.
 
 #### Tarea 2: Agregar Microsoft Entra ID como origen de datos
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. En **Microsoft Sentinel**, navega en el menú hasta **Administración de contenido** y selecciona **Centro de contenido**.
 

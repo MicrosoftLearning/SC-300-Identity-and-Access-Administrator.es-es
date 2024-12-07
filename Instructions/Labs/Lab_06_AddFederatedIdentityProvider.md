@@ -7,6 +7,8 @@ lab:
 
 # Laboratorio 06: agregar un proveedor de identidades federado
 
+### Tipo de inicio de sesión = Administración de Microsoft 365
+
 ## Escenario del laboratorio
 
 Tu empresa trabaja con muchos proveedores y, en ocasiones, necesitas agregar algunas cuentas de proveedor al directorio como invitado y permitirles usar tu cuenta de Google para iniciar sesión.
