@@ -156,9 +156,9 @@ Como parte de la configuración de seguridad más grande de tu empresa, debes pr
 
 9. En el panel Seleccionar, selecciona tu cuenta **Grady Archie** y luego selecciona **Seleccionar**.
 
-10. Seleccione **Aplicaciones en la nube o acciones**.
+10. Selecciona **Recursos de destino: no se ha seleccionado ningún recurso de destino**.
 
-11. Compruebe que **Aplicaciones en la nube** está seleccionado y, a continuación, seleccione **Aplicaciones**.
+11. En **Incluir**, asegúrate de que **Seleccionar recursos** esté seleccionado y luego elige **Ninguno** en la sección Seleccionar.
 
 12. En el panel Seleccionar, seleccione **Office 365** y, a continuación, **Seleccionar**.
 
