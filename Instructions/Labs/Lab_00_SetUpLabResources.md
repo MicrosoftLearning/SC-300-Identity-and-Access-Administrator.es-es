@@ -38,29 +38,3 @@ Las tareas de este ejercicio y los ejercicios de esta ruta de aprendizaje requie
 1. Actualice el explorador hasta ver Azure AD Premium P2 debajo del nombre de la organización. Puede tardar unos minutos.
 
 1. Si se produce algún problema y las características esperadas no están disponibles, es posible que tenga que cerrar sesión y volver a iniciarla en Microsoft Azure.
-
-#### Canjear el pase para Azure
-
-1. Abre un explorador y ve a: [www.microsoftazurepass.com](https://www.microsoftazurepass.com).
-
-1. Se recomienda cerrar todos los exploradores y abrir una nueva sesión de explorador InPrivate. Otros inicios de sesión pueden persistir y provocar errores durante el paso de activación.
-
-1. Seleccione el botón **Empezar** para comenzar.
-
-1. Comprueba que el nombre de usuario es el mismo que el de la cuenta del proveedor del laboratorio.
-
-1. Introduce el código del vale del pase para Azure en el campo **Introducir código promocional**. Verifica que eres humano si el sistema lo solicita. 
-
-1. Introduce la información de la dirección en los campos **Perfil**.
-    - **Línea de dirección 1**: 1 Microsoft Way
-    - **Ciudad**: Redmond
-    - **Estado**: Washington
-    - **Código postal**: 98052
-
-1. Selecciona la casilla para aceptar el acuerdo de suscripción y selecciona **Registrarme**.
-
-    ![Acepta el acuerdo de suscripción y regístrate](media/azurepassactivation.png)
-
-1. Ve a [https://portal.azure.com](https://portal.azure.com) e inicia sesión con una cuenta de administrador global para el directorio.
-
-1. Ve a **Suscripciones** y comprueba que el estado de **Pase para Azure - Patrocinio** esté **Activo**. 

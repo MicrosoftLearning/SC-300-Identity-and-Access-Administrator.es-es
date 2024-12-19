@@ -7,16 +7,13 @@ lab:
 
 # Laboratorio 07: OPCIONAL --- agregar identidad híbrida con Microsoft Entra Connect
 
-
-
 # Este laboratorio solo funcionará en un entorno que no sea de host de laboratorio. Si quieres probarlo con una cuenta personal, debería funcionar. No podrás actuar dentro de la clase.
 
 
 
 
-**Nota:** este laboratorio requiere un pase para Azure. Consulta el laboratorio 00 para obtener instrucciones.
 
-**Nota 2**: Este laboratorio se denomina Opcional.  Tarda al menos 1 hora en completarse y requiere que se detallen los pasos del laboratorio.  No dudes en computarlo cuando el tiempo lo permita.  Si tu empresa ya ha configurado su configuración híbrida o no tienes previsto usar Microsoft Entra Connect, salta este laboratorio.
+**Nota**: Este laboratorio se denomina Opcional.  Tarda al menos 1 hora en completarse y requiere que se detallen los pasos del laboratorio.  No dudes en computarlo cuando el tiempo lo permita.  Si tu empresa ya ha configurado su configuración híbrida o no tienes previsto usar Microsoft Entra Connect, salta este laboratorio.
 
 ## Escenario del laboratorio
 
@@ -38,7 +35,7 @@ Tu empresa tiene servicios de dominio de Active Directory locales.  Les gustarí
 
    **Nota:** La configuración base de 3 VM aprovisiona un controlador de dominio de Active Directory de Windows Server 2016 denominado DC1 con el nombre de dominio que especifiques y un servidor miembro de dominio denominado APP1 que ejecuta Windows Server 2016. También ofrece una opción para aprovisionar una máquina virtual cliente que ejecuta Windows 10, pero no la usaremos en nuestro laboratorio (básicamente debido a los requisitos de licencia aplicables al ejecutar máquinas virtuales de Windows 10 en Azure). El servidor miembro del dominio (APP1) ha instalado automáticamente .NET 4.5 e IIS.  
    
-   **Nota:** La máquina virtual necesaria para este laboratorio es **DC1**.  Si usas un Pase para Azure, hay una limitación de 2 máquinas virtuales, por lo que es posible que se produzca un error en la máquina virtual cliente.  No la necesitaremos en este laboratorio.
+   **Nota:** La máquina virtual necesaria para este laboratorio es **DC1**.
 
 3. En la página **Implementación personalizada**, especifica la siguiente configuración y luego selecciona **Revisar y crear** y luego **Crear**.
 
