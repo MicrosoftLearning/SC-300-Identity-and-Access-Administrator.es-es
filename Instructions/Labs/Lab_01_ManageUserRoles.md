@@ -134,8 +134,8 @@ Esta tarea usará un método alternativo para quitar el rol asignado; usará la 
 2. En el cuadro de búsqueda, escribe **Roles** y después inicia los roles y la administración de Microsoft Entra ID.
 3. En  **Todos los roles** de  **Roles y administradores**, selecciona el rol **Administrador de aplicaciones** de la lista.
 4. En la página **Administrador de aplicaciones | Asignaciones** deberías ver el nombre Chris Green en la lista.
-5. Coloca una marca de verificación en el cuadro junto a Chris Green.
-6. Selecciona **X Quitar asignaciones** de las opciones de la parte superior del cuadro de diálogo.
+5. Desplázate hasta la derecha sobre Chris Green.
+6. Selecciona **Quitar** de las opciones de la parte superior del diálogo.
 7. Responde **Sí** cuando se abra el cuadro de confirmación.
 8. Cierra la pantalla.
 

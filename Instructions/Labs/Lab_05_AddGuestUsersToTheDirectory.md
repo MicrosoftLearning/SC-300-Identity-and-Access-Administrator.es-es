@@ -90,7 +90,7 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
 
 #### Tarea 2: invitar a usuarios invitados con PowerShell
 
-1. Abra PowerShell como administrador.Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
+1. Abra PowerShell como administrador. Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
 
 **Nota:** Debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, aparecerá una versión en la parte superior de la pantalla. Si estás ejecutando una versión anterior, actualízala o se producirá un error en esta parte del laboratorio.
 

@@ -109,7 +109,7 @@ Tienes que agregar y quitar licencias a través del Centro de administración de
 
    ![Imagen de pantalla del sitio web de Office.com con Delia Dennis que inició sesión con las aplicaciones de office disponibles, ya que hay asignada una licencia.](./media/delia-office-license.png)
     
-5. Cierre la ventana del explorador. 
+5. Cierre la ventana del explorador.
 
 ### Ejercicio 2: Crear un grupo de Microsoft 365 en Microsoft Entra ID
 
