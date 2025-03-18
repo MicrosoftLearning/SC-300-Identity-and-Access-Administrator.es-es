@@ -1,45 +1,45 @@
 ---
 lab:
-  title: '19: registrar una aplicación'
+  title: '19: Registro de una aplicación'
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
 ---
 
-# Laboratorio 19: registrar una aplicación
+# Laboratorio 19: Registro de una aplicación
 
 ### Tipo de inicio de sesión = Administración de Microsoft 365
 
 #### Tiempo estimado: 30 minutos
 
-### Ejercicio 1: registrar una aplicación
+### Ejercicio 1: Registro de una aplicación
 
-#### Tarea 1: registrar una aplicación
+#### Tarea 1: Registro de una aplicación
 
 El registro de la aplicación establece una relación de confianza entre la aplicación y la plataforma de identidad de Microsoft. La confianza es unidireccional: la aplicación confía en la plataforma de identidad de Microsoft y no al revés.
 
-1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con una cuenta de administrador global.
+1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con la cuenta de Administrador proporcionada.
 
 2. Abre el menú del portal y selecciona  **Microsoft Entra ID**.
 
-3. En el menú **Identidad**, en **Aplicaciones**, seleccione **Registros de aplicaciones**.
+3. En el menú **Identidad**, en **Aplicaciones**, selecciona **Registros de aplicaciones**.
 
-4. En el menú de la página **Registros de aplicaciones**, seleccione **+ Nuevo registro**.
+4. En el menú de la página **Registros de aplicaciones**, selecciona **+ Nuevo registro**.
 
-5. En la hoja **Registrar una aplicación**, registre una aplicación denominada **Aplicación de demostración** con los valores predeterminados. No es necesario que escriba el URI de redirección.
+5. En la hoja **Registrar una aplicación**, registra una aplicación denominada **Aplicación de demostración** con los valores predeterminados. No es necesario que escribas el URI de redirección.
 
     ![Imagen de pantalla que muestra la hoja Registrar una página de aplicación con el nombre y la configuración predeterminada resaltados.](./media/lp3-mod3-register-an-application.png)
 
-6. Seleccionará el botón **Registrarse**.
+6. Selecciona el botón **Registrarse**.
 
 7. Cuando hayas terminado, accederás a la página **Aplicación de demostración**.
 
-#### Tarea 2: configurar opciones de la plataforma
+#### Tarea 2: Configuración de opciones de la plataforma
 
 La configuración de cada tipo de aplicación, incluyendo los URI de redirección, se realiza en  **Configuraciones de la plataforma**  en Azure Portal. Algunas plataformas, como las de  **aplicaciones web**  y  **aplicaciones de página única**, requieren que se especifique manualmente un URI de redirección. Para otras plataformas, como las de aplicaciones móviles y de escritorio, es posible elegir entre los URI de redirección que se generan automáticamente al configurar las demás opciones.
 
 Para configurar los valores de la aplicación según la plataforma o el dispositivo de destino:
 
-Para agregar y modificar los URI de redirección de las aplicaciones registradas, especifique los parámetros en la opción Configuración de la plataforma.
+Para agregar y modificar los URI de redirección de las aplicaciones registradas, especifica los parámetros en la opción Configuración de la plataforma.
 
 1. En el Centro de administración Microsoft Entra, en  **Registros de aplicaciones**, selecciona la aplicación.
 
@@ -53,11 +53,11 @@ Para agregar y modificar los URI de redirección de las aplicaciones registradas
 
     | Plataforma| Parámetros de configuración|
     | :--- | :--- |
-    | Web| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Seleccione esta plataforma para las aplicaciones web estándar que se ejecuten en un servidor.|
-    | Aplicación de una sola página| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Seleccione esta plataforma si va a desarrollar una aplicación web de cliente en JavaScript, o bien con un marco de trabajo como Angular, Vue.js, React.js o Blazor WebAssembly.|
+    | Web| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Selecciona esta plataforma para las aplicaciones web estándar que se ejecuten en un servidor.|
+    | Aplicación de una sola página| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Selecciona esta plataforma si va a desarrollar una aplicación web de cliente en JavaScript, o bien con un marco de trabajo como Angular, Vue.js, React.js o Blazor WebAssembly.|
     | iOS/macOS| Introduce el **Id. del paquete** de la aplicación, que se encuentra en XCode en *Info.plist*  o en Configuración de compilación. Al especificar un ID de agrupación, se genera un URI de redirección.|
     | Android| Introduce el  **nombre del paquete** de la aplicación, que puedes encontrar en el archivo AndroidManifest.xml, y genera e introduce el **hash de firma**. Al especificar estos valores, se genera un URI de redirección.|
-    | Aplicaciones móviles y de escritorio| Selecciona uno de los  **URI de redirección sugeridos**  o especifica un  **URI de redirección personalizado**. En el caso de las aplicaciones de escritorio, se recomienda: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Seleccione esta plataforma para las aplicaciones móviles que no utilicen la biblioteca de autenticación de Microsoft (MSAL) más reciente o que no usen un agente. Seleccione también esta plataforma para las aplicaciones de escritorio.|
+    | Aplicaciones móviles y de escritorio| Selecciona uno de los  **URI de redirección sugeridos**  o especifica un  **URI de redirección personalizado**. En el caso de las aplicaciones de escritorio, se recomienda: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Selecciona esta plataforma para las aplicaciones móviles que no utilicen la biblioteca de autenticación de Microsoft (MSAL) más reciente o que no usen un agente. Selecciona también esta plataforma para las aplicaciones de escritorio.|
 
 5. Selecciona **Web** como plataforma.
 

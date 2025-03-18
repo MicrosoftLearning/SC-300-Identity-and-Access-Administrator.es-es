@@ -1,13 +1,13 @@
 ---
 lab:
-  title: '08: habilitar la autenticación multifactor'
+  title: '08: Habilitación de la autenticación multifactor'
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# Laboratorio 08: habilitar la autenticación multifactor
+# Laboratorio 08: Habilitación de la autenticación multifactor
 
-### Tipo de inicio de sesión = Administración de Microsoft 365
+### Tipo de inicio de sesión = Inicio de sesión del inquilino de Microsoft 365 + E5
 
 ## Escenario del laboratorio
 
@@ -17,9 +17,9 @@ Para mejorar la seguridad de tu organización, se te ha indicado que habilites l
 
 **IMPORTANTE**: se requiere una licencia de Microsoft Entra ID Premium para este ejercicio.
 
-### Ejercicio 1: revisar y habilitar la autenticación multifactor en Azure
+### Ejercicio 1: Revisión y habilitación de la autenticación multifactor en Azure
 
-#### Tarea 1: revisar las opciones de autenticación multifactor de Azure
+#### Tarea 1: Revisión de las opciones de autenticación multifactor de Azure
 
 1. Ve a [https://entra.microsoft.com](https://entra.microsoft.com) e inicia sesión con una cuenta de administrador global para el directorio.
 
@@ -39,9 +39,9 @@ Para mejorar la seguridad de tu organización, se te ha indicado que habilites l
 
     Aquí es donde se seleccionan los métodos de autenticación admitidos, todos ellos seleccionados en la pantalla anterior.
 
-    También puede habilitar o deshabilitar aquí las contraseñas de aplicación, que permiten a los usuarios crear contraseñas de cuenta únicas para las aplicaciones que no admiten la autenticación multifactor. Esta característica permite que el usuario se autentique con su identidad de Microsoft Entra mediante otra contraseña específica para esa aplicación.
+    También puedes habilitar o deshabilitar aquí las contraseñas de aplicación, que permiten a los usuarios crear contraseñas de cuenta únicas para las aplicaciones que no admiten la autenticación multifactor. Esta característica permite que el usuario se autentique con su identidad de Microsoft Entra mediante otra contraseña específica para esa aplicación.
 
-#### Tarea 2: configurar reglas de acceso condicional para MFA para Delia Dennis
+#### Tarea 2: Configuración de reglas de acceso condicional para MFA para Delia Dennis
 
 A continuación se verá cómo configurar las reglas de directivas de acceso condicional que aplicarán MFA para los usuarios invitados que accedan a aplicaciones específicas en la red.
 
@@ -63,28 +63,29 @@ A continuación se verá cómo configurar las reglas de directivas de acceso con
 5. En Recursos de destino, selecciona **No se ha seleccionado ningún recurso de destino**.
 
    - En la lista desplegable, asegúrate de que **las aplicaciones en la nube** estén seleccionadas.
-   - En Incluir, marca **Todas las aplicaciones en la nube** y ten en cuenta la advertencia sobre el bloqueo. 
-   - Ahora, en la sección Seleccionar, elige el elemento **Ninguno**.
+   - En Incluir, marca **Recursos (anteriormente aplicaciones en la nube)** y ten en cuenta la advertencia sobre el bloqueo. 
+   - Ahora, en la sección Incluir, elige el elemento **Seleccionar recursos**.
+   - En la sección **Seleccionar**, selecciona el vínculo **Ninguno**.
    - En el cuadro de diálogo recién abierto, elige **Office 365**.
       - **Recordatorio:** en un laboratorio anterior le dimos a Delia Dennis una licencia de Office 365 e iniciamos sesión para asegurarnos de que funcionaba.
    - Elige **Seleccionar**.
 
-6. Revise la sección Condiciones.
+6. Elige una ubicación de red en la sección Condiciones y, a continuación, selecciona **No configurado**.
 
-   - Elige **Sí** en el control deslizante de configuración.
+   - En la sección **Condiciones**, elige el vínculo **0 condiciones seleccionadas**.
+   - En la parte inferior del menú recién abierto, busca la sección **Ubicaciones** y selecciona **No configurado**.
+   - Elige **Sí** para el elemento **Configurar**.
    - Selecciona **Cualquier red o ubicación**.
 
-7. En **Controles de acceso**, busca la sección **Conceder** y selecciona **0 controles seleccionados**.
+7. En **Controles de acceso**, busca la sección **Conceder** y selecciona el vínculo **0 controles seleccionados**.
 
-8. Activa la casilla **Requerir autenticación multifactor** para aplicar MFA.
+   - Activa la casilla **Requerir autenticación multifactor** para aplicar MFA.
+   - Asegúrate de que la opción **Requerir todos los controles seleccionados** esté seleccionada.
+   - Elige **Seleccionar**.
 
-9. Asegúrate de que la opción **Requerir todos los controles seleccionados** esté seleccionada.
+8. Establece **Habilitar directiva** en **Activado**.
 
-10. Elija **Seleccionar**.
-
-11. Establezca **Habilitar directiva** en **Activado**.
-
-12. Selecciona **Crear** para crear la directiva.
+9. Haz clic en el botón **Crear** para crear la directiva.
 
     ![Captura de pantalla en la que se muestra el cuadro de diálogo Agregar directiva completo](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 
@@ -93,7 +94,7 @@ A continuación se verá cómo configurar las reglas de directivas de acceso con
 #### Tarea 3: probar el inicio de sesión de Delia
 
 1. Abre una nueva ventana de exploración de InPrivate.
-2. Debes conectarte a https://www.office.com.
+2. Conectarse a https://www.office.com.
 3. Selecciona la opción de Iniciar sesión.
 4. Escribe **DeliaD@**`<<your domain address>>`.
 5. Escribe la contraseña = Escribe la contraseña de administrador global del inquilino (Nota: consulta la pestaña "Recursos de laboratorio" para recuperar la contraseña de administrador).

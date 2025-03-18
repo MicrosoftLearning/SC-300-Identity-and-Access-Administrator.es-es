@@ -1,11 +1,11 @@
 ---
 lab:
-  title: '13: implementar y probar una directiva de acceso condicional'
+  title: '13: Implementación y prueba de una directiva de acceso condicional'
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# Laboratorio 13: implementar y probar una directiva de acceso condicional
+# Laboratorio 13: Implementación y prueba de una directiva de acceso condicional
 
 ### Tipo de inicio de sesión = Administración de Microsoft 365
 
@@ -13,23 +13,23 @@ lab:
 
 Tu organización debe poder limitar el acceso de los usuarios a sus aplicaciones internas. Debes implementar una directiva de acceso condicional de Microsoft Entra.
 
-**Nota**: En el caso de las directivas de acceso condicional, puedes desactivar los valores predeterminados de seguridad, los puntos clave que se deben recordar son del entrenamiento.  Puedes encontrar información adicional sobre los valores predeterminados de seguridad en este vínculo: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
+**Nota**: en el caso de las directivas de acceso condicional, puedes desactivar los valores predeterminados de seguridad, los puntos clave que se deben recordar son del entrenamiento.  Puedes encontrar información adicional sobre los valores predeterminados de seguridad en este vínculo: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
 #### Tiempo estimado: 20 minutos
 
-### Ejercicio 1: Establecer una directiva de acceso condicional para impedir que DebraB acceda a Sway
+### Ejercicio 1: Establecimiento de una directiva de acceso condicional para impedir que DebraB acceda a Sway
 
-#### Tarea 1: Confirmar que DebraB tenga acceso a Sway
+#### Tarea 1: Confirmación de que DebraB tenga acceso a Sway
 
 
 1. Inicia una nueva ventana del explorador InPrivate.
-2. Conéctese a [https://www.office.com](https://www.office.com). 
+2. Conéctate a [https://www.office.com](https://www.office.com). 
 3. Cuando se te solicite, inicia sesión como DebraB:
 
   | Configuración | Valor |
   | :--- | :--- |
   | Nombre de usuario | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-  | Contraseña | Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña de administrador del inquilino). |
+  | Contraseña | Escribe la contraseña proporcionada. |
     
 4. Omite las pantallas de bienvenida e introducción.
 
@@ -37,9 +37,9 @@ Tu organización debe poder limitar el acceso de los usuarios a sus aplicaciones
 
 6. Cierra sesión en Office y cierra la sesión del explorador.
 
-#### Tarea 2: crear una directiva de acceso condicional
+#### Tarea 2: Creación de una directiva de acceso condicional
 
-El acceso condicional de Microsoft Entra es una característica avanzada de Microsoft Entra ID que te permite especificar directivas detalladas que controlan quién puede tener acceso a los recursos. Con el acceso condicional, puede proteger las aplicaciones mediante la limitación del acceso de los usuarios en función de aspectos como los grupos, el tipo de dispositivo, la ubicación y el rol.
+El acceso condicional de Microsoft Entra es una característica avanzada de Microsoft Entra ID que te permite especificar directivas detalladas que controlan quién puede tener acceso a los recursos. Con el acceso condicional, puedes proteger las aplicaciones mediante la limitación del acceso de los usuarios en función de aspectos como los grupos, el tipo de dispositivo, la ubicación y el rol.
 
 1. Ve a [https://entra.microsoft.com](https://entra.microsoft.com) e inicia sesión con una cuenta de administrador global para el directorio.
 
@@ -55,7 +55,7 @@ El acceso condicional de Microsoft Entra es una característica avanzada de Mic
 
 6. En el cuadro **Nombre**, escribe **Bloquear Sway para DebraB**.
 
-   **Nota:** Usa esta nomenclatura para ayudarte a reconocer rápidamente la directiva y su función.
+   **Nota:** usa esta nomenclatura para ayudarte a reconocer rápidamente la directiva y su función.
 
 7. En **Asignaciones**, selecciona **0 usuarios y grupos seleccionados**
 
@@ -71,25 +71,25 @@ El acceso condicional de Microsoft Entra es una característica avanzada de Mic
 
 13. En **Controles de acceso** en la sección **Concesión**, selecciona **0 controles seleccionados**.
 
-14. En el panel de concesión, seleccione **Bloquear acceso** y, a continuación, seleccione **Seleccionar**.
+14. En el panel de concesión, selecciona **Bloquear acceso** y, a continuación, selecciona **Seleccionar**.
 
-   **Nota**: Esta directiva se está configurando solo para el ejercicio y se usa para mostrar rápidamente una directiva de acceso condicional.
+   **Nota**: esta directiva se está configurando solo para el ejercicio y se usa para mostrar rápidamente una directiva de acceso condicional.
 
-15. En **Habilitar directiva**, seleccione **Activar** y después seleccione **Crear**.
+15. En **Habilitar directiva**, selecciona **Activar** y después selecciona **Crear**.
 
    ![Imagen de pantalla que muestra una nueva directiva de acceso condicional con la configuración de directiva resaltada](./media/lp2-mod3-create-conditional-access-policy.png)
 
-#### Tarea 3: probar la directiva de acceso condicional
+#### Tarea 3: Prueba de la directiva de acceso condicional
 
-Debe probar las directivas de acceso condicional para asegurarse de que funcionan según lo previsto.
+Debes probar las directivas de acceso condicional para asegurarte de que funcionan según lo previsto.
 
-1. Abre una nueva pestaña del explorador 'InPrivate' y luego ve a [https://sway.office.com](https://sway.office.com).
+1. Abre una nueva pestaña del explorador 'InPrivate' y luego ve a [https://sway.cloud.microsoft](https://sway.cloud.microsoft).
     - Cuando se te solicite, inicia sesión como DebraB:
 
    | Configuración | Valor |
    | :--- | :--- |
    | Nombre de usuario | **DebraB@**`<<your lab domain>>.onmicrosoft.com` |
-   | Contraseña | Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña de administrador del inquilino). |
+   | Contraseña | Escribe la contraseña proporcionada. |
      
 2. Comprueba que no puedes acceder a Microsoft Sway.
 

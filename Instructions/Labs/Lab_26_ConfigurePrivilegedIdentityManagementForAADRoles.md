@@ -112,7 +112,7 @@ Sigue estos pasos para hacer que un usuario sea elegible para un rol de administ
    | Campo | Value |
    | :--- | :--- |
    | Nombre de usuario | **MiriamG@**`<<your domain.onmicrosoft.com>>` |
-   | Contraseña |  Escribe la contraseña de administrador del inquilino (consulta la pestaña Recursos del laboratorio para recuperar la contraseña del administrador de inquilinos). |
+   | Contraseña |  Escribe la contraseña de administrador de inquilinos proporcionada. |
 
 4. En el menú **Identidad**, abre **Usuarios** y después selecciona **Todos los usuarios**.
 5. Busca a **Miriam** en la lista de usuarios
@@ -120,7 +120,7 @@ Sigue estos pasos para hacer que un usuario sea elegible para un rol de administ
 7. Selecciona **Asignaciones válidas**.
 1. Ten en cuenta que el rol **Administrador de cumplimiento** ahora está disponible para Miriam.
 
-#### Tarea 3: activar los roles de Microsoft Entra
+#### Tarea 3: Activación de los roles de Microsoft Entra
 
 Cuando necesites asumir un rol de Microsoft Entra, puedes solicitar la activación al abrir **Mis roles** en Privileged Identity Management.
 
@@ -132,9 +132,9 @@ Cuando necesites asumir un rol de Microsoft Entra, puedes solicitar la activaci�
 
     ![Imagen de pantalla que muestra Mis roles con las asignaciones de roles elegibles resaltadas](./media/lp4-mod3-my-roles.png)
 
-5. En la fila del rol de administrador de cumplimiento, seleccione **Activar**.
+5. En la fila del rol de administrador de cumplimiento, selecciona **Activar**.
 
-6. En el panel Activar: administrador de cumplimiento, seleccione **Se requiere verificación adicional** y, a continuación, siga las instrucciones para proporcionar una verificación de seguridad adicional. Se le requiere que se autentique solo una vez por sesión.
+6. En el panel Activar: administrador de cumplimiento, selecciona **Se requiere verificación adicional** y, a continuación, sigue las instrucciones para proporcionar una verificación de seguridad adicional. Se te requiere que se autentique solo una vez por sesión.
 
     ![Imagen de pantalla que muestra un menú emergente para activar el administrador de cumplimiento](./media/lp4-mod3-pim-activate-role.png)
 
@@ -144,15 +144,15 @@ Cuando necesites asumir un rol de Microsoft Entra, puedes solicitar la activaci�
 
     **Nota importante**: para la entidad de seguridad de menos privilegios, solo debes activar la cuenta durante el período de tiempo que la necesites.  Si son necesarias 1,5 horas para realizar el trabajo, establece la duración en dos horas.  De forma similar, si sabes que no podrás realizar el trabajo hasta después de las 3 p. m., elige una hora de activación personalizada.
 
-8. Seleccione **Activar**.
+8. Selecciona **Activar**.
 
-#### Tarea 4: asignar un rol con ámbito restringido
+#### Tarea 4: Asignación de un rol con ámbito restringido
 
 Para determinados roles, el ámbito de los permisos concedidos se puede restringir a una sola unidad de administración, entidad de servicio o aplicación. Este procedimiento es un ejemplo si se asigna un rol con el ámbito de una unidad administrativa.
 
 1. Recuerda cerrar las ventanas del explorador para MiriamG y luego abre el Centro de administración Microsoft Entra con tu cuenta de administrador.
 2. Ve a la página Privileged Identity Management y, en el menú de navegación izquierdo, selecciona **Roles de Microsoft Entra** de Azure.
-3. Seleccione **Roles**.
+3. Selecciona **Roles**.
 4. En la página Roles, en el menú superior, selecciona **+ Agregar asignaciones.**
 
 5. En la página Agregar asignaciones, selecciona el menú **Seleccionar rol** y después, selecciona **Administrador de usuarios.**
