@@ -65,6 +65,13 @@ Tu empresa trabaja con muchos proveedores y, en ocasiones, necesitas agregar alg
        (where <tenant name> is your tenant name)
    ```
 
+**Sugerencia de laboratorio**: los resultados deben tener un aspecto similar al siguiente, con el identificador y el nombre del inquilino.
+| N.º URI | Vínculo |
+| :--- | :--- |
+| URI 1 | https://login.microsoftonline.com |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
 16. Seleccione **Crear**. Copia tu **Id. de cliente** y **secreto de cliente**. Los usará cuando agregue el proveedor de identidades en Azure Portal.
 
 17. Puedes dejar el proyecto en un estado de publicación de Pruebas.
