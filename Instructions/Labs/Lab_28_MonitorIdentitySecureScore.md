@@ -13,7 +13,7 @@ lab:
 
 Microsoft Entra Identity Protection proporciona detección y corrección automatizadas a riesgos basados en identidades y facilita datos en el portal para investigar posibles riesgos. Microsoft Entra Identity Protection también proporciona una puntuación de seguridad de identidad para supervisar y mejorar la posición de seguridad de la identidad.  De la misma manera que Microsoft Defender XDR y Microsoft Defender for Cloud, la puntuación de seguridad de identidad proporciona acciones de mejora y recomendaciones que pueden mejorar la posición general de seguridad para la identidad en Microsoft Entra ID.  Este laboratorio explorará esta funcionalidad. 
 
-**Nota:** Dado que este laboratorio se ejecuta en un nuevo entorno de inquilino creado, probablemente obtendrás una puntuación de seguridad de la identidad del 0,00 %.  Los datos valiosos tardan aproximadamente 24 horas en escribir el cálculo para proporcionarte una puntuación válida.
+**Nota:** Dado que este laboratorio se ejecuta en un nuevo entorno de inquilino creado, probablemente obtendrás una puntuación de seguridad de la identidad del 30 % o menos.  Los datos viables tardan aproximadamente 24 horas en escribir el cálculo para proporcionarte una puntuación válida.
 
 #### Tiempo estimado: 15 minutos
 
@@ -31,7 +31,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 5. Desplázate hacia abajo para ver las **Acciones de mejora**.
 
-6. A diferencia de las acciones de mejora de Microsoft Defender for Cloud y Microsoft Defender XDR, estas acciones de mejora son específicas de la identidad.  Esto proporciona una lista más enfocada en las posibles acciones de la administración de la posición de seguridad.  Las acciones de mejora iniciadas desde esta lista también proporcionarán un impacto en la posición de seguridad general del inquilino. 
+**Sugerencia de laboratorio**: a diferencia de las acciones de mejora de Microsoft Defender for Cloud y Microsoft Defender XDR, estas acciones de mejora son específicas de la identidad.  Esto proporciona una lista más enfocada en las posibles acciones de la administración de la posición de seguridad.  Las acciones de mejora iniciadas desde esta lista también proporcionarán un impacto en la posición de seguridad general del inquilino. 
 
 #### Tarea 2: ejecutar una acción de mejora
 

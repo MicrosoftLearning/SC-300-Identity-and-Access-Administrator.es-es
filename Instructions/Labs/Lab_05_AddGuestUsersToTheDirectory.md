@@ -57,7 +57,7 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
 
 4. En el menú Usuarios, selecciona **Operaciones masivas > Invitación masiva**.
 
-     ![Imagen de pantalla que muestra la página Todos los usuarios con las opciones de menú Operaciones masivas e Invitación masiva resaltadas](./media/lp1-mod3-bulk-invite-option.png)
+   ![Imagen de pantalla que muestra la página Todos los usuarios con las opciones de menú Operaciones masivas e Invitación masiva resaltadas](./media/lp1-mod3-bulk-invite-option.png)
 
 5. En el panel de invitación masiva a usuarios, seleccione **Descargar** para obtener una plantilla CSV de ejemplo con propiedades de invitación.
 
@@ -69,6 +69,8 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
     - **URL de redireccionamiento**: la dirección URL a la que se reenviará al usuario invitado después de que acepte la invitación.
 
     ![Imagen de pantalla que muestra el archivo .csv de la plantilla de invitación masiva de usuarios de ejemplo.](./media/lp1-mod3-template-csv.png)
+
+**Sugerencia de laboratorio**: los usuarios que aparecen en la captura de pantalla y los archivos de plantilla son ejemplos, no existen realmente.  Deberás agregar usuarios reales para probar completamente esta característica.
 
 8. Guarde el archivo.
 
@@ -93,6 +95,8 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
 1. Abra PowerShell como administrador. Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
 
 **Nota:** Debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, aparecerá una versión en la parte superior de la pantalla. Si estás ejecutando una versión anterior, actualízala o se producirá un error en esta parte del laboratorio.
+
+**Sugerencia de laboratorio**: la característica TouchType del entorno de laboratorio tiene problemas al escribir en PowerShell. Si inicias el Bloc de notas en el laboratorio, usa TouchType para cargar las instrucciones de PowerShell en el Bloc de notas. Puedes usar **Cortar y pegar** para introducirlas en PowerShell sin escribir.
 
 2. Deberás instalar el módulo de PowerShell Microsoft.Graph si no lo has usado antes.  Ejecuta los dos comandos siguientes y cuando se te pida confirmación pulsa Y:
 
