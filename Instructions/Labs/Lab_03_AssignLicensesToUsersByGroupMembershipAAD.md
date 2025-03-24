@@ -1,13 +1,13 @@
 ---
 lab:
-  title: '03: asignar licencias con la pertenencia a grupos'
+  title: '03: Asignación de licencias con la pertenencia a grupos'
   learning path: '01'
   module: Module 01 - Implement an identity management solution
 ---
 
-# Laboratorio 03: Asignar licencias mediante la pertenencia a grupos
+# Laboratorio 03: Asignación de licencias mediante la pertenencia a grupos
 
-### Tipo de inicio de sesión = Administración de Microsoft 365
+### Tipo de inicio de sesión = Inicio de sesión del inquilino de Microsoft 365 + E5
 
 ## Escenario del laboratorio
 
@@ -15,32 +15,32 @@ Tu organización ha decidido usar grupos de seguridad en Microsoft Entra ID para
 
 #### Tiempo estimado: 25 minutos
 
-### Ejercicio 1: crear un grupo de seguridad y añadir un usuario
+### Ejercicio 1: Creación de un grupo de seguridad y adición de un usuario
 
-#### Tarea 1: comprobar si Delia Dennis tiene acceso a Office 365
+#### Tarea 1: Comprobación de si Delia Dennis tiene acceso a Office 365
 
 1. Inicia una nueva ventana del explorador InPrivate.
-2. Conectarse a [https://www.office.com](https://www.office.com).
+2. Conéctate a [https://www.office.com](https://www.office.com).
 3. Selecciona Iniciar sesión y conéctate como Delia Dennis.
 
-   | **Configuración**| **Valor**|
+   | **Configuración** | **Valor** |
    | :--- | :--- |
-   | Nombre de usuario | DeliaD@`your domain name.com`|
-   | Contraseña| Escribe la contraseña del Administrador global de los recursos.|
+   | Nombre de usuario | DeliaD@`your domain name.com` |
+   | Contraseña| Escribe la contraseña de usuario proporcionada para DeliaD. |
 
 4. Debes conectarte al sitio web de Office.com, pero verás un mensaje que indica que no tienes una licencia.
 
    ![Imagen de pantalla del sitio web de Office.com que muestra que Delia Dennis inició sesión, pero no hay ninguna aplicación de Office disponible porque hay ninguna licencia asignada.](./media/delia-no-office-license.png)
     
-5. Cierre la ventana del explorador.
+5. Cierra la ventana del explorador.
 
-#### Tarea 2: crear un grupo de seguridad en Microsoft Entra ID
+#### Tarea 2: Creación de un grupo de seguridad en Microsoft Entra ID
 
-1. Vaya a [https://entra.microsoft.com](https://entra.microsoft.com).
+1. Ve a [https://entra.microsoft.com](https://entra.microsoft.com).
 
 2. En la navegación de la izquierda, en **Identidad**, selecciona **Grupos** y después **Todos los grupos**.
 3. En la página Grupos, en el menú, selecciona **Nuevo grupo**.
-4. Cree un grupo con esta información:
+4. Crea un grupo con esta información:
 
    | **Configuración**| **Valor**|
    | :--- | :--- |
@@ -51,16 +51,16 @@ Tu organización ha decidido usar grupos de seguridad en Microsoft Entra ID para
 
 5. Selecciona el texto **Sin miembros seleccionados** en Miembros.
 6. Selecciona **Delia Dennis** de la lista de usuarios.
-7. Seleccione el botón **Seleccionar**.
+7. Selecciona el botón **Seleccionar**.
 
    ![Imagen de pantalla que muestra la página de nuevo grupo con el tipo de grupo, el nombre del grupo, los propietarios y los miembros resaltados.](./media/lp1-mod2-create-group.png)
 
-8. Seleccione el botón **Crear**.
+8. Selecciona el botón **Crear**.
 9. Cuando termines, comprueba que el grupo denominado **sg-SC300-O365** aparece en la lista **Todos los grupos**.
 
-#### Tarea 3: Agregar una licencia de Office a sg-SC300-O365
+#### Tarea 3: Adición de una licencia de Office a sg-SC300-O365
 
-Tienes que agregar y quitar licencias a través del Centro de administración de Microsoft 365. Este es un cambio relativamente nuevo.
+**Sugerencia de laboratorio**: tienes que agregar y quitar licencias a través del Centro de administración de Microsoft 365. Este es un cambio relativamente nuevo.
 
 1. Abre una nueva pestaña en tu explorador.
 
@@ -74,11 +74,11 @@ Tienes que agregar y quitar licencias a través del Centro de administración de
 
 6. Selecciona la pestaña **Grupos** en la pantalla de licencias.
 
-7. Elige el elemento **+ Agregar licencia**.
+7. Elige el elemento **+ Asignar licencias**.
 
 8. Busca el grupo **sg-SC300-O365** y selecciónalo de la lista.
 
-8. Una vez que hayas agregado a Raúl, selecciona **Asignar**.
+8. Una vez que hayas agregado el grupo, selecciona **Asignar**.
  
 9. Cierra el mensaje de confirmación.
 
@@ -86,44 +86,44 @@ Tienes que agregar y quitar licencias a través del Centro de administración de
 
 11. Vuelve a **Todos los grupos** en el menú de la izquierda, en **Identidad**, selecciona **Grupos**
 
-12. En la página Usuarios, selecciona **sg-SC300-O365**.
+12. En la página Grupos, selecciona **sg-SC300-O365**.
 
-13. En el panel de navegación izquierdo, seleccione **Licencias.**
+13. En el panel de navegación izquierdo, selecciona **Licencias.**
 
 14. Observa que se ha asignado la licencia Office 365 E3.
 
 15. Puedes salir de la pantalla de licencia.
 
-#### Tarea 4: confirmar la licencia de Office 365
+#### Tarea 4: Confirmación de la licencia de Office 365
 
 1. Inicia una nueva ventana del explorador InPrivate.
-2. Conectarse a [https://www.office.com](https://www.office.com).
+2. Conéctate a [https://www.office.com](https://www.office.com).
 3. Selecciona Iniciar sesión y conéctate como Delia Dennis.
 
    | **Configuración**| **Valor**|
    | :--- | :--- |
    | Nombre de usuario | DeliaD@`your domain name.com`|
-   | Contraseña| Escribe la contraseña del Administrador global de los recursos.|
+   | Contraseña| En Contraseña, escribe la contraseña proporcionada.  |
 
 4. Debes conectarte al sitio web de Office.com y no ver ningún mensaje con respecto a la licencia. Todas las aplicación de Office están disponibles a la izquierda.
 
    ![Imagen de pantalla del sitio web de Office.com con Delia Dennis que inició sesión con las aplicaciones de office disponibles, ya que hay asignada una licencia.](./media/delia-office-license.png)
     
-5. Cierre la ventana del explorador.
+5. Cierra la ventana del explorador.
 
-### Ejercicio 2: Crear un grupo de Microsoft 365 en Microsoft Entra ID
+### Ejercicio 2: Creación de un grupo de Microsoft 365 en Microsoft Entra ID
 
-#### Tarea 1: crear el grupo
+#### Tarea 1: Creación del grupo
 
 Parte de tus tareas como administrador de Microsoft Entra es crear diferentes tipos de grupos. Debes crear un nuevo grupo de Microsoft 365 para el departamento de ventas de tu organización.
 
-1. Vaya a [https://entra.microsoft.com]( https://entra.microsoft.com).
+1. Ve a [https://entra.microsoft.com]( https://entra.microsoft.com).
 
 2. En la navegación de la izquierda, en **Identidad**, selecciona **Grupos** y después selecciona **Todos los grupos**
 
 3. En la página Grupos, en el menú, selecciona **Nuevo grupo**.
 
-4. Cree un grupo con esta información:
+4. Crea un grupo con esta información:
 
    | **Configuración**| **Valor**|
    | :--- | :--- |
@@ -135,49 +135,49 @@ Parte de tus tareas como administrador de Microsoft Entra es crear diferentes ti
 
    ![Imagen de pantalla que muestra la página de nuevo grupo con el tipo de grupo, el nombre del grupo, los propietarios y los miembros resaltados.](./media/lp1-mod2-create-o365-group.png)
 
-5. Cuando termine, compruebe que el grupo denominado **Northwest Sales** aparece en la lista **Todos los grupos**.
+5. Cuando termines, comprueba que el grupo denominado **Northwest Sales** aparece en la lista **Todos los grupos**.
 
-### Ejercicio 3: crea un grupo dinámico con todos los usuarios como miembros
+### Ejercicio 3: Creación de un grupo dinámico con todos los usuarios como miembros
 
-#### Tarea 1: crear el grupo dinámico
+#### Tarea 1: Creación del grupo dinámico
 
 A medida que crece tu empresa, la administración manual de grupos se hace demasiado lenta. Desde la estandarización del directorio, puedes sacar partido a los grupos dinámicos. Debes crear un nuevo grupo dinámico para asegurarte de que esté todo listo para la creación de grupos dinámicos en producción.
 
-1. Inicia sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con una cuenta que tenga asignada el rol Administrador global o Administrador de usuarios en el inquilino.
+1. Inicie sesión en [https://entra.microsoft.com](https://entra.microsoft.com) con la cuenta de administrador proporcionada. Necesitas al menos el rol de administrador de usuarios en el inquilino.
 
-2. Seleccione **Identidad**.
+2. Selecciona **Identidad**.
 
 3. En **Grupos**, selecciona **Todos los grupos** y después selecciona **Nuevo grupo**.
 
-4. En la página Nuevo grupo, en **Tipo de grupo**, seleccione **Seguridad**.
+4. En la página Nuevo grupo, en **Tipo de grupo**, selecciona **Seguridad**.
 
 5. En el cuadro del **Nombre del grupo**, escribe **SC300-myDynamicGroup**.
 
-6. Seleccione el menú **Tipo de pertenencia** y, luego, seleccione **Usuario dinámico**.
+6. Selecciona el menú **Tipo de pertenencia** y, luego, selecciona **Usuario dinámico**.
 
 7. Selecciona un **Propietario** para el grupo.
 
-7. En **Dynamic user members** (Miembros usuarios dinámicos), seleccione **Add dynamic query** (Agregar consulta dinámica).
+7. En **Miembros usuarios dinámicos**, seleccione **Agregar consulta dinámica**.
 
-8. A la derecha, sobre el cuadro **Sintaxis de regla**, seleccione **Editar**.
+8. A la derecha, sobre el cuadro **Sintaxis de regla**, selecciona **Editar**.
 
-9. En el panel de edición de sintaxis de regla, escriba esta expresión en el cuadro **Sintaxis de regla**:
+9. En el panel de edición de sintaxis de regla, escribe esta expresión en el cuadro **Sintaxis de regla**:
 
    ```powershell
-   user.objectid -ne null
+   user.objectId -ne null
    ```
 
-   **Advertencia:** el `user.objectid` distingue mayúsculas de minúsculas.
+   **Advertencia:** el `user.objectId` distingue mayúsculas de minúsculas.
 
-10. Seleccione **Aceptar**. La regla aparece en el cuadro Sintaxis de regla.
+10. Selecciona **Aceptar**. La regla aparece en el cuadro Sintaxis de regla.
 
    ![Imagen de pantalla que muestra la página de reglas de pertenencia dinámica a grupos con sintaxis de regla resaltada.](./media/lp1-mod3-dynamic-group-membership-rule.png)
 
-11. Seleccione **Guardar**. En el nuevo grupo dinámico se incluirán ahora los usuarios invitados de B2B y los usuarios miembros.
+11. Selecciona **Guardar**. En el nuevo grupo dinámico se incluirán ahora los usuarios invitados de B2B y los usuarios miembros.
 
-12. En la página Nuevo grupo, seleccione **Crear** para crear el grupo.
+12. En la página Nuevo grupo, selecciona **Crear** para crear el grupo.
 
-#### Tarea 2: comprobar que se han agregado los miembros
+#### Tarea 2: Comprobación de que se han agregado los miembros
 
 **Nota:** el rellenado de pertenencia dinámica a grupos puede tardar hasta 15 minutos.
 
@@ -190,12 +190,14 @@ A medida que crece tu empresa, la administración manual de grupos se hace demas
 7. Selecciona **Miembros** en el menú **Administrar**.
 8. Revisa los miembros.
 
-#### Tarea 3: experimentar con reglas alternativas
+#### Tarea 3: Experimentación con reglas alternativas
 
 1. Prueba a crear un grupo solo con usuarios **Invitados**:
 
-   - (user.objectid -ne null) y (user.userType -eq "Guest")
+   - (user.objectId -ne null) y (user.userType -eq "Guest")
 
 2. Prueba a crear un grupo solo con **miembros** de los usuarios de Microsoft Entra.
 
-   - (user.objectid -ne null) y (user.userType -eq "Member")
+   - (user.objectId -ne null) y (user.userType -eq "Member")
+
+**Sugerencia de laboratorio**: si recibes un mensaje de error al crear un grupo que menciona un operador no válido, comprueba la ortografía del operador.  Nota I en objectId y T en userType son letras mayúsculas.
