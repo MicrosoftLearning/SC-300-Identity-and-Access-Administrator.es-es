@@ -1,11 +1,11 @@
 ---
 lab:
-  title: '16: usar Azure Key Vault para identidades administradas'
+  title: '16: Uso de Azure Key Vault para identidades administradas'
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# Laboratorio 16: usar Azure Key Vault para identidades administradas
+# Laboratorio 16: Uso de Azure Key Vault para identidades administradas
 
 ### Tipo de inicio de sesión = Inicio de sesión de recurso de Azure
 
@@ -17,7 +17,7 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
 ### Ejercicio 1: Uso de Azure Key Vault para administrar identidades de máquina virtual
 
-#### Tarea 1: Crear un almacén de claves
+#### Tarea 1: Creación de un almacén de claves
 
 1. Inicia sesión en [https://portal.azure.com]( https://portal.azure.com) con una cuenta de administrador global.
 
@@ -25,27 +25,27 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
 1. En el cuadro de texto Buscar en Marketplace, escribe **almacén de claves**.  
 
-1. En la lista de resultados, seleccione **Key Vault**.
+1. En la lista de resultados, selecciona **Key Vault**.
 
-1. Seleccione **Crear**.
+1. Selecciona **Crear**.
 
 1. Rellena toda la información necesaria, tal como se muestra a continuación. Asegúrate de elegir la suscripción que vas a usar para este laboratorio.
-    **Nota**: Los nombres del almacén de claves deben ser únicos. Busca una marca de verificación verde a la derecha del campo.
+    **Nota**: los nombres del almacén de claves deben ser únicos. Busca una marca de verificación verde a la derecha del campo.
 
  - **Grupo de recursos**: rgSC300KeyVault
  - **Nombre del almacén de claves** - *anyuniquevalue*
  - En la página **Configuración de acceso**, selecciona el botón de radio **Directiva de acceso de Key Vault**.
-1. Seleccione **Revisar + crear**.
+1. Selecciona **Revisar + crear.**
 
-1. Seleccione **Crear**.
+1. Selecciona **Crear**.
 
-#### Tarea 2: Crear una máquina virtual
+#### Tarea 2: Creación de una máquina virtual
 
-1. Seleccione **+ Crear un recurso**.
+1. Selecciona **+ Crear un recurso**.
 
 1. Escribe **Windows 11** en el campo de búsqueda de la barra de búsqueda de Marketplace.
 
-1. Selecciona **Windows 11** y en la lista desplegable, selecciona **Windows 11 Empresas, versión 22H2**. Luego, elija **Crear**.
+1. Selecciona **Windows 11** y en la lista desplegable, selecciona **Windows 11 Empresas, versión 22H2**. Luego, elige **Crear**.
 
   | Campo | Valores |
   | :--   | :--    |
@@ -55,21 +55,23 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
   | Contraseña | Establece una contraseña segura que puedas recordar |
   | Licencias | Confirma que tienes una licencia válida |
 
+1. Asegúrate de marcar la casilla **Confirmar licencia**.
+
 1. Usa el botón **Siguiente** para ir a la pestaña **Administración**.
 
 1. En la pestaña **Administración**, marca la casilla junto a **Habilitar la identidad administrada asignada por el sistema**.
 
-1. Pase por el resto de la experiencia de creación de una máquina virtual. 
+1. Pasa por el resto de la experiencia de creación de una máquina virtual. 
 
 1. Elige **Revisar + crear** y luego selecciona **Crear**.
 
-#### Tarea 3: crear un secreto
+#### Tarea 3: Creación de un secreto
 
-1. Vaya al almacén de claves recién creado.
+1. Ve al almacén de claves recién creado.
 
 1. Abre **Objetos** en el menú de la izquierda y luego selecciona **Secretos**.
 
-1. Seleccione **+ Generar/Importar**.
+1. Selecciona **+ Generar/Importar**.
 
 1. En la pantalla Crear un secreto de Opciones de carga, deja **Manual** seleccionado.
 
