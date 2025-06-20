@@ -180,7 +180,7 @@ Una vez creados los usuarios, se te comunicará que la creación se ha realizado
 
 #### Tarea 2: Adición de usuarios de manera masiva con PowerShell
 
-1. Abre PowerShell como administrador.Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
+1. Abra PowerShell.Para ello, busca PowerShell en Windows. 
 
 **Nota:** debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, verás una versión en la parte superior de la pantalla. Si ejecutas una versión anterior, sigue las instrucciones de la pantalla para ir a https://aka.ms/PowerShell-Release?tag=7.3.9. Desplázate hacia abajo hasta la sección activos y selecciona powershell-7.3.1-win-x64.msi. Cuando se haya completado la descarga, selecciona Abrir archivo. Instala con todos los valores predeterminados.
 
@@ -189,7 +189,7 @@ Una vez creados los usuarios, se te comunicará que la creación se ha realizado
 2. Deberás instalar el módulo de PowerShell Microsoft.Graph si no lo has usado antes.  Ejecuta los dos comandos siguientes y cuando se te pida confirmación pulsa Y:
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Confirma que el módulo Microsoft.Graph está instalado:
 
@@ -211,7 +211,7 @@ Una vez creados los usuarios, se te comunicará que la creación se ha realizado
     Get-MgUser 
     ```
     
-7. Para asignar una contraseña temporal común a todos los usuarios nuevos, ejecuta el siguiente comando y reemplaza <Enter a complex Password> por la contraseña que quieras proporcionar a tus usuarios.  
+6. Para asignar una contraseña temporal común a todos los usuarios nuevos, ejecuta el siguiente comando y reemplaza <Enter a complex Password> por la contraseña que quieras proporcionar a tus usuarios.  
 
     ``` 
     $PWProfile = @{
@@ -220,7 +220,7 @@ Una vez creados los usuarios, se te comunicará que la creación se ha realizado
     }
     ```
 
-8. Ya puedes crear un nuevo usuario.  El comando siguiente se rellenará con la información del usuario y se ejecutará.  Si tienes más de un usuario que agregar, puedes usar un archivo TXT de Bloc de notas para agregar la información del usuario y copiar o pegar en PowerShell. 
+7. Ya puedes crear un nuevo usuario.  El comando siguiente se rellenará con la información del usuario y se ejecutará.  Si tienes más de un usuario que agregar, puedes usar un archivo TXT de Bloc de notas para agregar la información del usuario y copiar o pegar en PowerShell. 
 
     ```
     New-MgUser `
@@ -245,7 +245,7 @@ Puedes agregar y quitar usuarios con la página Microsoft Entra ID.  Sin embargo
 
 Puede ocurrir que se elimine una cuenta y después se deba recuperar. Debes comprobar que puedes recuperar una cuenta que se ha eliminado recientemente.
 
-1. Ve a [https://entra.micrososft.com](Microsoft Entra admin center).
+1. Explore en [https://entra.microsoft.com](Microsoft Entra admin center).
 
 2. En el panel de navegación izquierdo, en **Identidad**, selecciona **Usuarios**.
 
