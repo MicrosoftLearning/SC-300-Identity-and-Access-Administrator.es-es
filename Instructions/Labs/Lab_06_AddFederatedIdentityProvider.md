@@ -28,62 +28,83 @@ Tu empresa trabaja con muchos proveedores y, en ocasiones, necesitas agregar alg
 **Crear un nuevo proyecto:**
 3. En la parte superior de la página, selecciona el menú de proyectos para abrir la página Seleccionar un proyecto. Elija **Nuevo proyecto**.  Deja los campos restantes con la configuración predeterminada.
 
-4. En la página Nuevo proyecto, asigna un nombre al proyecto (por ejemplo, **MyB2BApp**) y después selecciona **Crear**.
+4. En la página Nuevo proyecto, asigna un nombre al proyecto: +++MyB2BApp+++ y después selecciona **Crear**.
 
 5. Abra el proyecto nuevo seleccionando el vínculo en el cuadro de mensaje Notificaciones o con el menú del proyecto en la parte superior de la página.
 
 6. En el menú de la izquierda, selecciona **API y servicios** y después selecciona **Pantalla de consentimiento de OAuth**.
 
-7. En Tipo de usuario, selecciona **Externo** y después **Crear**.
+7. Seleccione el botón **Introducción**.
 
-8. En la **pantalla de consentimiento de OAuth**, en Información de la aplicación, introduce un nombre de aplicación, como **Microsoft Entra ID**.
+8. En la pantalla Información de la aplicación, escribe la siguiente información:
 
-9. En Correo electrónico de soporte del usuario, seleccione una dirección de correo electrónico. Esto debe incluir la dirección de correo electrónico que usaste para iniciar sesión en Google.
+| Sección | Nombre del campo | Valor |
+| :---    | :---    | :---  |
+| 1 Información de la aplicación: | | |
+|            | Nombre de la aplicación | +++Microsoft Entra ID+++ |
+|            | Correo electrónico de soporte técnico del usuario | Selecciona el nombre en el elemento desplegable |
+| 2 Público | | |
+|            | Interna/Externa | **Externo** |
+| 3 Información de contacto | | |
+|            | Direcciones de correo | Usa la misma dirección de correo electrónico que antes |
+| 4 Finalizar | | |
+|            | Contrato | Marca la casilla |
 
-10. En Dominios autorizados, selecciona **+ Agregar dominio** y después agrega el dominio microsoftonline.com.
+9. Selecciona el botón **Crear** para continuar.
 
-   ```
-   microsoftonline.com
-   ```
+10. Selecciona el botón **Crear cliente OAuth**.
 
-11. En Información de contacto del desarrollador, escribe la dirección de correo electrónico de la cuenta de laboratorio que usaste para iniciar sesión en el portal.
+11. Elige **Tipo de aplicación = Aplicación web**.
 
-12. Selecciona **Guardar y continuar**.
+12. Acepta el nombre predeterminado de la aplicación.
 
-13. En el menú de la izquierda, seleccione **Credenciales**.
+13. En los **orígenes de JavaScript autorizados**, selecciona el botón **+ Agregar URI**.
 
-14. Selecciona **+ Crear credenciales** y después selecciona **Id. de cliente de OAuth**.
+14. Escribe el URI +++https://microsoftonline.com+++ para el valor.
 
-15. En el menú Tipo de aplicación, seleccione Aplicación web. Asigne a la aplicación un nombre adecuado, como Microsoft Entra B2B. En **URI de redireccionamiento autorizados**, agregue estos URI:
+15. En **URI de redirección autorizados**, selecciona el botón **+ Agregar un URI**.  Tendrás que agregar tres URI diferentes en esta sección:
 
-   ```
-      https://login.microsoftonline.com
-   ```
-      https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp (donde <tenant ID> es el identificador del inquilino)
-   ```
-      https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
-       (where <tenant name> is your tenant name)
-   ```
+ - **Primer URI** = +++https://login.microsoftonline.com+++
+ - **Segundo URI** = +++https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp+++ (donde  <tenant ID> es el identificador del inquilino)
+ - **Tercer URI** = +++https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp+++ (donde <tenant name> es el nombre del inquilino)
 
-**Sugerencia de laboratorio**: los resultados deben tener un aspecto similar al siguiente, con el identificador y el nombre del inquilino.
-| N.º URI | Vínculo |
+**Sugerencia de laboratorio**: este paso te puede resultar más fácil si usas el Bloc de notas en la máquina virtual del laboratorio para crear estos URI y, a continuación, copias y pegas desde allí.
+
+**Sugerencia de laboratorio 2**: los resultados deben tener un aspecto similar al siguiente, con el identificador y el nombre del inquilino.
+
+| URI # | Vínculo |
 | :--- | :--- |
 | URI 1 | https://login.microsoftonline.com |
 | URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
 | URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
 
-16. Seleccione **Crear**. Copia tu **Id. de cliente** y **secreto de cliente**. Los usará cuando agregue el proveedor de identidades en Azure Portal.
+16. Seleccione el botón **Crear**.
 
-17. Puedes dejar el proyecto en un estado de publicación de Pruebas.
+17. Cuando se crea el elemento, copia el **Id. de cliente** y el **secreto de cliente** en el Bloc de notas para el usuario más adelante.
+
+18. Puedes dejar el proyecto en este estado, no es necesario publicarlo.
 
 #### Tarea 2: agregar un usuario de prueba
-18. Selecciona la **pantalla de consentimiento OAuth** en el menú de API y servicios.
 
-19. En la sección **Usuarios de la prueba* de la página, selecciona **+ Agregar usuarios**.
+1. En el menú de la izquierda, selecciona el elemento **Público**.
 
-20. Escribe la cuenta de gmail que has creado (o estás usando) para este laboratorio.
+2. En la sección ***Usuarios de la prueba** de la página, selecciona **+ Agregar usuarios**.
 
-21. Seleccione **Guardar**.
+3. Escribe la cuenta de gmail que usas para este laboratorio.
+
+4. Seleccione **Guardar**.
+
+#### Tarea 3: Agregar un dominio autorizado a la personalización de marca
+
+1. En el menú de la izquierda, selecciona el elemento **Personalización de marca**.
+
+2. Desplázate hasta la parte inferior de la página.
+
+3. En la sección **Dominios autorizados**, agrega el dominio **microsoftonline.com**.
+
+4. En **información de contacto del desarrollador**, agrega la dirección de correo electrónico que usas para este laboratorio.
+
+5. Seleccione **Guardar**.
 
 
 ### Ejercicio 2: configura Azure para trabajar con un proveedor de identidades externo
@@ -108,57 +129,68 @@ Tu empresa trabaja con muchos proveedores y, en ocasiones, necesitas agregar alg
 Esto completa la configuración de Google como proveedor de identidades.
 
 #### Tarea 2: invitar a tu cuenta de usuario de prueba
-9. Si has usado una cuenta de Gmail existente, no olvides eliminar la cuenta con **External Identities | Todos los proveedores de identidades**. También puedes volver a la consola del desarrollador de Google y eliminar el proyecto que has creado.
+1. Si has usado una cuenta de Gmail existente, no olvides eliminar la cuenta con **External Identities | Todos los proveedores de identidades**. También puedes volver a la consola del desarrollador de Google y eliminar el proyecto que has creado.
 
-10. Abra Microsoft Entra ID.
+2. Abra Microsoft Entra ID.
 
-11. Ve a Usuarios y selecciona **Todos los usuarios**.
+3. Ve a Usuarios y selecciona **Todos los usuarios**.
 
-12. Selecciona **+ Nuevo usuario**.
+4. Selecciona **+ Nuevo usuario**.
 
-13. Selecciona **Invitar usuario externo** en el menú desplegable.
+5. Selecciona **Invitar usuario externo** en el menú desplegable.
 
-14. Introduce la información de la cuenta de Gmail que has configurado como usuario de prueba para Google App en la Tarea 2 del Ejercicio 1.
+6. Introduce la información de la cuenta de Gmail que has configurado como usuario de prueba para Google App en la Tarea 2 del Ejercicio 1.
 
-15. Escribe un mensaje personal.
+7. Escribe un mensaje personal.
 
-16. Seleccione **Invitar**.
+8. Selecciona **Revisar e invitar** y, después, selecciona **Invitar**.
+
+
+| **Nota de seguridad** |
+| ----: |
+| Si usas una cuenta de Gmail existente que tenga habilitadas las llaves de acceso, no podrás completar los procesos de inicio de sesión dentro del entorno de laboratorio.  La llave de acceso requiere BlueTooth, que no se puede habilitar a través de la máquina virtual.  Todavía puedes completar el laboratorio, solo tienes que realizar estas últimas tareas en un navegador InPrivate que se ejecuta fuera del entorno de laboratorio. |
+
 
 #### Tarea 3: aceptar la invitación e iniciar sesión
-17. Usa un explorador InPrivate para iniciar sesión en tu cuenta de gmail.
 
-18. Abre la **Invitación de Microsoft en nombre de** en la bandeja de entrada.
+1. Usa un explorador InPrivate para iniciar sesión en tu cuenta de gmail.
 
-19. Selecciona el vínculo **Aceptar invitación** en el mensaje.
+2. Abre la **Invitación de Microsoft en nombre de** en la bandeja de entrada.
 
-20. Escribe el nombre de usuario y la contraseña cuando se te solicite en el cuadro de diálogo de inicio de sesión (si se te solicita).
+3. Selecciona el vínculo **Aceptar invitación** en el mensaje.
+
+3. Escribe el nombre de usuario y la contraseña cuando se te solicite en el cuadro de diálogo de inicio de sesión (si se te solicita).
+
    **NOTA** Si la federación funciona correctamente, aquí es donde verás los primeros resultados de tu nuevo proveedor de identidades externas de Google.  Irás a la pantalla de inicio de sesión y podrás iniciar sesión con tus credenciales de gmail.  Si la federación no funciona, o no se ha configurado, se enviará al usuario un correo electrónico de VERIFICACIÓN DE LA CUENTA después del inicio de sesión, para confirmar la cuenta.  Con la federación, no se necesita ninguna comprobación adicional.
 
    **NOTA** Si recibes un error de acceso 500, espera unos 30 segundos y actualiza la página.  Elige VOLVER A ENVIAR.  Este error es una incidencia de tiempo que se da solo en el entorno del laboratorio.
 
-21. Lee el nuevo mensaje **permisos solicitados por:** que recibes.  Este mensaje proviene de tu dominio del laboratorio de Azure.
+4. Lee el nuevo mensaje **permisos solicitados por:** que recibes.  Este mensaje proviene de tu dominio del laboratorio de Azure.
 
-22. Elige **Aceptar**.
+5. Elige **Aceptar**.
 
-23. Una vez completado el inicio de sesión, se te enviará a MyApplications.
+6. Una vez completado el inicio de sesión, se te enviará a MyApplications.
 
 #### Tarea 4: iniciar sesión en Microsoft 365 con tu cuenta de Google
-24. Una vez que hayas terminado el proceso de invitación de usuario externo de la tarea 3, puedes iniciar sesión directamente en Microsoft Online.
 
-25. Abre una nueva pestaña en el explorador que tienes abierto.
+1. Una vez que hayas terminado el proceso de invitación de usuario externo de la tarea 3, puedes iniciar sesión directamente en Microsoft Online.
+
+2. Abre una nueva pestaña en el explorador que tienes abierto.
+
    **NOTA** Si no has abierto un nuevo explorador InPrivate en la tarea 3, debes hacerlo para este paso.
 
-26. Escribe la siguiente dirección web:
+3. Escribe la siguiente dirección web:
 
    ```
    login.microsoftonline.com
    ```
 
-27. Selecciona **Opciones de inicio de sesión** en el cuadro de diálogo.
+4. Selecciona **Opciones de inicio de sesión** en el cuadro de diálogo.
  
-28. Selecciona **Iniciar sesión en una organización**.
+5. Selecciona **Iniciar sesión en una organización**.
 
-29. Escribe el **nombre de dominio del inquilino de laboratorio** en el cuadro y selecciona **Siguiente**.
+6. Escribe el **nombre de dominio del inquilino de laboratorio** en el cuadro y selecciona **Siguiente**.
 
-30. Escribe la dirección de correo electrónico de **Google** y la contraseña que has creado.
+7. Escribe la dirección de correo electrónico de **Google** y la contraseña que has creado.
+
 En este momento, deberías ver que tu cuenta pasa a Google para su confirmación; después entra en el portal de Microsoft Office.

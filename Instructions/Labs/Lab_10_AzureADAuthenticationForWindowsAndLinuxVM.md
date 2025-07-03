@@ -21,7 +21,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Ve a [https://portal.azure.com](https://portal.azure.com)
 
-1. Seleccione **+ Crear un recurso**.
+1. Selecciona **+ Crear un recurso**.
 
 1. Escribe **Windows 11** en la barra de búsqueda Buscar en Marketplace y, después, **Entrar**.
 
@@ -190,4 +190,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
     - **Rol**: iniciar sesión de administrador de máquina virtual o iniciar sesión de usuario de máquina virtual
     - **Asignar acceso a**: usuario, grupo, entidad de servicio o identidad administrada
 
-1. Para asignar roles, consulta Asignación de roles de Azure mediante Azure Portal.
+##### Parte de desafío del laboratorio
+
+Intenta completar el resto de este laboratorio por tu cuenta. Es muy similar a la versión de Windows. Si buscas pasos detallados, consulta Asignación de roles de Azure mediante Azure Portal en Learn Docs.
+

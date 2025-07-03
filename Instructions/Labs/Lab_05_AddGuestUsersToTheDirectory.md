@@ -92,16 +92,16 @@ Se ha establecido una asociación reciente con otra empresa. Por ahora, los empl
 
 #### Tarea 2: invitar a usuarios invitados con PowerShell
 
-1. Abra PowerShell como administrador. Para ello, busca PowerShell en Windows y elige Ejecutar como administrador. 
+1. Abra PowerShell. Para ello, busca PowerShell en Windows.
 
-**Nota:** Debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, aparecerá una versión en la parte superior de la pantalla. Si estás ejecutando una versión anterior, actualízala o se producirá un error en esta parte del laboratorio.
+**Nota:** debes tener PowerShell versión 7.2 o posterior para que este laboratorio funcione.  Cuando se abra PowerShell, aparecerá una versión en la parte superior de la pantalla. Si estás ejecutando una versión anterior, actualízala o se producirá un error en esta parte del laboratorio.
 
 **Sugerencia de laboratorio**: la característica TouchType del entorno de laboratorio tiene problemas al escribir en PowerShell. Si inicias el Bloc de notas en el laboratorio, usa TouchType para cargar las instrucciones de PowerShell en el Bloc de notas. Puedes usar **Cortar y pegar** para introducirlas en PowerShell sin escribir.
 
 2. Deberás instalar el módulo de PowerShell Microsoft.Graph si no lo has usado antes.  Ejecuta los dos comandos siguientes y cuando se te pida confirmación pulsa Y:
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Confirma que el módulo Microsoft.Graph está instalado:
 
