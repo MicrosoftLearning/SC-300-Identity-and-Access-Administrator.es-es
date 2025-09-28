@@ -148,7 +148,7 @@ Cuando necesites asumir un rol de Microsoft Entra, puedes solicitar la activaci�
 
 #### Tarea 4: Asignación de un rol con ámbito restringido
 
-Para determinados roles, el ámbito de los permisos concedidos se puede restringir a una sola unidad de administración, entidad de servicio o aplicación. Este procedimiento es un ejemplo si se asigna un rol con el ámbito de una unidad administrativa.
+En el caso de determinados roles, el ámbito de los permisos concedidos se puede restringir a una sola unidad de administración, entidad de servicio o aplicación. Este procedimiento es un ejemplo si se asigna un rol que tenga el ámbito de una unidad administrativa.
 
 1. Recuerda cerrar las ventanas del explorador para MiriamG y luego abre el Centro de administración Microsoft Entra con tu cuenta de administrador.
 2. Ve a la página Privileged Identity Management y, en el menú de navegación izquierdo, selecciona **Roles de Microsoft Entra** de Azure.
@@ -165,7 +165,7 @@ Para determinados roles, el ámbito de los permisos concedidos se puede restring
 
 #### Tarea 5: actualizar o quitar una asignación de roles existente
 
-Siga estos pasos para actualizar o quiotar una asignación de roles existente.
+Sigue estos pasos para actualizar o quitar una asignación de roles existente.
 
 1. En la página Abrir roles de Privileged Identity Management > Microsoft Entra, en el panel de navegación izquierdo, selecciona **Asignaciones**.
 

@@ -11,7 +11,7 @@ lab:
 
 ## Escenario del laboratorio
 
-Para las aplicaciones que haya desarrollado la organización, o bien las que se hayan registrado directamente en el inquilino de Microsoft Entra, puede conceder el consentimiento del administrador para todo el inquilino desde los Registros de aplicaciones en Azure Portal.
+Para las aplicaciones que haya desarrollado la organización, o bien las que se hayan registrado directamente en el inquilino de Microsoft Entra, puede conceder el consentimiento del administrador para todo el inquilino desde los Registros de aplicaciones en Azure Portal.
 
 #### Tiempo estimado: 15 minutos
 
@@ -43,7 +43,7 @@ El rol de administrador global es necesario para proporcionar el consentimiento 
 
 #### Tarea 2: conceder el consentimiento del administrador en las aplicaciones de Enterprise
 
-Puede conceder el consentimiento del administrador para todo el inquilino a través de Aplicaciones empresariales si la aplicación ya se ha aprovisionado en el inquilino.
+Puede conceder el consentimiento del administrador para todo el inquilino a través de aplicaciones empresariales si la aplicación ya se ha aprovisionado en el inquilino.
 
 1. En el Centro de administración Microsoft Entra, ve a **Identidad** y **Aplicaciones**.
 
