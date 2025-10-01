@@ -13,7 +13,7 @@ lab:
 
 Al usar identidades administradas para recursos de Azure, el código puede obtener tokens de acceso para autenticarse en aquellos recursos que admitan la autenticación de Microsoft Entra.Pero no todos los servicios de Azure admiten la autenticación de Microsoft Entra. Para usar identidades administradas para recursos de Azure con esos servicios, almacena las credenciales del servicio en Azure Key Vault y usa la identidad administrada para acceder a Key Vault y recuperar las credenciales.
 
-#### Tiempo estimado: 20 minutos
+#### Tiempo estimado: 35 minutos
 
 ### Ejercicio 1: Uso de Azure Key Vault para administrar identidades de máquina virtual
 
@@ -49,7 +49,7 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
   | Campo | Valores |
   | :--   | :--    |
-  | Nombre de VM | vmKeyVault |
+  | Nombre de la máquina virtual | vmKeyVault |
   | Opciones de disponibilidad | No se requiere redundancia de la infraestructura |
   | Nombre de usuario administrador | adminKeyVault |
   | Contraseña | Establece una contraseña segura que puedas recordar |
@@ -103,7 +103,7 @@ Al usar identidades administradas para recursos de Azure, el código puede obten
 
 1. Ve a **vmKeyVault** y usa RDP para conectarte a tu máquina virtual como **adminKeyVault**.
 
-1. En la máquina virtual del laboratorio, abre PowerShell.  
+1. Abra la **máquina virtual de Windows 11** implementada anteriormente en este laboratorio. En la máquina virtual del laboratorio, abre PowerShell.  
 
 1. En PowerShell, invoque la solicitud web en el inquilino para obtener el token del host local en el puerto específico de la máquina virtual.  
 
