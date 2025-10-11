@@ -55,7 +55,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
     **Advertencia**: el consentimiento en cada dispositivo obligará a los usuarios a registrar cada uno de ellos en Microsoft Entra ID para obtener acceso. Un procedimiento recomendado es requerir que esta configuración esté activada; sin embargo, para tener el laboratorio más despejado, usamos Desactivado.
 
-11. Si quiere hacer expirar autorizaciones de términos de uso en una programación, establezca **Expirar autorizaciones** en **Activado**. Al establecerse en Activado, se muestran dos opciones de configuración de la programación adicionales.
+11. Si desea expirar los consentimientos de los términos de uso según una programación, establezca **Expiración de consentimientos** en **En**. Al establecerse en Activado, se muestran dos opciones de configuración de la programación adicionales.
 
     ![Configuración de Expirar autorizaciones para establecer la fecha de inicio, la frecuencia y la duración](./media/lp4-mod1-new-terms-of-use-create.png)
 
@@ -63,7 +63,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 
     | Expirar a partir del | Frecuencia | Resultado |
     |---|---|---|
-    | La fecha de hoy | Mensual | A partir de hoy, los usuarios deben aceptar los términos de uso y, después, volver a aceptarlos cada mes.|
+    | Fecha de hoy | Mensual | A partir de hoy, los usuarios deben aceptar los términos de uso y, después, volver a aceptarlos cada mes.|
     | Fecha del futuro | Mensual | A partir de hoy, los usuarios deben aceptar los términos de uso. Cuando la fecha del futuro llegue, expirarán las autorizaciones y, luego, los usuarios deberán volver a aceptar cada mes. |
 
     Por ejemplo, si establece la fecha de inicio de la expiración en **1 de enero** y la frecuencia en **Mensual**, este es el modo en que pueden producirse las expiraciones para dos usuarios:
@@ -132,7 +132,7 @@ Una vez que haya finalizado el documento de términos de uso, use el procedimien
 #### Tarea 2: Iniciar sesión como Adele
 
 1. Abrir una ventana del explorador de InPrivate.
-2. Debes conectarte a https://portal.azure.com.
+2. Conéctese a https://portal.azure.com.
 3. Si aparece un mensaje de que ya has iniciado sesión, selecciona el nombre de los usuarios que han iniciado sesión en la esquina superior derecha de la pantalla y elige **Iniciar sesión con otra cuenta**.
 4. Iniciar sesión como Adele:
 

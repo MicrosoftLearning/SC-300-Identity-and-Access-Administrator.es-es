@@ -22,13 +22,11 @@ Como capa adicional de seguridad, debes habilitar y configurar las directivas de
 
 1. Inicia sesión en [https://entra.microsoft.com]( https://entra.microsoft.com) con una cuenta de administrador global.
 
-2. Abre el menú del portal y selecciona  **Microsoft Entra ID**.
+2. Abra el menú del portal y, a continuación, seleccione **Entra ID**.
 
-3. En el menú, en **Identidad**, seleccione **Protección**.
+3. En el menú, en **Protección de ID**, seleccione **Panel**.
 
-4. En la página Seguridad, en el panel de navegación izquierdo, selecciona **Protección de identidad**.
-
-5. En la página de protección de identidades, en el panel de navegación izquierdo, selecciona **Directiva de riesgo de usuario**.
+4. 5. En el panel de Identity Protection, en el panel de navegación izquierdo, seleccione **Directiva de riesgo de usuario**.
 
     ![Imagen de pantalla que muestra la página Directiva de riesgo de usuario y la ruta de exploración resaltada](./media/lp2-mod4-browse-to-identity-protection.png)
 

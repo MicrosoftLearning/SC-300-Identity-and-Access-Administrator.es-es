@@ -35,9 +35,9 @@ El registro de la aplicación establece una relación de confianza entre la apli
 
 #### Tarea 2: Configuración de opciones de la plataforma
 
-La configuración de cada tipo de aplicación, incluyendo los URI de redirección, se realiza en  **Configuraciones de la plataforma**  en Azure Portal. Algunas plataformas, como las de  **aplicaciones web**  y  **aplicaciones de página única**, requieren que se especifique manualmente un URI de redirección. Para otras plataformas, como las de aplicaciones móviles y de escritorio, es posible elegir entre los URI de redirección que se generan automáticamente al configurar las demás opciones.
+La configuración de cada tipo de aplicación, incluyendo los URI de redirección, se realiza en  **Configuraciones de la plataforma**  en Azure Portal. Algunas plataformas, como las de  **aplicaciones web**  y  **aplicaciones de página única**, requieren que se especifique manualmente un URI de redirección. Para otras plataformas, como dispositivos móviles y de escritorio, puede seleccionar entre los URI de redireccionamiento generados automáticamente al configurar sus otras opciones.
 
-Para configurar los valores de la aplicación según la plataforma o el dispositivo de destino:
+Para configurar las opciones de la aplicación en función de la plataforma o el dispositivo de destino:
 
 Para agregar y modificar los URI de redirección de las aplicaciones registradas, especifica los parámetros en la opción Configuración de la plataforma.
 
@@ -54,7 +54,7 @@ Para agregar y modificar los URI de redirección de las aplicaciones registradas
     | Plataforma| Parámetros de configuración|
     | :--- | :--- |
     | Web| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Selecciona esta plataforma para las aplicaciones web estándar que se ejecuten en un servidor.|
-    | Aplicación de una sola página| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Selecciona esta plataforma si va a desarrollar una aplicación web de cliente en JavaScript, o bien con un marco de trabajo como Angular, Vue.js, React.js o Blazor WebAssembly.|
+    | Aplicación de página única| Escribe un  **URI de redirección**  para tu aplicación, la ubicación en la que la plataforma de identidad de Microsoft redirige el cliente de un usuario y envía los tokens de seguridad después de la autenticación. Selecciona esta plataforma si va a desarrollar una aplicación web de cliente en JavaScript, o bien con un marco de trabajo como Angular, Vue.js, React.js o Blazor WebAssembly.|
     | iOS/macOS| Introduce el **Id. del paquete** de la aplicación, que se encuentra en XCode en *Info.plist*  o en Configuración de compilación. Al especificar un ID de agrupación, se genera un URI de redirección.|
     | Android| Introduce el  **nombre del paquete** de la aplicación, que puedes encontrar en el archivo AndroidManifest.xml, y genera e introduce el **hash de firma**. Al especificar estos valores, se genera un URI de redirección.|
     | Aplicaciones móviles y de escritorio| Selecciona uno de los  **URI de redirección sugeridos**  o especifica un  **URI de redirección personalizado**. En el caso de las aplicaciones de escritorio, se recomienda: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Selecciona esta plataforma para las aplicaciones móviles que no utilicen la biblioteca de autenticación de Microsoft (MSAL) más reciente o que no usen un agente. Selecciona también esta plataforma para las aplicaciones de escritorio.|
@@ -67,7 +67,7 @@ Para agregar y modificar los URI de redirección de las aplicaciones registradas
 
 #### Tarea 3: agregar credenciales, certificados y secreto de cliente
 
-Las credenciales se usan con las aplicaciones cliente confidenciales que acceden a una API web. Ejemplos de aplicaciones cliente confidenciales son, entre otras, las aplicaciones web, las API web o las aplicaciones de tipo demonio y de tipo servicio. Las credenciales permiten que la aplicación se autentique a sí misma, por lo que no se requiere la interacción del usuario en tiempo de ejecución.
+Las aplicaciones cliente confidenciales usan credenciales que acceden a una API web. Ejemplos de aplicaciones cliente confidenciales son, entre otras, las aplicaciones web, las API web o las aplicaciones de tipo demonio y de tipo servicio. Las credenciales permiten que la aplicación se autentique como sí misma, lo que no requiere ninguna interacción de un usuario en tiempo de ejecución.
 
 Puede agregar certificados y secretos de cliente (una cadena) como credenciales al registro de la aplicación cliente confidencial.
 
@@ -95,7 +95,7 @@ Una vez registrada la aplicación web, estás listo para agregar los ámbitos qu
 
 #### Tarea 5: agregar un ámbito
 
-El código de las aplicaciones cliente solicita permiso para realizar operaciones definidas por la API web; para ello, pasa un token de acceso junto con sus solicitudes al recurso protegido (la API web). A continuación, la API web realiza la operación solicitada solo si el token de acceso que recibe contiene los ámbitos (también conocidos como permisos de aplicación) necesarios para la operación.
+El código de una aplicación cliente solicita permiso para realizar operaciones definidas por la API web pasando un token de acceso junto con sus solicitudes al recurso protegido (la API web). A continuación, la API web realiza la operación solicitada solo si el token de acceso que recibe contiene los ámbitos (también conocidos como permisos de aplicación) necesarios para la operación.
 
 En primer lugar, siga estos pasos para crear un ámbito de ejemplo denominado Employees.Read.All:
 
@@ -109,13 +109,13 @@ En primer lugar, siga estos pasos para crear un ámbito de ejemplo denominado Em
 
   - Nota: el URI de Id. de aplicación actúa como prefijo de los ámbitos a los que se hará referencia en el código de la API y debe ser único globalmente. Puedes usar el valor predeterminado proporcionado, que tiene el formato api://<application-client-id\>, o especificar un URI más legible como `https://contoso.com/api`.
 
-4. Selecciona **Guardar y continuar**.
+4. Selecciona **Guardar** y continúa.
 
 5. Después, especifica los atributos del ámbito en el  **panel Agregar un ámbito**. Para este procedimiento paso a paso, usa los valores de la tercera columna: **Valor**.
 
     | Campo| Descripción| Valor |
     | :--- | :--- | :--- |
-    | Nombre de ámbito| Nombre del ámbito. Una convención de nomenclatura de ámbito común es resource.operation.constraint.| Employees.Read.All|
+    | Nombre del ámbito| El nombre del ámbito. Una convención de nomenclatura de ámbito común es resource.operation.constraint.| Employees.Read.All|
     | ¿Quién puede dar el consentimiento?| Si los usuarios pueden dar su consentimiento a este ámbito o si se requiere el consentimiento del administrador. Seleccione Solo administradores para permisos con más privilegios.| Administradores y usuarios|
     | Nombre para mostrar del consentimiento del administrador| Breve descripción del propósito del ámbito que solo verán los administradores.| Acceso de solo lectura a los registros de empleados.|
     | Descripción del consentimiento del administrador| Descripción más detallada del permiso concedido por el ámbito que solo verán los administradores.| Permite que la aplicación obtenga acceso de solo lectura a todos los datos de los empleados.|
@@ -146,8 +146,8 @@ A continuación, agregue otro ámbito de ejemplo denominado Employees.Write.All 
     | ¿Quién puede dar el consentimiento?| Solo administradores|
     | Nombre para mostrar del consentimiento del administrador| Acceso de escritura a los registros de empleados.|
     | Descripción del consentimiento del administrador| Permite que la aplicación obtenga acceso de escritura a todos los datos de los empleados.|
-    | Nombre para mostrar del consentimiento del usuario| Ninguno (deje este campo en blanco)|
-    | Descripción del consentimiento del usuario| Ninguno (deje este campo en blanco)|
+    | Nombre para mostrar del consentimiento del usuario| Ninguno (deje vacío)|
+    | Descripción del consentimiento del usuario| Ninguno (deje vacío)|
 
 2. Asegúrate de que el Estado está en **Habilitado** y selecciona **Agregar ámbito**.
 
@@ -160,7 +160,7 @@ A continuación, agregue otro ámbito de ejemplo denominado Employees.Write.All 
   **Nota**: por ejemplo, si el URI de Id. de aplicación de tu API web es `https://contoso.com/api` y el nombre del ámbito es Employees.Read.All, el ámbito completo es: `https://contoso.com/api/Employees.Read.All`
 
   **Nota**: después, configurarás el registro de una aplicación cliente con acceso a tu API web y a los ámbitos que hayas definido mediante los pasos anteriores.
-  Una vez que el registro de una aplicación cliente tenga permiso para acceder a la API web, se puede emitir un token de acceso de OAuth 2.0 para el cliente mediante la plataforma de identidad de Microsoft. Cuando el cliente llama a la API web, presenta un token de acceso cuya demanda de ámbito (scp) se establece en los permisos especificados en el registro de la aplicación cliente. Puede exponer ámbitos adicionales posteriormente si es necesario. Tenga en cuenta que la API web puede exponer varios ámbitos asociados a varias operaciones. El recurso puede controlar el acceso a la API web en tiempo de ejecución, mediante la evaluación de las notificaciones de ámbito (scp) del token de acceso de OAuth 2.0 recibido.
+  Una vez que se concede permiso a un registro de aplicación cliente para acceder a la API web, el cliente puede emitir un token de acceso de OAuth 2.0 mediante la plataforma de identidad de Microsoft. Cuando el cliente llama a la API web, presenta un token de acceso cuya demanda de ámbito (scp) se establece en los permisos especificados en el registro de la aplicación cliente. Puede exponer ámbitos adicionales más adelante según sea necesario. Tenga en cuenta que la API web puede exponer varios ámbitos asociados a varias operaciones. El recurso puede controlar el acceso a la API web en tiempo de ejecución, mediante la evaluación de las notificaciones de ámbito (scp) del token de acceso de OAuth 2.0 recibido.
 
 
 ### Ejercicio 2: crear un rol personalizado para administrar el registro de aplicaciones

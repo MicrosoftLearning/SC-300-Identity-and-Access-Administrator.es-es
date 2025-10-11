@@ -17,7 +17,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 #### Tiempo estimado: 15 minutos
 
-### Ejercicio 1: usar la puntuación de seguridad de identidad para supervisar y administrar la posición de seguridad de identidad
+### Ejercicio 1: Uso de la puntuación de seguridad de identidad para supervisar y administrar la posición de seguridad de identidad
 
 #### Tarea 1: Revisión de la puntuación de seguridad de identidad y acciones de mejora
 
@@ -33,7 +33,7 @@ Microsoft Entra Identity Protection proporciona detección y corrección automat
 
 **Sugerencia de laboratorio**: a diferencia de las acciones de mejora de Microsoft Defender for Cloud y Microsoft Defender XDR, estas acciones de mejora son específicas de la identidad.  Esto proporciona una lista más enfocada en las posibles acciones de la administración de la posición de seguridad.  Las acciones de mejora iniciadas desde esta lista también proporcionarán un impacto en la posición de seguridad general del inquilino. 
 
-#### Tarea 2: ejecutar una acción de mejora
+#### Tarea 2: Ejecución de una acción de mejora
 
 1. Para mejorar una área de la posición de seguridad de identidad, selecciona **Habilitar la directiva de riesgo de inicio de sesión de Protección de Microsoft Entra ID**.
 

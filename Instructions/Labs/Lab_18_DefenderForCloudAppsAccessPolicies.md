@@ -20,7 +20,7 @@ Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condici
 #### Tarea 1: confirmar que PradeepG tiene acceso incondicional a FORMS
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Conéctese a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
@@ -57,7 +57,7 @@ Microsoft Defender for Cloud Apps nos permite crear directivas de acceso condici
 #### Tarea 3: iniciar sesión en Forms y validar que el acceso condicional está supervisando
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Conéctese a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>
@@ -99,7 +99,7 @@ El registro de la aplicación establece una relación de confianza entre la apli
 #### Tarea 2: iniciar sesión como Pradeep en Forms para desencadenar la actividad
 
 1. Inicia una nueva ventana de **exploración de InPrivate**.
-2. Debes conectarte a [https://forms.microsoft.com](https://forms.microsoft.com).
+2. Conéctese a [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Selecciona inicio de sesión en la esquina superior derecha de la página.
 4. Inicia sesión como Pradeep Gupta.
    - Nombre de usuario: PradeepG@<<<your lab hoster provided domain>>>

@@ -37,18 +37,18 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
 1. Inicia sesión en  [https://entra.microsoft.com](https://entra.microsoft.com) como Administrador global.
  - Usa la cuenta **Administración de Microsoft 365**.
 
-2. En el menú de la izquierda selecciona **Identidad**.
+2. En el menú de la izquierda, expanda la lista desplegable **Entra ID**, si aún no está abierta.
 
 3. En el menú de navegación de la izquierda, en **Usuarios**, selecciona **Todos los usuarios** y después **+ Nuevo usuario** y **Crear nuevo usuario**.
 
-4. Marca el botón **Crear usuario**. Después, crea un usuario con la siguiente información:
+4. Cree un usuario con la siguiente información:
 
     | **Configuración**| **Valor**|
     | :--- | :--- |
     | Nombre principal de usuario| ChrisG|
     | Nombre| Chris Green|
 
-5. Marca la opción **Generar contraseña automáticamente**.
+5. Asegúrese de que la opción **Generar contraseña automáticamente** está activada.
 
 6. Copia la contraseña generada en una ubicación donde puedas recordarla para la siguiente tarea.
 
@@ -74,11 +74,13 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
     | New Password| Escribe una contraseña única y segura |
     | Confirm Password| Vuelve a introducir una contraseña única y segura |
 
-4. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
+  **Sugerencia de laboratorio**: se recomienda usar la contraseña de usuario proporcionada en el entorno de laboratorio.
+
+4. Busque y seleccione "Aplicaciones empresariales" en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
 
 5. Selecciona **+ Nueva aplicación**. Ten en cuenta que **+ Crear tu propia aplicación** no está disponible.
 
-6. Prueba seleccionando otra configuración como **Proxy de aplicación**, **Configuración de usuario** y otras para ver si **Chris Green** no tiene derechos.
+6. Pruebe a seleccionar cualquiera de las otras opciones, como **Consentimiento y permisos** y **Configuración de usuario** para comprobar que **Chris Green** no tiene derechos.
 
 7. Selecciona el nombre **ChrisG** en la esquina superior derecha y cierra la sesión.
 
@@ -89,7 +91,7 @@ Tu empresa ha contratado recientemente a un nuevo empleado que realizará tareas
 
 Con Microsoft Entra ID, puedes designar administradores limitados que administren tareas de identidad en roles con menos privilegios. Los administradores se pueden asignar para realizar tareas como agregar usuarios o cambiarlos, asignar roles administrativos, restablecer contraseñas de usuario, administrar licencias de usuario y administrar nombres de dominio.
 
-1. Si aún no has iniciado sesión como Administrador global, abre el Centro de administración de Microsoft Entra e inicia sesión.
+1. Si aún no ha iniciado sesión con el rol de administrador, abra el Centro de administración de Microsoft Entra e inicie sesión.
 2. Ve a Identidad y selecciona la página Usuarios.
 3. Selecciona **Todos los usuarios** en la sección Administrar del menú.
 4. Selecciona la cuenta de **Chris Green**.
@@ -98,7 +100,7 @@ Con Microsoft Entra ID, puedes designar administradores limitados que administre
 7. Selecciona el rol `Application administrator` en la lista desplegable.
 8. Selecciona el botón **Siguiente**.
 9. Marca el valor **Activo** para **Tipo de asignación**.
-10. Selecciona **Asignar**.
+10. Escriba como justificación "Necesario para el laboratorio". Seleccione **Asignar**.
 
     ![Página Roles asignados, se muestra el rol seleccionado](./media/directory-role-select-role.png)
 
@@ -111,22 +113,21 @@ Con Microsoft Entra ID, puedes designar administradores limitados que administre
 #### Tarea 2: Comprobación de los permisos de la aplicación
 
 1. Inicia una nueva ventana del explorador de InPrivate.
-2. Abre el Centro de administración de Microsoft Entra [https://entra.microsoftcom](https://entra.microsoft.com) como Chris Green.
+2. Abra el Centro de administración de Microsoft Entra en https://entra.microsoftcom+++ como Chris Green.
 
     | **Configuración**| **Valor**|
     | :--- | :--- |
     | Nombre de usuario| ChrisG@`your domain name.com`|
     | Contraseña| Introduce la contraseña única y segura que has creado anteriormente |
 
-3. Si aparece el cuadro de diálogo **Le damos la bienvenida a Microsoft Azure**, selecciona el botón **Quizás más tarde**.
-4. Busca y selecciona **Aplicaciones empresariales** en el cuadro de diálogo de búsqueda en la parte superior de la pantalla.
-5. Observa que **+ Nueva aplicación** está disponible ahora.
-6. Selecciona **+ Nueva aplicación**
-7. Observa que **+ Crear tu propia aplicación** no está en gris. Si eliges una aplicación de la galería, verás que el botón **Crear** está disponible.
+3. Busque y seleccione "Aplicaciones empresariales" en el cuadro de diálogo de búsqueda de la parte superior de la pantalla.
+4. Observa que **+ Nueva aplicación** está disponible ahora.
+5. Selecciona **+ Nueva aplicación**
+6. Observe que **+ Crear su propia aplicación** ya no aparece atenuado.  Si elige una aplicación de la galería, verá que el botón **Crear** está disponible.
 
    **Nota: este rol tiene ahora la capacidad de añadir aplicaciones al inquilino. Experimentaremos más con esta característica en laboratorios posteriores.**
 
-8. Cierra la sesión de la instancia de Chris Green del portal y cierra el explorador.
+7. Cierra la sesión de la instancia de Chris Green del portal y cierra el explorador.
 
 ### Ejercicio 3: Eliminación de una asignación de roles
 
@@ -134,8 +135,8 @@ Con Microsoft Entra ID, puedes designar administradores limitados que administre
 
 Esta tarea usará un método alternativo para quitar el rol asignado; usará la opción **Roles y administradores** en Micrisoft Entra ID.
 
-1. Si aún no has iniciado sesión como tu Administrador global, inicia el Centro de administración de Microsoft Entra e inicia sesión ahora.
-2. En el cuadro de búsqueda, escribe **Roles** y después inicia los roles y la administración de Microsoft Entra ID.
+1. Si aún no ha iniciado sesión como administrador, inicie el Centro de administración de Microsoft Entra e inicie sesión ahora.
+2. En el cuadro de búsqueda, escriba **Roles** y, a continuación, inicie **Roles y administración de Microsoft Entra ID**.
 3. En  **Todos los roles** de  **Roles y administradores**, selecciona el rol **Administrador de aplicaciones** de la lista.
 4. En la página **Administrador de aplicaciones | Asignaciones** deberías ver el nombre Chris Green en la lista.
 5. Desplázate hasta la derecha sobre Chris Green.
@@ -304,7 +305,7 @@ Tienes que agregar y quitar licencias a través del Centro de administración de
 
 1. Abre una nueva pestaña en tu explorador.
 
-2. Conéctate al Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Conéctese al Centro de administración de Microsoft 365 en https://admin.microsoft.com+++.
 
 3. Inicia sesión con tu cuenta de administrador si se te solicita.
 

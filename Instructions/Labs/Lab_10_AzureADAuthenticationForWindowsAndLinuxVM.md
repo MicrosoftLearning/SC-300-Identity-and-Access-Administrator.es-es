@@ -21,11 +21,13 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Ve a [https://portal.azure.com](https://portal.azure.com)
 
+**Sugerencia de laboratorio**: si se le pide que guarde sus credenciales, elija "Nunca".  Y cancele el recorrido, a menos que esta sea su primera vez en Azure Portal.
+
 1. Selecciona **+ Crear un recurso**.
 
 1. Escribe **Windows 11** en la barra de búsqueda Buscar en Marketplace y, después, **Entrar**.
 
-1. En el cuadro **Windows 11**, selecciona **Crear v** y elige **Windows 11 Empresas, versión 22H2** en el menú que se abre.
+1. Busque el cuadro **Microsoft Windows 11** y, a continuación, seleccione **Crear** y elija **Windows 11 Enterprise, versión 22H2** en el menú que se abre.
 
 1. Crea la VM con los valores siguientes en la pestaña **Aspectos básicos**:
 

@@ -62,7 +62,7 @@ Tu empresa tiene servicios de dominio de Active Directory locales.  Les gustarí
 
 5. Seleccione **Crear** una vez que se pase la validación.
     
-6. Espere a que la implementación se complete. Esto puede tardar unos 60 minutos.
+6. Espera a que la implementación se complete. Esto puede tardar unos 60 minutos.
 
 
 ### Tarea 2: configurar el entorno de laboratorio de las máquinas virtuales de Azure
