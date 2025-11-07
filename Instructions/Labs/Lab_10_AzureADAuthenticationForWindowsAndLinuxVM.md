@@ -27,7 +27,7 @@ La empresa ha decidido que Microsoft Entra ID debe usarse para iniciar sesión e
 
 1. Escribe**Windows 11** en la barra de búsqueda Buscar en Marketplace y, después,**Entrar**.
 
-1. Busque el cuadro**Microsoft Windows 11** y, a continuación, seleccione**Crear** y elija**Windows 11 Enterprise, versión 22H2** en el menú que se abre.
+1. Busque el cuadro**Microsoft Windows 11**, y a continuación, seleccione**Crear v** y elija**Windows 11 Enterprise, versión 25H2** desde el menú que se abre.
 
 1. Crea la VM con los valores siguientes en la pestaña**Aspectos básicos**:
 
